@@ -20,7 +20,7 @@ export default function AdmissionSection() {
     {
       step: "03",
       title: "Inicio de clases",
-      description: "Una vez acreditado el seminario, te anotás a las materias de primer año y elegís tu turno de cursada según tus horarios.",
+      description: "Una vez acreditado el seminario, te anotás a las materias para comenzar la carrera.",
       linkText: "Portal de Aspirantes",
       linkUrl: "https://guarani.frba.utn.edu.ar/autogestion/aspirantes"
     }

@@ -7,112 +7,73 @@ DOCUMENTO EXCLUSIVO PARA DESARROLLADORES Y MODELOS DE INTELIGENCIA ARTIFICIAL (I
 Ubicacion: Carpeta raiz del proyecto (PROPOSITO_PROYECTO.txt)
 Ultima actualizacion: Septiembre 2026
 Repositorio en GitHub: https://github.com/manutorres413-tech/ingenieria-industrial-utnba
-Sitio Web en Vivo (GitHub Pages): https://manutorres413-tech.github.io/ingenieria-industrial-utnba/
+Sitio Web en Produccion: https://manutorres413-tech.github.io/ingenieria-industrial-utnba/
 Despliegue en Vercel: Vinculado directamente al repositorio GitHub (CI/CD automatico en cada push).
 
 --------------------------------------------------------------------------------
-1. FILOSOFIA Y DIRECTIVAS DEL USUARIO (LECTURA OBLIGATORIA)
+1. FILOSOFIA Y DIRECTIVAS EXPLICITAS DEL USUARIO (OBLIGATORIO RESPETAR)
 --------------------------------------------------------------------------------
 1. "PAGINA SIMPLE Y SIN VIRIVIRI":
-   El usuario dejo en claro que la pagina debe ser informativa, directa y sin relleno.
-   No inventar secciones, ni marketing exagerado, ni textos grandilocuentes.
-   Si el usuario quiere agregar algo, lo pedira explicitamente.
+   La web es un folleto informativo, limpio, directo y al grano.
+   Sin relleno publicitario ni parrafos largos.
 
 2. CERO MENCIONES A "INDUSTRIALITO":
    El juego "Industrialito" del afiche fisico NO forma parte de este folleto.
-   Queda terminantemente prohibido volver a incluir simuladores, referencias o archivos
-   con ese nombre.
+   No incluir simuladores ni juegos.
 
-3. SIN CINTAS/RIBBONS INSTITUCIONALES REPETITIVOS:
-   No poner carteles ruidosos arriba de todo ("Expo Carreras UTN Buenos Aires • Departamento...").
-   El encabezado y el Hero van directo al grano:
-   "Ingeniería Industrial - UTN Buenos Aires".
+3. NADA DE SUBTITULOS INNECESARIOS:
+   - Se elimino el cartel de "Plan I23 • Ordenanza N° 1909/23".
+   - Se elimino el subtitulo largo del Hero ("Plan de estudios oficial, materias organizadas por año...").
+   - Los anos dicen simplemente: "1° Año", "2° Año", "3° Año", "4° Año", "5° Año".
 
-4. TONO HUMANIZER ("FORMAL PERO AGRADABLE"):
+4. NADA DE HORARIOS (NO ACLARAR):
+   El usuario indico explicitamente NO incluir aclaraciones sobre horarios ni turnos
+   (ni "tarde y noche", ni nada similar), ya que la facultad cuenta con turnos
+   mañana, tarde y noche y no es algo necesario de aclarar.
+
+5. TONO HUMANIZER ("FORMAL PERO AGRADABLE"):
    Basado en la skill "D:\Proyectos Antigravity\SKILLS\humanizer":
-   - Tono natural, cercano, profesional y agradable, evitando que suene redactado por IA.
-   - Prohibido el uso de palabras trilladas: "crucial", "fundamental", "puente estrategico",
-     "matriz productiva", "tapiz", "vibrante", "testamento", "paisaje cambiante".
-   - Sin paralelismos negativos ("No solo... sino...").
-   - Sin listas forzadas de tres elementos.
-   - Frases concisas y con sujeto/predicado claros en espanol.
+   - Tono natural, cercano, profesional y agradable, sin sonar a IA.
+   - Sin palabras infladas: "crucial", "fundamental", "puente estrategico", "matriz productiva".
+   - Oraciones cortas, claras y bien construidas.
 
 --------------------------------------------------------------------------------
-2. ESPECIFICACION DE DISEÑO DEL PLAN DE ESTUDIOS
+2. DISEÑO DEL PLAN DE ESTUDIOS (CUADRADOS COMPACTOS Y UNIFORMES)
 --------------------------------------------------------------------------------
-- FORMATO EN CUADRADOS COMPACTOS (FICHAS EN CUADRICULA):
-  * Las materias se muestran en una grilla compacta de cuadrados:
-    - 2 columnas en telefonos moviles.
-    - 3 a 4 columnas en tablets y computadoras de escritorio.
-  * Estado compacto:
-    - Muestra codigo, carga horaria semanal, nombre en negrita y tipo de materia.
-    - Ocupa poco espacio vertical para permitir una vista panoramica de cada ano.
-  * Interaccion al tocar/hacer clic:
-    - Al presionar una materia, esta se EXPANDE para mostrar:
-      + Descripcion clara de los contenidos.
-      + Materias correlativas para cursar.
-      + Materias correlativas para rendir examen final.
-      + Boton para cerrar el detalle.
-  * Totalmente apto para moviles:
-    - Botones y tarjetas con area tactil comoda (sin desbordes horizontales).
-    - Selector de anos tipo pastillas para filtrar por 1°, 2°, 3°, 4°, 5° ano o ver todos.
-    - Hito destacado del Titulo Intermedio al 3° ano (Analista Industrial).
-    - Descarga directa del PDF oficial del Plan I23.
+- Cuadricula en cuadrados compactos:
+  * 2 columnas en celulares.
+  * 3 a 4 columnas en computadoras.
+  * Cada materia es una ficha cuadrada de altura fija y compacta con:
+    codigo, carga horaria, nombre y tipo.
+- Detalle interactivo sin desarmar la grilla:
+  * Al tocar o hacer clic en una materia, se abre una ventana modal emergente (popup)
+    con la descripcion de contenidos y las correlativas para cursar y rendir.
+  * Se cierra tocando afuera o con la cruz (x).
+- Hitos sencillos:
+  * 3° Año: Título Intermedio (Analista Industrial).
+  * 5° Año: PPS (200 hs) y Proyecto Final.
+  * Materias electivas en cuadrícula compacta.
+  * Boton para descargar el PDF oficial del plan.
 
 --------------------------------------------------------------------------------
-3. ESTRUCTURA COMPLETA DE SECCIONES DE LA WEB
+3. ESTRUCTURA VIGENTE DE LA PAGINA
 --------------------------------------------------------------------------------
-1. Navbar:
-   - Logo oficial de UTN.BA + Departamento de Ingenieria Industrial.
-   - Enlaces: Plan de Estudios, Salida Laboral, Por que UTN, Ingreso.
-   - Botones: "Imprimir Folleto" (con reglas @media print) y "Web Oficial".
-
-2. Hero (Seccion Principal):
-   - Titular limpio: "Ingenieria Industrial - UTN Buenos Aires".
-   - 4 datos clave esenciales: 5 Anos de duracion, Titulo Intermedio en 3° ano,
-     Turnos Tarde y Noche (para trabajar y estudiar), Universidad Publica y Gratuita.
-   - Botones: "Ver Plan de Estudios", "Web Oficial Industrial", "PDF Oficial".
-   - Render 3D limpio de modelado de procesos industriales.
-
-3. Plan de Estudios Escalonado:
-   - Cuadricula compacta de materias por nivel con expansion interactiva.
-   - Buscador rapido en tiempo real.
-
-4. Salida Laboral (Perfil del Graduado):
-   - 6 ambitos de trabajo explicados en lenguaje humano y concreto:
-     Plantas y Produccion, Logistica y Abastecimiento, Costos y Finanzas,
-     Datos y Mejora de Procesos, Consultoria y Gestion, Calidad y Seguridad Ambiental.
-
-5. ¿Como es cursar en UTN Buenos Aires?:
-   - Turnos tarde y noche pensados para trabajar.
-   - Dos sedes: Medrano (Almagro) y Campus (Villa Lugano con laboratorios).
-   - Tutorias de acompanamiento estudiantil en 1° ano.
-   - Gratuidad universitaria.
-
-6. Pasos para el Ingreso:
-   - 01: Preinscripcion en SIU-Guarani.
-   - 02: Seminario Universitario nivelatorio (Matematica, Fisica y TIVU).
-   - 03: Inicio de clases y eleccion de turno.
-   - Enlace oficial obligatorio: https://frba.utn.edu.ar/ingreso/ingenieria-industrial/
-
-7. Footer:
-   - Direcciones de las sedes y canales de contacto institucionales.
+1. Navbar: Logo UTN.BA + Depto Industrial + Boton Imprimir Folleto + Web Oficial.
+2. Hero: Titular limpio ("Ingenieria Industrial - UTN Buenos Aires"), 3 datos clave
+   (5 Años de duracion, Titulo Intermedio en 3°, Gratuita) + Botones de accion + Render 3D.
+3. Plan de Estudios: Cuadricula compacta con modal emergente y buscador.
+4. Salida Laboral: 6 ambitos de insercion explicados de forma clara y humana.
+5. ¿Como es cursar en UTN Buenos Aires?: Sedes Medrano y Campus Lugano, tutorias en 1° ano, gratuidad.
+6. Ingreso a la Carrera: Pasos claros del Seminario Universitario y link a SIU-Guarani.
+7. Footer: Sedes y enlaces oficiales.
 
 --------------------------------------------------------------------------------
-4. INFRAESTRUCTURA DE DESPLIEGUE (GITHUB + VERCEL)
+4. COMANDOS Y VISUALIZACION LOCAL
 --------------------------------------------------------------------------------
-- Repositorio GitHub:
-  https://github.com/manutorres413-tech/ingenieria-industrial-utnba
-
-- Despliegue en Vercel:
-  Al estar conectado al repositorio de GitHub, VERCEL SE ACTUALIZA AUTOMATICAMENTE
-  EN CADA "git push" a la rama `main`. No es necesario desplegar manualmente.
-
-- Despliegue en GitHub Pages:
-  Tambien se compila y publica automaticamente mediante GitHub Actions
-  en `.github/workflows/deploy.yml`.
-
-- Configuracion tecnica:
-  `vite.config.js` tiene configurado `base: './'` para asegurar que las rutas
-  relativas de assets funcionen sin importar el subdominio o subcarpeta de hosting.
+- Para ver la web localmente sin problemas de CORS:
+  Hacer doble clic en `abrir_web.bat` (inicia el servidor local en http://localhost:4173).
+- Comandos npm:
+  npm run dev    -> Servidor de desarrollo
+  npm run build  -> Compilacion a /dist
+  git push       -> Despliega automaticamente en Vercel y GitHub Pages.
 ================================================================================

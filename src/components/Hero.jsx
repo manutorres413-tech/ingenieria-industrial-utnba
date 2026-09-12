@@ -1,27 +1,23 @@
 import React from 'react';
-import { ArrowDown, ExternalLink, Download, Clock, Briefcase, Award, GraduationCap } from 'lucide-react';
+import { ArrowDown, ExternalLink, Download, Clock, Award, GraduationCap } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="pt-8 pb-10 sm:pt-10 sm:pb-14 bg-white border-b border-gray-200 text-left">
+    <section className="pt-8 pb-10 sm:pt-12 sm:pb-14 bg-white border-b border-gray-200 text-left">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           
-          {/* Left Column: Title & Presentation */}
-          <div className="lg:col-span-7 space-y-5">
+          {/* Left Column: Title & Actions */}
+          <div className="lg:col-span-7 space-y-6">
             
             <h1 className="text-3xl sm:text-5xl font-black tracking-tight text-[#2F3336] leading-tight">
               Ingeniería Industrial <br />
               <span className="text-[#B71234]">UTN Buenos Aires</span>
             </h1>
 
-            <p className="text-sm sm:text-base text-gray-600 max-w-xl leading-relaxed">
-              Plan de estudios oficial, materias organizadas por año, título intermedio y requisitos de ingreso a la carrera.
-            </p>
-
             {/* Quick CTAs */}
-            <div className="flex flex-wrap items-center gap-2.5 pt-1">
+            <div className="flex flex-wrap items-center gap-2.5">
               <a
                 href="#plan-estudios"
                 className="inline-flex items-center space-x-1.5 px-4 py-2.5 rounded-lg text-xs sm:text-sm font-bold text-white bg-[#B71234] hover:bg-[#9E0E2B] transition-colors"
@@ -52,8 +48,8 @@ export default function Hero() {
             </div>
 
             {/* Key Data Points */}
-            <div className="pt-3 border-t border-gray-100 grid grid-cols-2 sm:grid-cols-4 gap-2.5">
-              <div className="bg-[#F5F6F8] p-2.5 rounded-lg border border-gray-200">
+            <div className="pt-4 border-t border-gray-100 grid grid-cols-3 gap-2.5 sm:gap-3">
+              <div className="bg-[#F5F6F8] p-3 rounded-lg border border-gray-200">
                 <div className="flex items-center space-x-1.5 text-[#B71234] mb-0.5">
                   <Clock className="w-3.5 h-3.5" />
                   <span className="text-[10px] font-bold uppercase text-gray-500">Duración</span>
@@ -62,7 +58,7 @@ export default function Hero() {
                 <div className="text-[10px] text-gray-500">Título de Grado</div>
               </div>
 
-              <div className="bg-[#F5F6F8] p-2.5 rounded-lg border border-gray-200">
+              <div className="bg-[#F5F6F8] p-3 rounded-lg border border-gray-200">
                 <div className="flex items-center space-x-1.5 text-[#B71234] mb-0.5">
                   <Award className="w-3.5 h-3.5" />
                   <span className="text-[10px] font-bold uppercase text-gray-500">Intermedio</span>
@@ -71,16 +67,7 @@ export default function Hero() {
                 <div className="text-[10px] text-gray-500">Analista Industrial</div>
               </div>
 
-              <div className="bg-[#F5F6F8] p-2.5 rounded-lg border border-gray-200">
-                <div className="flex items-center space-x-1.5 text-[#B71234] mb-0.5">
-                  <Briefcase className="w-3.5 h-3.5" />
-                  <span className="text-[10px] font-bold uppercase text-gray-500">Horarios</span>
-                </div>
-                <div className="text-sm font-bold text-[#2F3336]">Tarde y Noche</div>
-                <div className="text-[10px] text-gray-500">Permite trabajar</div>
-              </div>
-
-              <div className="bg-[#F5F6F8] p-2.5 rounded-lg border border-gray-200">
+              <div className="bg-[#F5F6F8] p-3 rounded-lg border border-gray-200">
                 <div className="flex items-center space-x-1.5 text-[#B71234] mb-0.5">
                   <GraduationCap className="w-3.5 h-3.5" />
                   <span className="text-[10px] font-bold uppercase text-gray-500">Arancel</span>

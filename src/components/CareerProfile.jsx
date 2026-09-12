@@ -93,7 +93,7 @@ export default function CareerProfile() {
               Inserción laboral durante la carrera
             </h4>
             <p className="text-xs sm:text-sm text-gray-300 mt-1 max-w-2xl">
-              Al tener opciones de cursada en horario nocturno, la mayoría de los estudiantes empieza a trabajar en empresas o consultoras a partir del tercer o cuarto año.
+              La mayoría de los estudiantes realiza pasantías o se incorpora a empresas a partir del tercer o cuarto año de la carrera.
             </p>
           </div>
           <a
