@@ -186,7 +186,7 @@ export default function SteppedStudyPlan() {
                       <Award className="w-4 h-4 text-[#A31235] shrink-0" />
                       <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
                         <div>
-                          <strong className="text-[#A31235]">Título intermedio (3° año):</strong>{' '}
+                          <strong className="text-[#A31235]">Título intermedio:</strong>{' '}
                           <span className="text-[#231F20] font-bold">Técnico/a Universitario/a en Administración, Producción y Gestión Industrial</span>
                         </div>
                         <span className="hidden sm:inline text-gray-300">•</span>
