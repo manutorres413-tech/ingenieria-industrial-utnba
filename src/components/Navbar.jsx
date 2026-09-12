@@ -15,7 +15,7 @@ export default function Navbar() {
               <img 
                 src="./assets/utnba-logo.png" 
                 alt="UTN.BA Logo" 
-                className="h-10 sm:h-12 w-auto object-contain"
+                className="h-8 sm:h-10 w-auto object-contain"
               />
               <div className="hidden sm:block h-8 w-[1px] bg-gray-300"></div>
               <div className="flex flex-col text-left">

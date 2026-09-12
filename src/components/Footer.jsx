@@ -14,11 +14,11 @@ export default function Footer() {
           
           {/* Brand Info */}
           <div className="lg:col-span-4 space-y-4">
-            <div className="flex items-center space-x-3 bg-white p-2.5 rounded-lg w-fit">
+            <div className="flex items-center">
               <img 
-                src="./assets/utnba-logo.png" 
+                src="./assets/utnba-logo-white.png" 
                 alt="UTN.BA Logo" 
-                className="h-9 w-auto object-contain"
+                className="h-8 sm:h-9 w-auto object-contain"
               />
             </div>
             <div className="text-white font-bold text-base">

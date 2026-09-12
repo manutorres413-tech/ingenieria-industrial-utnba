@@ -78,20 +78,13 @@ export default function SteppedStudyPlan() {
 
             <button
               onClick={() => setSelectedNivel('electivas')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap transition-all flex items-center space-x-1.5 ${
+              className={`px-3 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap transition-all ${
                 selectedNivel === 'electivas'
                   ? 'bg-[#A31235] text-white'
                   : 'text-gray-600 hover:text-[#A31235] hover:bg-gray-100'
               }`}
             >
-              <span>Electivas</span>
-              <span className={`text-[10px] px-1.5 py-0.2 rounded-full font-extrabold ${
-                selectedNivel === 'electivas'
-                  ? 'bg-white text-[#A31235]'
-                  : 'bg-gray-100 text-gray-600'
-              }`}>
-                {asignaturasElectivas.length}
-              </span>
+              Electivas
             </button>
           </div>
         </div>
@@ -179,7 +172,7 @@ export default function SteppedStudyPlan() {
                     onClick={() => setSelectedNivel('electivas')}
                     className="inline-flex items-center text-xs font-bold text-[#A31235] hover:underline cursor-pointer shrink-0"
                   >
-                    Ver las 12 materias electivas →
+                    Ver materias electivas →
                   </button>
                 </div>
               )}
@@ -191,18 +184,13 @@ export default function SteppedStudyPlan() {
         {/* Materias Electivas - Mostradas en 'Todos los Años' o en la pestaña 'Electivas' */}
         {(selectedNivel === 'all' || selectedNivel === 'electivas') && (
           <div className="mt-5 bg-white rounded-xl border border-gray-200 p-4 text-left shadow-2xs">
-            <div className="pb-2 mb-3 border-b border-gray-100 flex items-center justify-between flex-wrap gap-2">
-              <div>
-                <h3 className="text-sm sm:text-base font-bold text-[#2F3336]">
-                  Materias Electivas (5° Año)
-                </h3>
-                <p className="text-xs text-gray-500 mt-0.5">
-                  Asignaturas de especialización técnica y directiva a elección del estudiante (10 hs/sem anuales).
-                </p>
-              </div>
-              <span className="text-xs text-gray-400 font-medium">
-                {asignaturasElectivas.length} especialidades
-              </span>
+            <div className="pb-2 mb-3 border-b border-gray-100">
+              <h3 className="text-sm sm:text-base font-bold text-[#2F3336]">
+                Materias Electivas (5° Año)
+              </h3>
+              <p className="text-xs text-gray-500 mt-0.5">
+                Asignaturas de especialización técnica y directiva a elección del estudiante (10 hs/sem anuales).
+              </p>
             </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
