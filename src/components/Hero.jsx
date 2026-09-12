@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowDown, ExternalLink, Download, Clock, Award, GraduationCap, Mail, FileText } from 'lucide-react';
+import { BookOpen, ArrowRight, Mail, FileText } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -15,13 +15,18 @@ export default function Hero() {
 
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
         
-        {/* Título Principal Directo y Limpio */}
+        {/* Título Principal */}
         <h1 className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight leading-none text-white">
           Ingeniería Industrial
         </h1>
         <span className="text-2xl sm:text-3xl font-bold text-[#FF4D6D] mt-2">
           UTN Buenos Aires
         </span>
+
+        {/* Frase directa para aspirantes */}
+        <p className="mt-4 text-base sm:text-lg text-gray-300 max-w-2xl font-normal leading-relaxed">
+          Vas a aprender a mejorar procesos, coordinar equipos y tomar decisiones con datos y tecnología en cualquier tipo de organización.
+        </p>
 
         {/* Línea de tiempo de evolución del estudio (5 Años) con hito en 3° año */}
         <div className="mt-8 w-full max-w-xl bg-white/5 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/10">
@@ -62,8 +67,8 @@ export default function Hero() {
                   Intermedio
                 </span>
               </div>
-              <span className="text-[10px] sm:text-xs text-[#FF4D6D] font-bold mt-1 text-center">
-                Técnico/a
+              <span className="text-[10px] sm:text-xs text-[#FF4D6D] font-bold mt-1 text-center whitespace-nowrap">
+                Técnico/a Univ.
               </span>
             </div>
 
@@ -85,37 +90,50 @@ export default function Hero() {
               </span>
             </div>
           </div>
+
+          <div className="mt-3.5 pt-2.5 border-t border-white/10 text-[11px] text-gray-400">
+            ★ Título intermedio oficial:{' '}
+            <strong className="text-white">Técnico/a Universitario/a en Administración, Producción y Gestión Industrial</strong>
+          </div>
         </div>
 
-        {/* Botones de acción centrados y unificados */}
+        {/* Dos acciones principales elegidas: Ver Plan y Cómo Ingresar */}
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3 w-full max-w-lg">
+          <a
+            href="#plan-estudios"
+            className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-6 py-3.5 rounded-xl text-sm sm:text-base font-bold text-white bg-[#A31235] hover:bg-[#870E2B] shadow-lg shadow-[#A31235]/40 transition-all transform hover:-translate-y-0.5"
+          >
+            <BookOpen className="w-4 h-4" />
+            <span>Ver Plan de Estudios</span>
+          </a>
+
+          <a
+            href="#ingreso"
+            className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-6 py-3.5 rounded-xl text-sm sm:text-base font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-sm transition-all"
+          >
+            <span>Cómo Ingresar</span>
+            <ArrowRight className="w-4 h-4 text-gray-300" />
+          </a>
+        </div>
+
+        {/* Enlace sutil al PDF oficial */}
+        <div className="mt-3">
           <a
             href="./PLAN_I23_Ingenieria_Industrial_UTNBA.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-6 py-3.5 rounded-xl text-sm sm:text-base font-bold text-white bg-[#A31235] hover:bg-[#870E2B] shadow-lg shadow-[#A31235]/40 transition-all transform hover:-translate-y-0.5"
+            className="inline-flex items-center space-x-1.5 text-xs text-gray-400 hover:text-white transition-colors"
           >
-            <FileText className="w-4 h-4" />
-            <span>Plan de Estudios (PDF)</span>
-            <ExternalLink className="w-3.5 h-3.5 opacity-80" />
-          </a>
-
-          <a
-            href="https://frba.utn.edu.ar/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-5 py-3.5 rounded-xl text-sm sm:text-base font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-sm transition-all"
-          >
-            <span>Web Oficial UTN</span>
-            <ExternalLink className="w-4 h-4 text-gray-300" />
+            <FileText className="w-3.5 h-3.5 text-[#FF4D6D]" />
+            <span>Descargar Plan Oficial I23 completo (PDF)</span>
           </a>
         </div>
 
         {/* Contacto directo por mail */}
-        <div className="mt-7 inline-flex items-center space-x-2 text-xs sm:text-sm text-gray-300 bg-white/5 backdrop-blur-xs px-4 py-2 rounded-xl border border-white/10">
+        <div className="mt-6 inline-flex items-center space-x-2 text-xs sm:text-sm text-gray-300 bg-white/5 backdrop-blur-xs px-4 py-2 rounded-xl border border-white/10">
           <Mail className="w-4 h-4 text-[#FF4D6D] shrink-0" />
           <span>
-            ¿Tenés dudas? Escribinos a{' '}
+            ¿Dudas sobre la carrera? Escribinos a{' '}
             <a href="mailto:info@industrial.frba.utn.edu.ar" className="font-semibold text-white underline hover:text-[#FF4D6D] transition-colors">
               info@industrial.frba.utn.edu.ar
             </a>

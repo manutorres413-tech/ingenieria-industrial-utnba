@@ -3,7 +3,7 @@ import { planEstudios, asignaturasElectivas } from '../data/planEstudios';
 import { ExternalLink, Award, GraduationCap, X, FileText, ChevronDown, ChevronUp } from 'lucide-react';
 
 export default function SteppedStudyPlan() {
-  const [selectedNivel, setSelectedNivel] = useState('all');
+  const [selectedNivel, setSelectedNivel] = useState(1);
   const [activeMateria, setActiveMateria] = useState(null);
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -20,15 +20,15 @@ export default function SteppedStudyPlan() {
   }, []);
 
   const filteredPlan = planEstudios.filter(level => 
-    selectedNivel === 'all' || level.nivel === Number(selectedNivel)
+    level.nivel === Number(selectedNivel)
   );
 
   return (
-    <section id="plan-estudios" className="py-8 sm:py-10 bg-[#F5F6F8]">
+    <section id="plan-estudios" className="py-8 sm:py-12 bg-[#F5F6F8]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Encabezado con botón para expandir/guardar */}
-        <div className="max-w-4xl mb-6 text-left">
+        <div className="w-full mb-6 text-left">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#2F3336] tracking-tight">
@@ -130,33 +130,22 @@ export default function SteppedStudyPlan() {
           </div>
         ) : (
           <div className="animate-fade-in space-y-5">
-            {/* Filtros rápidos por año */}
+            {/* Filtros por año */}
             <div className="no-print overflow-x-auto pb-1 scrollbar-none">
               <div className="bg-white p-1 rounded-xl border border-gray-200 inline-flex items-center gap-1 min-w-full sm:min-w-0 justify-start sm:justify-center">
-                <button
-                  onClick={() => setSelectedNivel('all')}
-                  className={`px-3 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap transition-all ${
-                    selectedNivel === 'all'
-                      ? 'bg-[#2F3336] text-white'
-                      : 'text-gray-600 hover:text-[#2F3336] hover:bg-gray-100'
-                  }`}
-                >
-                  Todos los Años
-                </button>
-
                 {[1, 2, 3, 4, 5].map(num => (
                   <button
                     key={num}
                     onClick={() => setSelectedNivel(num)}
-                    className={`px-3 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap transition-all flex items-center space-x-1 ${
+                    className={`px-3.5 py-2 rounded-lg text-xs sm:text-sm font-bold whitespace-nowrap transition-all flex items-center space-x-1.5 cursor-pointer ${
                       selectedNivel === num
-                        ? 'bg-[#A31235] text-white'
+                        ? 'bg-[#A31235] text-white shadow-xs'
                         : 'text-gray-600 hover:text-[#A31235] hover:bg-gray-100'
                     }`}
                   >
                     <span>{num}° Año</span>
                     {num === 3 && (
-                      <span className={`text-[9px] px-1 rounded uppercase font-extrabold ${selectedNivel === 3 ? 'bg-white text-[#A31235]' : 'bg-[#FFF1F3] text-[#A31235]'}`}>
+                      <span className={`text-[9px] px-1.5 py-0.5 rounded uppercase font-extrabold ${selectedNivel === 3 ? 'bg-white text-[#A31235]' : 'bg-[#FFF1F3] text-[#A31235]'}`}>
                         Intermedio
                       </span>
                     )}
@@ -165,9 +154,9 @@ export default function SteppedStudyPlan() {
 
                 <button
                   onClick={() => setSelectedNivel('electivas')}
-                  className={`px-3 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap transition-all ${
+                  className={`px-3.5 py-2 rounded-lg text-xs sm:text-sm font-bold whitespace-nowrap transition-all cursor-pointer ${
                     selectedNivel === 'electivas'
-                      ? 'bg-[#A31235] text-white'
+                      ? 'bg-[#A31235] text-white shadow-xs'
                       : 'text-gray-600 hover:text-[#A31235] hover:bg-gray-100'
                   }`}
                 >
@@ -268,8 +257,8 @@ export default function SteppedStudyPlan() {
               ))}
             </div>
 
-            {/* Materias Electivas - Mostradas en 'Todos los Años' o en la pestaña 'Electivas' */}
-            {(selectedNivel === 'all' || selectedNivel === 'electivas') && (
+            {/* Materias Electivas - Mostradas exclusivamente en la pestaña 'Electivas' */}
+            {selectedNivel === 'electivas' && (
               <div className="mt-5 bg-white rounded-xl border border-gray-200 p-4 text-left shadow-2xs">
                 <div className="pb-2 mb-3 border-b border-gray-100 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                   <div>

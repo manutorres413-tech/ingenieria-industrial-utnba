@@ -1,75 +1,63 @@
 import React from 'react';
-import { Factory, Globe2, TrendingUp, Cpu, LineChart, ShieldCheck } from 'lucide-react';
+import { Factory, Globe2, TrendingUp, Cpu, ArrowRight } from 'lucide-react';
 
 export default function CareerProfile() {
   const fields = [
     {
       icon: Factory,
-      title: "Plantas y Producción",
-      description: "Organización de líneas de trabajo, tiempos de fabricación, mantenimiento de equipos y coordinación del personal en fábricas de alimentos, autopartes, fármacos o energía.",
-      tag: "Operaciones"
+      title: "Producción y Fábricas",
+      tag: "Cómo se fabrica",
+      description: "Coordinar líneas de trabajo, tiempos, máquinas y equipos para fabricar autos, alimentos, medicamentos, energía o indumentaria."
     },
     {
       icon: Globe2,
-      title: "Logística y Abastecimiento",
-      description: "Gestión de depósitos, distribución de mercadería a nivel local e internacional, trato con proveedores y control de stock.",
-      tag: "Cadena de Suministro"
+      title: "Logística y Envíos",
+      tag: "Cómo se distribuye",
+      description: "Planificar cómo viajan los productos desde el depósito hasta el cliente, compras con proveedores y depósitos inteligentes."
     },
     {
       icon: TrendingUp,
-      title: "Costos y Finanzas",
-      description: "Cálculo de costos de producción, armado de presupuestos y análisis para evaluar si un nuevo proyecto o inversión conviene económicamente.",
-      tag: "Economía"
+      title: "Negocios y Economía",
+      tag: "Números y proyectos",
+      description: "Analizar costos, armar presupuestos y evaluar si una nueva idea o proyecto de inversión es viable y rentable."
     },
     {
       icon: Cpu,
-      title: "Datos y Mejora de Procesos",
-      description: "Uso de herramientas estadísticas y software para analizar datos de la empresa, encontrar demoras y hacer que los procesos funcionen mejor.",
-      tag: "Tecnología"
-    },
-    {
-      icon: LineChart,
-      title: "Consultoría y Gestión",
-      description: "Asesoramiento a empresas medianas y grandes para reorganizar sectores, implementar cambios tecnológicos o definir planes de trabajo.",
-      tag: "Estrategia"
-    },
-    {
-      icon: ShieldCheck,
-      title: "Calidad y Seguridad Ambiental",
-      description: "Cuidado de las condiciones de trabajo en planta, cumplimiento de normas de calidad y reducción del impacto ambiental de las operaciones.",
-      tag: "Normativa"
+      title: "Tecnología y Datos",
+      tag: "Optimización digital",
+      description: "Usar software, analítica e inteligencia artificial para detectar demoras, ahorrar recursos y tomar mejores decisiones."
     }
   ];
 
   return (
-    <section id="perfil" className="py-14 bg-white border-t border-gray-200">
+    <section id="perfil" className="py-12 sm:py-16 bg-white border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="max-w-3xl mb-10 text-left">
+        <div className="w-full mb-8 text-left">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-[#2F3336] tracking-tight">
-            Perfil Profesional y Campo Laboral
+            ¿Qué hace un/a ingeniero/a industrial?
           </h2>
-          <p className="mt-2 text-sm sm:text-base text-gray-600 leading-relaxed">
-            Formamos profesionales con sólidas competencias tecnológicas para gestionar organizaciones de manera integral y diseñar, implementar, evaluar y mejorar sistemas productivos con enfoque sistémico, crítico, ético e innovador, liderando equipos multidisciplinarios en:
+          <p className="mt-2 text-sm sm:text-base text-gray-600 leading-relaxed max-w-4xl">
+            Vas a aprender a mirar organizaciones en conjunto: conectar personas, tecnología, números y procesos. No te limitás a un solo rubro; estas son las 4 áreas principales donde podés desarrollarte:
           </p>
         </div>
 
-        {/* Sectors Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
+        {/* 4 Sectors Grid ocupando toda la pantalla de forma equilibrada */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 mb-8">
           {fields.map((field, idx) => {
             const Icon = field.icon;
             return (
               <div
                 key={idx}
-                className="bg-[#F5F6F8] rounded-xl p-5 border border-gray-200 flex flex-col justify-between"
+                className="bg-[#F5F6F8] rounded-xl p-5 border border-gray-200 flex flex-col justify-between shadow-2xs hover:border-[#A31235] hover:shadow-xs transition-all text-left"
               >
                 <div>
                   <div className="flex items-center justify-between mb-3">
-                    <div className="w-10 h-10 rounded-lg bg-white text-[#B71234] border border-gray-200 flex items-center justify-center">
+                    <div className="w-10 h-10 rounded-lg bg-white text-[#B71234] border border-gray-200 flex items-center justify-center shadow-2xs">
                       <Icon className="w-5 h-5" />
                     </div>
-                    <span className="text-[11px] font-semibold text-gray-500 bg-white border border-gray-200 px-2 py-0.5 rounded">
+                    <span className="text-[10px] font-bold text-gray-500 bg-white border border-gray-200 px-2 py-0.5 rounded-md">
                       {field.tag}
                     </span>
                   </div>
@@ -86,26 +74,25 @@ export default function CareerProfile() {
           })}
         </div>
 
-        {/* Informative Note */}
-        <div className="bg-[#2F3336] text-white rounded-xl p-6 sm:p-7 flex flex-col sm:flex-row items-center justify-between gap-4 text-left">
+        {/* Informative Note: Lenguaje directo y claro */}
+        <div className="bg-[#2F3336] text-white rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-left">
           <div>
-            <div className="inline-flex items-center space-x-2 text-[11px] font-bold text-[#FF4D6D] uppercase tracking-wider mb-1">
-              <span>Práctica Profesional Supervisada (PPS - 200 hs)</span>
+            <div className="inline-flex items-center space-x-1.5 text-[11px] font-bold text-[#FF4D6D] uppercase tracking-wider mb-1">
+              <span>Inserción Laboral Temprana</span>
             </div>
-            <h4 className="text-base font-bold">
-              Inserción laboral y vinculación con el medio socioproductivo
+            <h4 className="text-base sm:text-lg font-bold text-white">
+              Salida laboral real antes de recibirte
             </h4>
-            <p className="text-xs sm:text-sm text-gray-300 mt-1 max-w-2xl leading-relaxed">
-              La carrera articula formación académica y experiencia práctica directa mediante 200 horas de PPS en empresas e industrias. Más del 95% de los estudiantes se incorpora formalmente al mercado laboral antes de graduarse, y más de 100 graduados al año impulsan la competitividad nacional.
+            <p className="text-xs sm:text-sm text-gray-300 mt-1 max-w-3xl leading-relaxed">
+              9 de cada 10 estudiantes ya trabajan o realizan pasantías pagas a partir de 3° y 4° año. Además, el plan contempla 200 horas de Práctica Profesional Supervisada (PPS) en industrias y empresas líderes.
             </p>
           </div>
           <a
-            href="https://frba.utn.edu.ar/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="shrink-0 px-4 py-2.5 text-xs sm:text-sm font-bold bg-[#A31235] hover:bg-[#870E2B] text-white rounded-lg transition-colors"
+            href="#ingreso"
+            className="shrink-0 px-4 py-2.5 text-xs sm:text-sm font-bold bg-[#A31235] hover:bg-[#870E2B] text-white rounded-xl transition-all flex items-center space-x-2 shadow-xs"
           >
-            Web Oficial UTN.BA
+            <span>Ver Cómo Ingresar</span>
+            <ArrowRight className="w-4 h-4" />
           </a>
         </div>
 

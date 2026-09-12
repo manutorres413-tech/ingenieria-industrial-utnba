@@ -31,30 +31,27 @@ export default function Navbar() {
 
           {/* Desktop Navigation Links */}
           <nav className="hidden lg:flex items-center space-x-7 text-sm font-medium text-[#2F3336]">
-            <a href="#plan-estudios" className="flex items-center space-x-1 hover:text-[#B71234] transition-colors">
-              <span>Plan de Estudios</span>
+            <a href="#plan-estudios" className="hover:text-[#B71234] transition-colors">
+              Plan de Estudios
             </a>
             <a href="#perfil" className="hover:text-[#B71234] transition-colors">
-              Salida Laboral
-            </a>
-            <a href="#por-que-utn" className="hover:text-[#B71234] transition-colors">
-              ¿Por qué UTN?
+              ¿Qué hace?
             </a>
             <a href="#ingreso" className="hover:text-[#B71234] transition-colors">
-              Ingreso
+              Cómo Ingresar
+            </a>
+            <a href="#sedes" className="hover:text-[#B71234] transition-colors">
+              Sedes
             </a>
           </nav>
 
-          {/* Action CTAs */}
+          {/* Action CTA: Directo al ingreso */}
           <div className="hidden sm:flex items-center space-x-3">
             <a
-              href="https://frba.utn.edu.ar/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center space-x-2 px-4 py-2 text-xs sm:text-sm font-bold text-white bg-[#A31235] hover:bg-[#870E2B] rounded-md shadow-sm transition-all transform hover:-translate-y-0.5"
+              href="#ingreso"
+              className="inline-flex items-center space-x-1.5 px-4 py-2 text-xs sm:text-sm font-bold text-white bg-[#A31235] hover:bg-[#870E2B] rounded-xl shadow-xs transition-all transform hover:-translate-y-0.5"
             >
-              <span>Web Oficial</span>
-              <ExternalLink className="w-3.5 h-3.5" />
+              <span>Cómo Ingresar</span>
             </a>
           </div>
 
@@ -87,32 +84,30 @@ export default function Navbar() {
             onClick={() => setMobileMenuOpen(false)}
             className="block py-2 text-base font-medium text-gray-700 hover:text-[#B71234]"
           >
-            Perfil y Salida Laboral
-          </a>
-          <a
-            href="#por-que-utn"
-            onClick={() => setMobileMenuOpen(false)}
-            className="block py-2 text-base font-medium text-gray-700 hover:text-[#B71234]"
-          >
-            ¿Por qué la UTN Buenos Aires?
+            ¿Qué hace un Ingeniero Industrial?
           </a>
           <a
             href="#ingreso"
             onClick={() => setMobileMenuOpen(false)}
             className="block py-2 text-base font-medium text-gray-700 hover:text-[#B71234]"
           >
-            Cómo Ingresar (Seminario)
+            Cómo Ingresar
+          </a>
+          <a
+            href="#sedes"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block py-2 text-base font-medium text-gray-700 hover:text-[#B71234]"
+          >
+            Sedes y Ubicación
           </a>
 
-          <div className="pt-3 border-t border-gray-100 flex flex-col space-y-2">
+          <div className="pt-3 border-t border-gray-100">
             <a
-              href="https://frba.utn.edu.ar/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center space-x-2 w-full py-2.5 px-4 text-sm font-bold text-white bg-[#A31235] hover:bg-[#870E2B] rounded-md shadow-sm"
+              href="#ingreso"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center justify-center space-x-2 w-full py-2.5 px-4 text-sm font-bold text-white bg-[#A31235] hover:bg-[#870E2B] rounded-xl shadow-xs"
             >
-              <span>Web Oficial UTN.BA</span>
-              <ExternalLink className="w-4 h-4" />
+              <span>Consultar Ingreso</span>
             </a>
           </div>
         </div>
