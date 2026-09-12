@@ -3,15 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --utn-red: #B71234;
-  --utn-charcoal: #2F3336;
+  --utn-red: #A31235;
+  --utn-charcoal: #231F20;
+  --utn-industrial: #BED600;
   --utn-bg: #F5F6F8;
 }
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
-  color: #2F3336;
+  font-family: 'Helvetica Neue', Helvetica, Arial, system-ui, -apple-system, sans-serif;
+  color: #231F20;
   background-color: #F5F6F8;
   -webkit-font-smoothing: antialiased;
 }

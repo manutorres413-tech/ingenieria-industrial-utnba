@@ -21,9 +21,11 @@ Despliegue en Vercel: Vinculado directamente al repositorio GitHub (CI/CD automa
    El juego "Industrialito" del afiche fisico NO forma parte de este folleto.
    No incluir simuladores ni juegos.
 
-3. NADA DE SUBTITULOS INNECESARIOS:
+3. NADA DE SUBTITULOS NI TEXTOS INNECESARIOS (HERO DIRECTO AL GRANO):
+   - El Hero es 100% centrado con imagen de fondo difuminada.
+   - Contiene UNICAMENTE: Título "Ingeniería Industrial", "UTN Buenos Aires", 3 datos clave en cajas (5 Años, 3° Año, Gratuita), botones de acción y nota breve del stand/mail.
+   - CERO párrafos explicativos o bajadas largas ("orientada a liderar...", "universidad enfocada...").
    - Se elimino el cartel de "Plan I23 • Ordenanza N° 1909/23".
-   - Se elimino el subtitulo largo del Hero ("Plan de estudios oficial, materias organizadas por año...").
    - Los anos dicen simplemente: "1° Año", "2° Año", "3° Año", "4° Año", "5° Año".
 
 4. NADA DE HORARIOS (NO ACLARAR):
