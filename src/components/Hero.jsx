@@ -1,49 +1,37 @@
 import React from 'react';
-import { ArrowDown, ExternalLink, Download, Sparkles, CheckCircle2, Clock, Briefcase, Award } from 'lucide-react';
+import { ArrowDown, ExternalLink, Download, Clock, Briefcase, Award, GraduationCap } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative pt-6 pb-14 sm:pt-10 sm:pb-20 overflow-hidden bg-gradient-to-b from-white via-[#F8F9FB] to-[#F2F4F7]">
+    <section className="relative pt-8 pb-12 sm:pt-12 sm:pb-16 bg-white border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Expo Carreras Ribbon */}
-        <div className="flex flex-wrap items-center gap-2 mb-6">
-          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full text-xs font-bold tracking-wide uppercase bg-[#FFF1F3] text-[#B71234] border border-[#FCD4DA]">
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>Expo Carreras UTN Buenos Aires</span>
-          </div>
-          <span className="text-xs font-semibold text-gray-500 hidden sm:inline">•</span>
-          <span className="text-xs text-gray-600 font-medium">
-            Departamento de Ingeniería Industrial (Plan I23)
-          </span>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
           
-          {/* Left Column: Headlines & Pitch */}
+          {/* Left Column: Title & Presentation */}
           <div className="lg:col-span-7 space-y-6 text-left">
             
             <div className="space-y-1">
-              <span className="text-xs sm:text-sm font-bold uppercase tracking-widest text-[#B71234]">
-                CARRERA DE GRADO • FACULTAD REGIONAL BUENOS AIRES
+              <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#B71234]">
+                Universidad Tecnológica Nacional • Facultad Regional Buenos Aires
               </span>
-              <h1 className="text-4xl sm:text-6xl xl:text-7xl font-extrabold tracking-tight leading-[1.08]">
-                <span className="block text-[#2F3336]">Tu fábrica.</span>
-                <span className="block text-[#B71234]">Tus decisiones.</span>
+              <h1 className="text-4xl sm:text-5xl xl:text-6xl font-black tracking-tight text-[#2F3336] leading-tight">
+                Ingeniería Industrial <br />
+                <span className="text-[#B71234]">UTN Buenos Aires</span>
               </h1>
             </div>
 
-            <p className="text-lg sm:text-xl font-normal text-[#4A5055] max-w-2xl leading-relaxed">
-              Diseñá y gerenciá una fábrica en 10 minutos. Descubrí cómo la <strong className="text-[#2F3336] font-semibold">Ingeniería Industrial en la UTN.BA</strong> articula personas, tecnología, logística y negocios para transformar la matriz productiva del país.
+            <p className="text-base sm:text-lg text-gray-600 max-w-2xl leading-relaxed">
+              Plan de estudios oficial (Plan I23), asignaturas por nivel, correlatividades, título intermedio al 3° año y requisitos de ingreso para la carrera de grado.
             </p>
 
             {/* Quick CTAs */}
-            <div className="flex flex-wrap items-center gap-3 sm:gap-4 pt-2">
+            <div className="flex flex-wrap items-center gap-3 pt-1">
               <a
                 href="#plan-estudios"
-                className="inline-flex items-center space-x-2 px-5 py-3 rounded-lg text-sm sm:text-base font-bold text-white bg-[#B71234] hover:bg-[#9E0E2B] shadow-md shadow-[#B71234]/20 transition-all transform hover:-translate-y-0.5"
+                className="inline-flex items-center space-x-2 px-5 py-2.5 rounded-lg text-sm font-bold text-white bg-[#B71234] hover:bg-[#9E0E2B] shadow-sm transition-all"
               >
-                <span>Explorar Plan Escalonado</span>
+                <span>Ver Plan de Estudios</span>
                 <ArrowDown className="w-4 h-4" />
               </a>
 
@@ -51,7 +39,7 @@ export default function Hero() {
                 href="https://frba.utn.edu.ar/ingreso/ingenieria-industrial/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center space-x-2 px-5 py-3 rounded-lg text-sm sm:text-base font-semibold text-[#2F3336] bg-white hover:bg-gray-50 border border-gray-300 shadow-sm transition-all"
+                className="inline-flex items-center space-x-2 px-5 py-2.5 rounded-lg text-sm font-semibold text-[#2F3336] bg-gray-50 hover:bg-gray-100 border border-gray-300 transition-all"
               >
                 <span>Web Oficial Industrial</span>
                 <ExternalLink className="w-4 h-4 text-gray-500" />
@@ -60,91 +48,68 @@ export default function Hero() {
               <a
                 href="./PLAN_I23_Ingenieria_Industrial_UTNBA.pdf"
                 download
-                className="inline-flex items-center space-x-1.5 px-3 py-3 rounded-lg text-xs sm:text-sm font-medium text-gray-600 hover:text-[#B71234] transition-colors"
+                className="inline-flex items-center space-x-1.5 px-3 py-2.5 rounded-lg text-xs sm:text-sm font-medium text-gray-600 hover:text-[#B71234] transition-colors"
                 title="Descargar PDF Oficial"
               >
                 <Download className="w-4 h-4" />
-                <span>PDF Plan I23</span>
+                <span>PDF Oficial</span>
               </a>
             </div>
 
-            {/* Quick Key Highlights Grid */}
-            <div className="pt-4 border-t border-gray-200 grid grid-cols-2 sm:grid-cols-4 gap-3 text-left">
-              <div className="bg-white p-3 rounded-lg border border-gray-200 shadow-2xs">
-                <div className="flex items-center space-x-2 text-[#B71234] mb-1">
+            {/* Simple Key Data Points */}
+            <div className="pt-4 border-t border-gray-100 grid grid-cols-2 sm:grid-cols-4 gap-3 text-left">
+              <div className="bg-[#F5F6F8] p-3 rounded-lg border border-gray-200">
+                <div className="flex items-center space-x-1.5 text-[#B71234] mb-1">
                   <Clock className="w-4 h-4" />
-                  <span className="text-xs font-bold uppercase text-gray-500">Duración</span>
+                  <span className="text-[11px] font-bold uppercase text-gray-500">Duración</span>
                 </div>
-                <div className="text-sm sm:text-base font-bold text-[#2F3336]">5 Años</div>
-                <div className="text-[11px] text-gray-500">Carrera de grado</div>
+                <div className="text-sm font-bold text-[#2F3336]">5 Años</div>
+                <div className="text-[11px] text-gray-500">Título de Grado</div>
               </div>
 
-              <div className="bg-white p-3 rounded-lg border border-gray-200 shadow-2xs">
-                <div className="flex items-center space-x-2 text-[#B71234] mb-1">
+              <div className="bg-[#F5F6F8] p-3 rounded-lg border border-gray-200">
+                <div className="flex items-center space-x-1.5 text-[#B71234] mb-1">
                   <Award className="w-4 h-4" />
-                  <span className="text-xs font-bold uppercase text-gray-500">Intermedio</span>
+                  <span className="text-[11px] font-bold uppercase text-gray-500">Intermedio</span>
                 </div>
-                <div className="text-sm sm:text-base font-bold text-[#2F3336]">3° Año</div>
+                <div className="text-sm font-bold text-[#2F3336]">3° Año</div>
                 <div className="text-[11px] text-gray-500">Analista Industrial</div>
               </div>
 
-              <div className="bg-white p-3 rounded-lg border border-gray-200 shadow-2xs">
-                <div className="flex items-center space-x-2 text-[#B71234] mb-1">
+              <div className="bg-[#F5F6F8] p-3 rounded-lg border border-gray-200">
+                <div className="flex items-center space-x-1.5 text-[#B71234] mb-1">
                   <Briefcase className="w-4 h-4" />
-                  <span className="text-xs font-bold uppercase text-gray-500">Horarios</span>
+                  <span className="text-[11px] font-bold uppercase text-gray-500">Horarios</span>
                 </div>
-                <div className="text-sm sm:text-base font-bold text-[#2F3336]">Noche y Tarde</div>
-                <div className="text-[11px] text-gray-500">Para trabajar y cursar</div>
+                <div className="text-sm font-bold text-[#2F3336]">Tarde y Noche</div>
+                <div className="text-[11px] text-gray-500">Permite trabajar</div>
               </div>
 
-              <div className="bg-white p-3 rounded-lg border border-gray-200 shadow-2xs">
-                <div className="flex items-center space-x-2 text-[#B71234] mb-1">
-                  <CheckCircle2 className="w-4 h-4" />
-                  <span className="text-xs font-bold uppercase text-gray-500">Empleabilidad</span>
+              <div className="bg-[#F5F6F8] p-3 rounded-lg border border-gray-200">
+                <div className="flex items-center space-x-1.5 text-[#B71234] mb-1">
+                  <GraduationCap className="w-4 h-4" />
+                  <span className="text-[11px] font-bold uppercase text-gray-500">Arancel</span>
                 </div>
-                <div className="text-sm sm:text-base font-bold text-[#2F3336]">+95%</div>
-                <div className="text-[11px] text-gray-500">Inserción laboral rápida</div>
+                <div className="text-sm font-bold text-[#2F3336]">Gratuita</div>
+                <div className="text-[11px] text-gray-500">Universidad Pública</div>
               </div>
             </div>
 
           </div>
 
-          {/* Right Column: Poster 3D Factory Illustration */}
-          <div className="lg:col-span-5 relative">
-            <div className="relative mx-auto rounded-2xl overflow-hidden shadow-2xl bg-[#23272A] border-4 border-white">
-              
-              {/* Badge Over Image */}
-              <div className="absolute top-3 left-3 z-10 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/20 flex items-center space-x-2">
-                <div className="w-2 h-2 rounded-full bg-[#B71234]"></div>
-                <span className="text-white text-xs font-semibold">Operaciones & Industria 4.0</span>
-              </div>
-
+          {/* Right Column: Clean Illustration */}
+          <div className="lg:col-span-5">
+            <div className="rounded-2xl overflow-hidden shadow-md border border-gray-200 bg-[#23272A]">
               <img 
                 src="./assets/planta-industrial-3d.png" 
                 alt="Planta Industrial y Modelado de Procesos UTNBA"
-                className="w-full h-auto object-cover transform hover:scale-102 transition-transform duration-500"
+                className="w-full h-auto object-cover"
               />
-
-              <div className="p-4 bg-[#23272A] text-white flex items-center justify-between border-t border-white/10">
-                <div>
-                  <h3 className="text-sm font-bold tracking-wide">Plantas, Procesos y Logística</h3>
-                  <p className="text-xs text-gray-400">Optimizá recursos, tecnología y personas</p>
-                </div>
-                <a
-                  href="#plan-estudios"
-                  className="px-3 py-1.5 bg-[#B71234] hover:bg-[#9E0E2B] text-white text-xs font-bold rounded transition-colors"
-                >
-                  Ver Plan I23
-                </a>
+              <div className="p-3 bg-[#23272A] text-white flex items-center justify-between text-xs">
+                <span className="text-gray-300 font-medium">Modelado de Procesos y Operaciones</span>
+                <span className="text-[#B71234] font-bold">UTN.BA</span>
               </div>
             </div>
-
-            {/* Subtle floating badge */}
-            <div className="hidden sm:block absolute -bottom-4 -left-4 bg-white p-3 rounded-xl shadow-lg border border-gray-200">
-              <div className="text-xs font-bold text-[#B71234]">Plan I23 Actualizado</div>
-              <div className="text-[11px] text-gray-600">Resolución y ordenanza oficial vigente</div>
-            </div>
-
           </div>
 
         </div>

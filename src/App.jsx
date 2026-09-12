@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import StepsPillars from './components/StepsPillars';
 import SteppedStudyPlan from './components/SteppedStudyPlan';
 import CareerProfile from './components/CareerProfile';
 import WhyUTN from './components/WhyUTN';
@@ -16,7 +15,6 @@ function App() {
       
       <main className="flex-grow">
         <Hero />
-        <StepsPillars />
         <SteppedStudyPlan />
         <CareerProfile />
         <WhyUTN />

@@ -35,13 +35,10 @@ export default function Navbar() {
 
           {/* Desktop Navigation Links */}
           <nav className="hidden lg:flex items-center space-x-7 text-sm font-medium text-[#2F3336]">
-            <a href="#carrera" className="hover:text-[#B71234] transition-colors">
-              La Carrera
-            </a>
             <a href="#plan-estudios" className="flex items-center space-x-1 hover:text-[#B71234] transition-colors">
-              <span>Plan I23</span>
+              <span>Plan de Estudios (I23)</span>
               <span className="bg-[#FFF1F3] text-[#B71234] text-[10px] font-bold px-1.5 py-0.5 rounded-full">
-                Nuevo
+                Vigente
               </span>
             </a>
             <a href="#perfil" className="hover:text-[#B71234] transition-colors">
@@ -101,13 +98,6 @@ export default function Navbar() {
       {/* Mobile Menu Dropdown */}
       {mobileMenuOpen && (
         <div className="lg:hidden border-t border-gray-200 bg-white px-4 pt-3 pb-6 space-y-3 shadow-lg">
-          <a
-            href="#carrera"
-            onClick={() => setMobileMenuOpen(false)}
-            className="block py-2 text-base font-medium text-gray-700 hover:text-[#B71234]"
-          >
-            La Carrera
-          </a>
           <a
             href="#plan-estudios"
             onClick={() => setMobileMenuOpen(false)}
