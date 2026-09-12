@@ -1,98 +1,118 @@
 ================================================================================
-PROPOSITO Y ARQUITECTURA DEL PROYECTO: INGENIERIA INDUSTRIAL UTN.BA
+GUIA DE PROPOSITO, DISEÑO Y DIRECTIVAS DEL PROYECTO
+INGENIERIA INDUSTRIAL - UTN BUENOS AIRES (PLAN I23)
 ================================================================================
 
-DOCUMENTO GUIA PARA DESARROLLADORES Y MODELOS DE INTELIGENCIA ARTIFICIAL (IA)
-Fecha: Septiembre 2026
-Institucion: Universidad Tecnologica Nacional - Facultad Regional Buenos Aires (UTN.BA)
-Departamento: Departamento de Ingenieria Industrial
-Sitio Web en Produccion: https://manutorres413-tech.github.io/ingenieria-industrial-utnba/
-Repositorio GitHub: https://github.com/manutorres413-tech/ingenieria-industrial-utnba
+DOCUMENTO EXCLUSIVO PARA DESARROLLADORES Y MODELOS DE INTELIGENCIA ARTIFICIAL (IA)
+Ubicacion: Carpeta raiz del proyecto (PROPOSITO_PROYECTO.txt)
+Ultima actualizacion: Septiembre 2026
+Repositorio en GitHub: https://github.com/manutorres413-tech/ingenieria-industrial-utnba
+Sitio Web en Vivo (GitHub Pages): https://manutorres413-tech.github.io/ingenieria-industrial-utnba/
+Despliegue en Vercel: Vinculado directamente al repositorio GitHub (CI/CD automatico en cada push).
 
 --------------------------------------------------------------------------------
-1. CONTEXTO Y PROPOSITO CENTRAL
+1. FILOSOFIA Y DIRECTIVAS DEL USUARIO (LECTURA OBLIGATORIA)
 --------------------------------------------------------------------------------
-Este proyecto es una aplicacion web estatica moderna y responsiva concebida como un
-FOLLETO DIGITAL INTERACTIVO de la carrera de INGENIERIA INDUSTRIAL de la UTN.BA
-para la Expo Carreras (Campus Villa Lugano - Mozart 2300, y Sede Medrano).
+1. "PAGINA SIMPLE Y SIN VIRIVIRI":
+   El usuario dejo en claro que la pagina debe ser informativa, directa y sin relleno.
+   No inventar secciones, ni marketing exagerado, ni textos grandilocuentes.
+   Si el usuario quiere agregar algo, lo pedira explicitamente.
 
-En la expo se exhibe un afiche con un codigo QR. Cuando los estudiantes secundarios
-y aspirantes escanean el QR desde sus telefonos moviles, acceden directamente a
-este folleto web.
+2. CERO MENCIONES A "INDUSTRIALITO":
+   El juego "Industrialito" del afiche fisico NO forma parte de este folleto.
+   Queda terminantemente prohibido volver a incluir simuladores, referencias o archivos
+   con ese nombre.
 
-NOTA IMPORTANTE:
-El afiche fisico del stand promocionaba un juego externo llamado "Industrialito".
-Dicho juego es un producto independiente y NO FORMA PARTE de este folleto.
-Este proyecto se concentra EXCLUSIVAMENTE en la presentacion de la carrera de
-Ingenieria Industrial, su Plan de Estudios I23, salida laboral, perfil profesional
-y modalidad de ingreso.
+3. SIN CINTAS/RIBBONS INSTITUCIONALES REPETITIVOS:
+   No poner carteles ruidosos arriba de todo ("Expo Carreras UTN Buenos Aires • Departamento...").
+   El encabezado y el Hero van directo al grano:
+   "Ingeniería Industrial - UTN Buenos Aires".
 
---------------------------------------------------------------------------------
-2. EJES DE CONTENIDO DEL FOLLETO WEB
---------------------------------------------------------------------------------
-1. Presentacion de la Carrera y Titulares de Alto Impacto:
-   - "Tu fabrica. Tus decisiones. Tu futuro."
-   - Definicion de la Ingenieria Industrial como puente integrador entre la tecnica,
-     las operaciones, la tecnologia, las finanzas y las personas.
-   - El ciclo operativo: 01 Construi (Organiza tu planta), 02 Fabrica (Pone la produccion
-     en marcha), 03 Entrega (Completa tus pedidos y distribucion).
-
-2. Plan de Estudios Escalonado (Plan I23 - Ordenanza N° 1909/23):
-   - Estructura paso a paso de los 5 niveles (1° a 5° ano).
-   - Detalle de horas semanales, correlatividades para cursar y rendir.
-   - HITO DEL TITULO INTERMEDIO (3° Ano): "Bachiller Universitario en Ciencias de la
-     Ingenieria / Analista Industrial".
-   - Practica Profesional Supervisada (PPS - 200 hs) y Proyecto Final Integrador.
-   - Buscador interactivo en tiempo real y descarga del PDF oficial del plan.
-
-3. Perfil del Graduado y Salida Laboral:
-   - Los 6 grandes campos de insercion: Manufactura y Procesos, Logistica Global y
-     Supply Chain, Finanzas y Evaluacion de Proyectos, Tecnologia y Analitica de Datos,
-     Consultoria Estrategica, Sustentabilidad y Normas de Calidad (ISO).
-   - Metricas de empleabilidad (+95% de insercion laboral).
-
-4. Por que elegir la UTN Buenos Aires:
-   - Cursada vespertina y nocturna: disenada especificamente para permitir trabajar
-     y estudiar sin superposiciones.
-   - Excelencia de universidad publica y gratuita.
-   - Sede Campus Villa Lugano (laboratorios pesados) y Sede Medrano.
-   - Tutorias universitarias entre pares para materias criticas de 1° ano.
-
-5. Camino al Ingreso:
-   - Seminario Universitario nivelatorio (Matematica, Fisica y TIVU).
-   - Enlace directo a SIU-Guarani para preinscripcion.
-
-6. Enlace Oficial Obligatorio:
-   - Enlace prioritario y visible en toda la aplicacion:
-     https://frba.utn.edu.ar/ingreso/ingenieria-industrial/
+4. TONO HUMANIZER ("FORMAL PERO AGRADABLE"):
+   Basado en la skill "D:\Proyectos Antigravity\SKILLS\humanizer":
+   - Tono natural, cercano, profesional y agradable, evitando que suene redactado por IA.
+   - Prohibido el uso de palabras trilladas: "crucial", "fundamental", "puente estrategico",
+     "matriz productiva", "tapiz", "vibrante", "testamento", "paisaje cambiante".
+   - Sin paralelismos negativos ("No solo... sino...").
+   - Sin listas forzadas de tres elementos.
+   - Frases concisas y con sujeto/predicado claros en espanol.
 
 --------------------------------------------------------------------------------
-3. ESTETICA Y DECISIONES VISUALES
+2. ESPECIFICACION DE DISEÑO DEL PLAN DE ESTUDIOS
 --------------------------------------------------------------------------------
-- Paleta Cromatica:
-  * Rojo Carmin UTN: #B71234
-  * Grafito Antracita: #2F3336 y #1E2124
-  * Gris Tecnico Editorial de Fondo: #F5F6F8
-  * Blanco Puro: #FFFFFF
-  * Bordes y Lineas: #E2E5E9
-
-- Tipografia:
-  * Sans-serif geometrica y de alta legibilidad (Segoe UI, Inter, system-ui).
-
-- Recursos Graficos:
-  * /public/assets/utnba-logo.png: Logotipo oficial de UTN.BA.
-  * /public/assets/planta-industrial-3d.png: Render 3D de planta de procesos.
-  * /public/PLAN_I23_Ingenieria_Industrial_UTNBA.pdf: PDF oficial para descarga.
-  * /public/favicon.svg: Isotipo engranaje UTN.
+- FORMATO EN CUADRADOS COMPACTOS (FICHAS EN CUADRICULA):
+  * Las materias se muestran en una grilla compacta de cuadrados:
+    - 2 columnas en telefonos moviles.
+    - 3 a 4 columnas en tablets y computadoras de escritorio.
+  * Estado compacto:
+    - Muestra codigo, carga horaria semanal, nombre en negrita y tipo de materia.
+    - Ocupa poco espacio vertical para permitir una vista panoramica de cada ano.
+  * Interaccion al tocar/hacer clic:
+    - Al presionar una materia, esta se EXPANDE para mostrar:
+      + Descripcion clara de los contenidos.
+      + Materias correlativas para cursar.
+      + Materias correlativas para rendir examen final.
+      + Boton para cerrar el detalle.
+  * Totalmente apto para moviles:
+    - Botones y tarjetas con area tactil comoda (sin desbordes horizontales).
+    - Selector de anos tipo pastillas para filtrar por 1°, 2°, 3°, 4°, 5° ano o ver todos.
+    - Hito destacado del Titulo Intermedio al 3° ano (Analista Industrial).
+    - Descarga directa del PDF oficial del Plan I23.
 
 --------------------------------------------------------------------------------
-4. ARQUITECTURA TECNICA
+3. ESTRUCTURA COMPLETA DE SECCIONES DE LA WEB
 --------------------------------------------------------------------------------
-- Stack: React 18, Vite 6, Tailwind CSS 3, Lucide Icons.
-- Rutas relativas base: "./" en vite.config.js para garantizar compatibilidad
-  inmediata tanto en GitHub Pages (subcarpeta) como en Vercel (raiz de dominio).
-- Hoja de estilos de impresion @media print para generar un folleto A4 limpio
-  al guardar como PDF desde el navegador.
-- Despliegue automatico mediante GitHub Actions (.github/workflows/deploy.yml).
-- Compatible con Vercel mediante vercel.json.
+1. Navbar:
+   - Logo oficial de UTN.BA + Departamento de Ingenieria Industrial.
+   - Enlaces: Plan de Estudios, Salida Laboral, Por que UTN, Ingreso.
+   - Botones: "Imprimir Folleto" (con reglas @media print) y "Web Oficial".
+
+2. Hero (Seccion Principal):
+   - Titular limpio: "Ingenieria Industrial - UTN Buenos Aires".
+   - 4 datos clave esenciales: 5 Anos de duracion, Titulo Intermedio en 3° ano,
+     Turnos Tarde y Noche (para trabajar y estudiar), Universidad Publica y Gratuita.
+   - Botones: "Ver Plan de Estudios", "Web Oficial Industrial", "PDF Oficial".
+   - Render 3D limpio de modelado de procesos industriales.
+
+3. Plan de Estudios Escalonado:
+   - Cuadricula compacta de materias por nivel con expansion interactiva.
+   - Buscador rapido en tiempo real.
+
+4. Salida Laboral (Perfil del Graduado):
+   - 6 ambitos de trabajo explicados en lenguaje humano y concreto:
+     Plantas y Produccion, Logistica y Abastecimiento, Costos y Finanzas,
+     Datos y Mejora de Procesos, Consultoria y Gestion, Calidad y Seguridad Ambiental.
+
+5. ¿Como es cursar en UTN Buenos Aires?:
+   - Turnos tarde y noche pensados para trabajar.
+   - Dos sedes: Medrano (Almagro) y Campus (Villa Lugano con laboratorios).
+   - Tutorias de acompanamiento estudiantil en 1° ano.
+   - Gratuidad universitaria.
+
+6. Pasos para el Ingreso:
+   - 01: Preinscripcion en SIU-Guarani.
+   - 02: Seminario Universitario nivelatorio (Matematica, Fisica y TIVU).
+   - 03: Inicio de clases y eleccion de turno.
+   - Enlace oficial obligatorio: https://frba.utn.edu.ar/ingreso/ingenieria-industrial/
+
+7. Footer:
+   - Direcciones de las sedes y canales de contacto institucionales.
+
+--------------------------------------------------------------------------------
+4. INFRAESTRUCTURA DE DESPLIEGUE (GITHUB + VERCEL)
+--------------------------------------------------------------------------------
+- Repositorio GitHub:
+  https://github.com/manutorres413-tech/ingenieria-industrial-utnba
+
+- Despliegue en Vercel:
+  Al estar conectado al repositorio de GitHub, VERCEL SE ACTUALIZA AUTOMATICAMENTE
+  EN CADA "git push" a la rama `main`. No es necesario desplegar manualmente.
+
+- Despliegue en GitHub Pages:
+  Tambien se compila y publica automaticamente mediante GitHub Actions
+  en `.github/workflows/deploy.yml`.
+
+- Configuracion tecnica:
+  `vite.config.js` tiene configurado `base: './'` para asegurar que las rutas
+  relativas de assets funcionen sin importar el subdominio o subcarpeta de hosting.
 ================================================================================
