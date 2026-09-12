@@ -17,7 +17,7 @@ export default function Navbar() {
           <div className="flex items-center space-x-3 sm:space-x-4">
             <a href="#" className="flex items-center space-x-3 group">
               <img 
-                src="/assets/utnba-logo.png" 
+                src="./assets/utnba-logo.png" 
                 alt="UTN.BA Logo" 
                 className="h-10 sm:h-12 w-auto object-contain"
               />

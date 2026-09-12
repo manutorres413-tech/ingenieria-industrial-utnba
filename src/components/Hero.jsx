@@ -58,7 +58,7 @@ export default function Hero() {
               </a>
 
               <a
-                href="/PLAN_I23_Ingenieria_Industrial_UTNBA.pdf"
+                href="./PLAN_I23_Ingenieria_Industrial_UTNBA.pdf"
                 download
                 className="inline-flex items-center space-x-1.5 px-3 py-3 rounded-lg text-xs sm:text-sm font-medium text-gray-600 hover:text-[#B71234] transition-colors"
                 title="Descargar PDF Oficial"
@@ -120,7 +120,7 @@ export default function Hero() {
               </div>
 
               <img 
-                src="/assets/industrialito-factory.png" 
+                src="./assets/industrialito-factory.png" 
                 alt="Planta Industrial 3D y Avatares Ingenieros de Industrialito"
                 className="w-full h-auto object-cover transform hover:scale-102 transition-transform duration-500"
               />

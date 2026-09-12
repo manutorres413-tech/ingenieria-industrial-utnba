@@ -16,7 +16,7 @@ export default function Footer() {
           <div className="lg:col-span-4 space-y-4">
             <div className="flex items-center space-x-3 bg-white p-2.5 rounded-lg w-fit">
               <img 
-                src="/assets/utnba-logo.png" 
+                src="./assets/utnba-logo.png" 
                 alt="UTN.BA Logo" 
                 className="h-9 w-auto object-contain"
               />
@@ -110,7 +110,7 @@ export default function Footer() {
               </li>
               <li>
                 <a 
-                  href="/PLAN_I23_Ingenieria_Industrial_UTNBA.pdf" 
+                  href="./PLAN_I23_Ingenieria_Industrial_UTNBA.pdf" 
                   download
                   className="hover:text-white transition-colors flex items-center space-x-1"
                 >
