@@ -1,0 +1,39 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Scratch & Temporary Analysis Files
+scratch_*
+afiche_analysis.txt
+afiche_preview_thumb.png
+qr_crop.png
+extract_afiche_details.py
+
+# Heavy raw reference material folders (keep repo clean and fast)
+*Nivel-20260912/
+Asignaturas Electivas-20260912/
+Industrialito-Afiche-A1-Marca-UTNBA.pdf
+Expo Carreras UTN Buenos Aires.pdf
+PLAN I23 y correlativas.pdf
+extracted_assets/

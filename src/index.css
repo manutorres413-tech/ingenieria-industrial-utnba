@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --utn-red: #B71234;
+  --utn-charcoal: #2F3336;
+  --utn-bg: #F5F6F8;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  color: #2F3336;
+  background-color: #F5F6F8;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Print Styles for Folleto / PDF */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+    font-size: 11pt;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .print-break-inside-avoid {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .print-page-break {
+    page-break-before: always;
+  }
+
+  /* Expand all study plan cards when printing */
+  .materia-card {
+    border: 1px solid #d1d5db !important;
+    background: #ffffff !important;
+    break-inside: avoid;
+  }
+}

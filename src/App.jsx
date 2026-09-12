@@ -1,0 +1,51 @@
+import React from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import StepsPillars from './components/StepsPillars';
+import SteppedStudyPlan from './components/SteppedStudyPlan';
+import IndustrialitoSimulator from './components/IndustrialitoSimulator';
+import WhyUTN from './components/WhyUTN';
+import AdmissionSection from './components/AdmissionSection';
+import Footer from './components/Footer';
+import { BookOpen, ExternalLink } from 'lucide-react';
+
+function App() {
+  return (
+    <div className="min-h-screen flex flex-col bg-[#F5F6F8]">
+      <Navbar />
+      
+      <main className="flex-grow">
+        <Hero />
+        <StepsPillars />
+        <SteppedStudyPlan />
+        <IndustrialitoSimulator />
+        <WhyUTN />
+        <AdmissionSection />
+      </main>
+
+      <Footer />
+
+      {/* Floating mobile quick access button (No-print) */}
+      <div className="fixed bottom-4 right-4 z-40 sm:hidden no-print flex items-center space-x-2">
+        <a
+          href="#plan-estudios"
+          className="bg-[#2F3336] text-white px-3.5 py-2.5 rounded-full shadow-lg text-xs font-bold flex items-center space-x-1.5 border border-white/20"
+        >
+          <BookOpen className="w-3.5 h-3.5 text-[#B71234]" />
+          <span>Plan I23</span>
+        </a>
+        <a
+          href="https://frba.utn.edu.ar/ingreso/ingenieria-industrial/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#B71234] text-white px-3.5 py-2.5 rounded-full shadow-lg text-xs font-bold flex items-center space-x-1.5"
+        >
+          <span>Web UTN</span>
+          <ExternalLink className="w-3.5 h-3.5" />
+        </a>
+      </div>
+    </div>
+  );
+}
+
+export default App;
