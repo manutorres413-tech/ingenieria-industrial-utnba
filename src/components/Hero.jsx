@@ -82,7 +82,7 @@ export default function Hero() {
 
             {/* 5° Año - TÍTULO DE GRADO */}
             <div className="flex flex-col items-center relative z-10">
-              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#1A1E22] border-2 border-white/60 text-white flex items-center justify-center font-black text-xs sm:text-sm">
+              <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-[#A31235] border-2 border-white text-white flex items-center justify-center font-black text-xs sm:text-sm shadow-md shadow-[#A31235]/50">
                 5°
               </div>
               <span className="text-[10px] sm:text-xs text-white font-bold mt-1.5 text-center whitespace-nowrap">
@@ -92,7 +92,8 @@ export default function Hero() {
           </div>
 
           <div className="mt-3.5 pt-2.5 border-t border-white/10 text-[11px] text-gray-400 text-center sm:text-left">
-            ★ Título intermedio (3° año): <strong className="text-white">Técnico/a Universitario/a</strong> • Título de grado (5° año): <strong className="text-white">Ingeniero/a Industrial</strong>
+            ★ Título intermedio oficial (3° año):{' '}
+            <strong className="text-white">Técnico/a Universitario/a en Administración, Producción y Gestión Industrial</strong>
           </div>
         </div>
 
