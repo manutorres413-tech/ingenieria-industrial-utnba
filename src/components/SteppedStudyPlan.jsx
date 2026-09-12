@@ -80,7 +80,7 @@ export default function SteppedStudyPlan() {
                   <span className="text-[11px] font-bold uppercase tracking-wider text-[#A31235] bg-[#FFF0F3] px-2.5 py-0.5 rounded-md border border-[#FCD4DA]">
                     Estructura Curricular I23
                   </span>
-                  <span className="text-xs text-gray-400 font-medium">38 asignaturas + materias electivas</span>
+                  <span className="text-xs text-gray-400 font-medium">42 asignaturas obligatorias + electivas y PPS</span>
                 </div>
                 <h4 className="text-base sm:text-lg font-bold text-[#231F20] group-hover:text-[#A31235] transition-colors">
                   Explorá las materias año por año y sus temarios analíticos

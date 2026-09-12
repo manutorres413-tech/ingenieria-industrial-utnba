@@ -116,8 +116,8 @@ export default function Hero() {
           <Mail className="w-4 h-4 text-[#FF4D6D] shrink-0" />
           <span>
             ¿Tenés dudas? Escribinos a{' '}
-            <a href="mailto:industrial@frba.utn.edu.ar" className="font-semibold text-white underline hover:text-[#FF4D6D] transition-colors">
-              industrial@frba.utn.edu.ar
+            <a href="mailto:info@industrial.frba.utn.edu.ar" className="font-semibold text-white underline hover:text-[#FF4D6D] transition-colors">
+              info@industrial.frba.utn.edu.ar
             </a>
           </span>
         </div>

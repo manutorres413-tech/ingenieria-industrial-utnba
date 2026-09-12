@@ -48,10 +48,10 @@ export default function CareerProfile() {
         {/* Section Header */}
         <div className="max-w-3xl mb-10 text-left">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-[#2F3336] tracking-tight">
-            ¿Dónde trabaja un graduado de Industrial?
+            Perfil Profesional y Campo Laboral
           </h2>
-          <p className="mt-2 text-base text-gray-600 leading-relaxed">
-            La carrera tiene un campo laboral amplio porque enseña a mirar las organizaciones en conjunto: los números, las personas, las máquinas y la tecnología. Estos son los ámbitos más comunes de trabajo:
+          <p className="mt-2 text-sm sm:text-base text-gray-600 leading-relaxed">
+            Formamos profesionales con sólidas competencias tecnológicas para gestionar organizaciones de manera integral y diseñar, implementar, evaluar y mejorar sistemas productivos con enfoque sistémico, crítico, ético e innovador, liderando equipos multidisciplinarios en:
           </p>
         </div>
 
@@ -89,18 +89,21 @@ export default function CareerProfile() {
         {/* Informative Note */}
         <div className="bg-[#2F3336] text-white rounded-xl p-6 sm:p-7 flex flex-col sm:flex-row items-center justify-between gap-4 text-left">
           <div>
+            <div className="inline-flex items-center space-x-2 text-[11px] font-bold text-[#FF4D6D] uppercase tracking-wider mb-1">
+              <span>Práctica Profesional Supervisada (PPS - 200 hs)</span>
+            </div>
             <h4 className="text-base font-bold">
-              Inserción laboral durante la carrera
+              Inserción laboral y vinculación con el medio socioproductivo
             </h4>
-            <p className="text-xs sm:text-sm text-gray-300 mt-1 max-w-2xl">
-              La mayoría de los estudiantes realiza pasantías o se incorpora a empresas a partir del tercer o cuarto año de la carrera.
+            <p className="text-xs sm:text-sm text-gray-300 mt-1 max-w-2xl leading-relaxed">
+              La carrera articula formación académica y experiencia práctica directa mediante 200 horas de PPS en empresas e industrias. Más del 95% de los estudiantes se incorpora formalmente al mercado laboral antes de graduarse, y más de 100 graduados al año impulsan la competitividad nacional.
             </p>
           </div>
           <a
             href="https://frba.utn.edu.ar/"
             target="_blank"
             rel="noopener noreferrer"
-            className="shrink-0 px-4 py-2 text-xs sm:text-sm font-bold bg-[#A31235] hover:bg-[#870E2B] text-white rounded-lg transition-colors"
+            className="shrink-0 px-4 py-2.5 text-xs sm:text-sm font-bold bg-[#A31235] hover:bg-[#870E2B] text-white rounded-lg transition-colors"
           >
             Web Oficial UTN.BA
           </a>
