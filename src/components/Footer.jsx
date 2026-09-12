@@ -1,10 +1,7 @@
 import React from 'react';
-import { ExternalLink, MapPin, Mail, Phone, Award, ShieldCheck, CheckCircle2, ArrowUp } from 'lucide-react';
+import { ExternalLink, MapPin, Mail, Phone, Award, ShieldCheck, CheckCircle2 } from 'lucide-react';
 
 export default function Footer() {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
 
   return (
     <footer className="bg-[#1E2124] text-gray-300 pt-12 pb-10 border-t border-gray-800 text-left">
@@ -46,7 +43,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 pb-10 border-b border-gray-800">
           
           {/* Brand & Department Authorities */}
-          <div className="lg:col-span-4 space-y-3.5">
+          <div className="lg:col-span-5 space-y-3.5">
             <div className="flex items-center">
               <img 
                 src="./assets/utnba-logo-white.png" 
@@ -62,7 +59,7 @@ export default function Footer() {
                 Director: Mg. Ing. Gastón Zotta
               </div>
             </div>
-            <p className="text-xs text-gray-400 leading-relaxed">
+            <p className="text-xs text-gray-400 leading-relaxed max-w-md">
               Facultad Regional Buenos Aires • Universidad Tecnológica Nacional.
               30 años de trayectoria formando líderes en gestión integral, tecnología y sistemas de producción.
             </p>
@@ -85,7 +82,7 @@ export default function Footer() {
           </div>
 
           {/* Sedes */}
-          <div className="lg:col-span-3 space-y-3 text-xs">
+          <div className="lg:col-span-4 space-y-3 text-xs">
             <div className="text-white font-bold uppercase tracking-wider text-sm">
               Sedes Académicas
             </div>
@@ -162,21 +159,6 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-          </div>
-
-          {/* Botón Volver Arriba */}
-          <div className="lg:col-span-2 flex flex-col justify-between items-start lg:items-end">
-            <button
-              onClick={scrollToTop}
-              className="p-3 bg-gray-800 hover:bg-[#B71234] text-white rounded-xl transition-colors flex items-center space-x-2 text-xs font-semibold"
-              title="Volver arriba"
-            >
-              <ArrowUp className="w-4 h-4" />
-              <span>Subir</span>
-            </button>
-            <div className="text-[11px] text-gray-500 mt-6 lg:mt-0">
-              Expo Carreras UTN Buenos Aires
-            </div>
           </div>
 
         </div>
