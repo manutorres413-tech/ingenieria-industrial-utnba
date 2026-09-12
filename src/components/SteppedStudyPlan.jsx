@@ -339,10 +339,9 @@ export default function SteppedStudyPlan() {
                 <h4 className="text-lg sm:text-xl font-bold text-[#2F3336]">
                   {activeMateria.nombre}
                 </h4>
-                {activeMateria.horas && (
+                {activeMateria.regimen && (
                   <p className="text-xs text-gray-500 mt-0.5">
-                    Carga horaria: <span className="font-semibold text-gray-700">{activeMateria.horas}</span>
-                    {activeMateria.regimen && <span> • {activeMateria.regimen}</span>}
+                    Régimen: <span className="font-semibold text-gray-700">{activeMateria.regimen}</span>
                   </p>
                 )}
               </div>
