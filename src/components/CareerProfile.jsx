@@ -39,7 +39,7 @@ export default function CareerProfile() {
             ¿Qué hace un/a ingeniero/a industrial?
           </h2>
           <p className="mt-2 text-sm sm:text-base text-gray-600 leading-relaxed max-w-4xl">
-            Vas a aprender a mirar organizaciones en conjunto: conectar personas, tecnología, números y procesos. No te limitás a un solo rubro; estas son las 4 áreas principales donde podés desarrollarte:
+            Diseñar, mejorar y dirigir sistemas productivos completos: conectar personas, tecnología, números y procesos para que las organizaciones funcionen mejor. No te limitás a un solo rubro; estas son las 4 áreas principales donde podés desarrollarte:
           </p>
         </div>
 
@@ -84,7 +84,7 @@ export default function CareerProfile() {
               Salida laboral real antes de recibirte
             </h4>
             <p className="text-xs sm:text-sm text-gray-300 mt-1 max-w-3xl leading-relaxed">
-              9 de cada 10 estudiantes ya trabajan o realizan pasantías pagas a partir de 3° y 4° año. Además, el plan contempla 200 horas de Práctica Profesional Supervisada (PPS) en industrias y empresas líderes.
+              La mayoría de los estudiantes avanzados ya trabajan o realizan pasantías pagas en la industria a partir de 3° y 4° año. Además, el plan contempla 200 horas de Práctica Profesional Supervisada (PPS) en empresas líderes.
             </p>
           </div>
           <a

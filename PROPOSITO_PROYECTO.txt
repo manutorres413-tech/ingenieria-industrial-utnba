@@ -7,8 +7,7 @@ DOCUMENTO EXCLUSIVO PARA DESARROLLADORES Y MODELOS DE INTELIGENCIA ARTIFICIAL (I
 Ubicacion: Carpeta raiz del proyecto (PROPOSITO_PROYECTO.txt)
 Ultima actualizacion: Septiembre 2026
 Repositorio en GitHub: https://github.com/manutorres413-tech/ingenieria-industrial-utnba
-Sitio Web en Produccion: https://manutorres413-tech.github.io/ingenieria-industrial-utnba/
-Despliegue en Vercel: Vinculado directamente al repositorio GitHub (CI/CD automatico en cada push).
+Despliegue: Vercel (CI/CD automatico en cada push a main).
 
 --------------------------------------------------------------------------------
 1. FILOSOFIA Y DIRECTIVAS EXPLICITAS DEL USUARIO (OBLIGATORIO RESPETAR)
@@ -21,62 +20,87 @@ Despliegue en Vercel: Vinculado directamente al repositorio GitHub (CI/CD automa
    El juego "Industrialito" del afiche fisico NO forma parte de este folleto.
    No incluir simuladores ni juegos.
 
-3. NADA DE SUBTITULOS NI TEXTOS INNECESARIOS (HERO DIRECTO AL GRANO):
-   - El Hero es 100% centrado con imagen de fondo difuminada.
-   - Contiene UNICAMENTE: Título "Ingeniería Industrial", "UTN Buenos Aires", 3 datos clave en cajas (5 Años, 3° Año, Gratuita), botones de acción y nota breve del stand/mail.
-   - CERO párrafos explicativos o bajadas largas ("orientada a liderar...", "universidad enfocada...").
-   - Se elimino el cartel de "Plan I23 • Ordenanza N° 1909/23".
-   - Los anos dicen simplemente: "1° Año", "2° Año", "3° Año", "4° Año", "5° Año".
+3. HERO DIRECTO AL GRANO:
+   - El Hero es 100% centrado con imagen de fondo difuminada (render 3D planta industrial).
+   - Contiene: Título "Ingeniería Industrial" + "UTN Buenos Aires", timeline visual de
+     5 años con hito de título intermedio en 3° año y título de grado en 5° año,
+     2 botones (Plan Oficial PDF + Cómo Ingresar) y contacto por mail.
+   - CERO párrafos explicativos largos.
 
-4. NADA DE HORARIOS (NO ACLARAR):
-   El usuario indico explicitamente NO incluir aclaraciones sobre horarios ni turnos
-   (ni "tarde y noche", ni nada similar), ya que la facultad cuenta con turnos
-   mañana, tarde y noche y no es algo necesario de aclarar.
-
-5. TONO HUMANIZER ("FORMAL PERO AGRADABLE"):
-   Basado en la skill "D:\Proyectos Antigravity\SKILLS\humanizer":
+4. TONO HUMANIZER ("FORMAL PERO AGRADABLE"):
    - Tono natural, cercano, profesional y agradable, sin sonar a IA.
-   - Sin palabras infladas: "crucial", "fundamental", "puente estrategico", "matriz productiva".
+   - Sin palabras infladas: "crucial", "fundamental", "puente estratégico", "matriz productiva".
    - Oraciones cortas, claras y bien construidas.
 
+5. PALETA DE COLORES INSTITUCIONAL:
+   - Burgundy principal: #A31235 / #B71234
+   - Dark: #2F3336 / #231F20 / #1A1E22
+   - Accent pink: #FF4D6D
+   - Light pink: #FFF0F3 / #FFF8F9 / #FCD4DA
+   - Background: #F5F6F8
+   - NO usar verde/emerald en ningún lado.
+
 --------------------------------------------------------------------------------
-2. DISEÑO DEL PLAN DE ESTUDIOS (CUADRADOS COMPACTOS Y LEGIBLES)
+2. DISEÑO DEL PLAN DE ESTUDIOS
 --------------------------------------------------------------------------------
 - Cuadrícula de materias en cajas/cuadrados compactos:
   * 2 columnas en celulares, 3 a 4 en computadoras.
-  * Encabezados de año limpios: "1° Año", "2° Año", "3° Año", etc. (sin badges negros que dupliquen "1° 1° Año").
-  * Tarjetas de materias enfocadas en máxima legibilidad del nombre: sin horas ni códigos técnicos que sobrecarguen la vista (eso ya está en el PDF oficial).
+  * Encabezados de año limpios: "1° Año", "2° Año", etc.
+  * Tarjetas de materias enfocadas en máxima legibilidad del nombre.
   * Indicador sutil de materias integradoras (★ Integradora).
 - Detalle interactivo en ventana modal:
-  * Al tocar una materia se abre un popup con descripción concisa y correlativas ("Para cursarla", "Para rendir final").
-  * Explicado en lenguaje claro, sin reglas burocráticas complejas.
+  * Al tocar una materia se abre un popup con descripción concisa.
+  * Enlace al programa de la materia en PDF (si está disponible).
+  * Las correlativas NO se muestran en el modal (están en el PDF oficial).
 - Hitos de carrera:
-  * 3° Año: Título Intermedio (Analista Industrial).
-  * 5° Año: Práctica Profesional y Proyecto Final.
-- Materias electivas: cuadrícula compacta con nombres limpios.
-- Enlace destacado de descarga del PDF oficial para quienes quieran ver la reglamentación completa.
+  * 3° Año: ★ Título intermedio: Técnico/a Universitario/a en Administración,
+    Producción y Gestión Industrial.
+  * 5° Año: Título de Grado Final: Ingeniero/a Industrial (círculo burgundy destacado,
+    sin badges ni carteles verdes).
+- Materias electivas: cuadrícula compacta con nombres limpios (pestaña separada).
+- Enlace destacado de descarga del PDF oficial del plan completo.
 
 --------------------------------------------------------------------------------
 3. ESTRUCTURA VIGENTE DE LA PAGINA
 --------------------------------------------------------------------------------
-1. Navbar: Logo UTN.BA + Depto Industrial + Boton Imprimir Folleto + Web Oficial.
-2. Hero: Titular limpio ("Ingenieria Industrial - UTN Buenos Aires"), 3 datos clave
-   (5 Años de duracion, Titulo Intermedio en 3°, Gratuita) + Botones de accion + Render 3D.
-3. Plan de Estudios: Cuadricula compacta con modal emergente (sin buscador).
-4. Salida Laboral: 6 ambitos de insercion explicados de forma clara y humana.
-5. ¿Por que estudiar en UTN Buenos Aires?: Se destaca que la UTN es una universidad
-   enfocada EXCLUSIVAMENTE en ingenieria (no se dictan otras disciplinas), sedes
-   Medrano y Campus Lugano, tutorias en 1° ano, gratuidad.
-6. Ingreso a la Carrera: Pasos claros del Seminario Universitario y link a SIU-Guarani.
-7. Footer: Sedes y enlaces oficiales.
+1. Navbar: Logo UTN.BA + Depto Industrial + links internos (#plan-estudios, #perfil,
+   #ingreso, #sedes) + CTA "Cómo Ingresar".
+2. Hero: Titular limpio + timeline 5 años con hito 3° y 5° año + Botón descarga
+   PDF oficial + "Cómo Ingresar" + contacto por mail.
+3. Plan de Estudios: Expand/collapse con cuadrícula de materias por año, modal
+   interactivo y pestaña de electivas. Botón Plan Oficial (PDF).
+4. ¿Qué hace un/a ingeniero/a industrial?: 4 áreas (Producción, Logística,
+   Negocios, Tecnología) + banner de Inserción Laboral Temprana con PPS.
+5. ¿Por qué estudiar en UTN Buenos Aires?: Gráfico 40% ingenieros UTN + datos duros
+   (2.500 estudiantes, 100+ graduados/año) + 3 beneficios (Pública y Gratuita,
+   Turnos para trabajar, Prestigio CONEAU/ISO).
+6. Pasos para el ingreso: 3 pasos (SIU-Guaraní, Seminario, Inicio) con links directos.
+7. Sedes: 2 cards con mapas embebidos (Medrano y Campus).
+8. Footer: Badges de calidad (PNC x3, ISO, CONEAU), datos de contacto completos,
+   sedes, links oficiales.
 
 --------------------------------------------------------------------------------
-4. COMANDOS Y VISUALIZACION LOCAL
+4. DATOS OFICIALES DE LA CARRERA (Presentación Dpto. Industrial)
 --------------------------------------------------------------------------------
-- Para ver la web localmente sin problemas de CORS:
-  Hacer doble clic en `abrir_web.bat` (inicia el servidor local en http://localhost:4173).
-- Comandos npm:
-  npm run dev    -> Servidor de desarrollo
-  npm run build  -> Compilacion a /dist
-  git push       -> Despliega automaticamente en Vercel y GitHub Pages.
+- Director: Mg. Ing. Gastón Zotta
+- Email: info@industrial.frba.utn.edu.ar
+- Teléfono: (+54 911) 4420-8083
+- Oficina: Medrano 951, 3° Piso, Of. 313, CABA
+- 30 años de trayectoria (creada en 1995)
+- 2.500 estudiantes (2° carrera con más estudiantes de la UTN.BA)
+- 100 graduados por año
+- 260 docentes
+- 42 materias obligatorias + 4 electivas + PPS (200 hs)
+- Acreditación CONEAU 6 años: Res. 992/14
+- Certificación ISO 9001:2015 por TÜV Rheinland
+- Premio Nacional a la Calidad 2016, 2019, 2023
+
+--------------------------------------------------------------------------------
+5. COMANDOS Y VISUALIZACION LOCAL
+--------------------------------------------------------------------------------
+- npm run dev    -> Servidor de desarrollo
+- npm run build  -> Compilación a /dist (Vite)
+- git push       -> Despliega automáticamente en Vercel
+- Framework: React + Vite + Tailwind CSS
+- Output dir: dist/
 ================================================================================

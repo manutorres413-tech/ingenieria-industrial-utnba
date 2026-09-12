@@ -136,6 +136,18 @@ export default function WhyUTN() {
 
             {/* Componente Gráfico Interactivo */}
             <EngineersStatGraphic />
+
+            {/* Datos duros de la carrera (fuente: Presentación Oficial Dpto. Industrial) */}
+            <div className="mt-4 grid grid-cols-2 gap-3">
+              <div className="bg-[#F5F6F8] rounded-xl p-3 text-center border border-gray-100">
+                <span className="text-xl sm:text-2xl font-black text-[#A31235] block">2.500</span>
+                <span className="text-[10px] sm:text-xs text-gray-500 font-semibold">Estudiantes activos</span>
+              </div>
+              <div className="bg-[#F5F6F8] rounded-xl p-3 text-center border border-gray-100">
+                <span className="text-xl sm:text-2xl font-black text-[#A31235] block">100+</span>
+                <span className="text-[10px] sm:text-xs text-gray-500 font-semibold">Graduados por año</span>
+              </div>
+            </div>
           </div>
 
           {/* Columna Derecha: 3 Beneficios concretos para el ingresante */}

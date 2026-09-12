@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ExternalLink, Menu, X, BookOpen, Layers, GraduationCap } from 'lucide-react';
+import { ExternalLink, Menu, X } from 'lucide-react';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
