@@ -19,9 +19,6 @@ export default function SteppedStudyPlan() {
           <h2 className="text-2xl sm:text-3xl font-black text-[#2F3336] tracking-tight">
             Plan de Estudios
           </h2>
-          <p className="mt-1 text-xs sm:text-sm text-gray-600">
-            Tocá cualquier materia para ver de qué trata y qué materias necesitás para cursarla.
-          </p>
 
           <div className="mt-3 flex flex-wrap items-center gap-2 no-print">
             <a
@@ -166,13 +163,10 @@ export default function SteppedStudyPlan() {
 
         {/* Materias Electivas - Diseño compacto en cuadrados */}
         <div className="mt-5 bg-white rounded-xl border border-gray-200 p-4 text-left">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-2 mb-3 border-b border-gray-100 gap-1">
+          <div className="pb-2 mb-3 border-b border-gray-100">
             <h3 className="text-sm sm:text-base font-bold text-[#2F3336]">
-              Materias Electivas (4° y 5° Año)
+              Materias Electivas
             </h3>
-            <span className="text-xs text-gray-500">
-              Podés elegir según el perfil profesional que quieras orientar
-            </span>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">

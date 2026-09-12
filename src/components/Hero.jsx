@@ -23,21 +23,71 @@ export default function Hero() {
           UTN Buenos Aires
         </span>
 
-        {/* Datos clave compactos y destacados */}
-        <div className="mt-8 grid grid-cols-3 gap-2.5 sm:gap-4 max-w-lg w-full">
-          <div className="bg-white/10 backdrop-blur-md p-3.5 sm:p-4 rounded-xl border border-white/15 flex flex-col items-center">
-            <span className="text-xl sm:text-2xl font-black text-white">5 Años</span>
-            <span className="text-[11px] sm:text-xs text-gray-300 font-medium mt-0.5">Título de Grado</span>
+        {/* Línea de tiempo de evolución del estudio (5 Años) con hito en 3° año */}
+        <div className="mt-8 w-full max-w-xl bg-white/5 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/10">
+          <div className="flex items-center justify-between text-xs text-gray-300 font-semibold mb-5 px-1">
+            <span>Evolución de la Carrera</span>
+            <span className="text-[#FF4D6D] font-bold">5 Años de Cursada</span>
           </div>
 
-          <div className="bg-white/10 backdrop-blur-md p-3.5 sm:p-4 rounded-xl border border-white/15 flex flex-col items-center">
-            <span className="text-xl sm:text-2xl font-black text-[#FF4D6D]">3° Año</span>
-            <span className="text-[11px] sm:text-xs text-gray-300 font-medium mt-0.5">Título Intermedio</span>
+          <div className="relative flex items-center justify-between px-2 sm:px-4">
+            {/* Línea conectora base */}
+            <div className="absolute left-6 right-6 top-4 sm:top-5 h-0.5 bg-white/20 -z-0" />
+            {/* Línea de progreso hasta el 3° año */}
+            <div className="absolute left-6 w-[52%] top-4 sm:top-5 h-0.5 bg-gradient-to-r from-white/50 to-[#FF4D6D] -z-0" />
+
+            {/* 1° Año */}
+            <div className="flex flex-col items-center relative z-10">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#1A1E22] border-2 border-white/30 text-white flex items-center justify-center font-black text-xs sm:text-sm">
+                1°
+              </div>
+              <span className="text-[10px] sm:text-xs text-gray-400 font-medium mt-1.5">Bases</span>
+            </div>
+
+            {/* 2° Año */}
+            <div className="flex flex-col items-center relative z-10">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#1A1E22] border-2 border-white/30 text-white flex items-center justify-center font-black text-xs sm:text-sm">
+                2°
+              </div>
+              <span className="text-[10px] sm:text-xs text-gray-400 font-medium mt-1.5">Ciencias</span>
+            </div>
+
+            {/* 3° Año - TÍTULO INTERMEDIO DESTACADO */}
+            <div className="flex flex-col items-center relative z-10">
+              <div className="relative">
+                <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-[#A31235] border-2 border-[#FF4D6D] text-white flex items-center justify-center font-black text-xs sm:text-sm shadow-lg shadow-[#A31235]/60 ring-4 ring-[#FF4D6D]/20 animate-pulse">
+                  3°
+                </div>
+                <span className="absolute -top-6 left-1/2 -translate-x-1/2 whitespace-nowrap text-[9px] font-extrabold uppercase bg-[#FF4D6D] text-white px-2 py-0.5 rounded-full shadow-xs">
+                  Intermedio
+                </span>
+              </div>
+              <span className="text-[10px] sm:text-xs text-[#FF4D6D] font-bold mt-1 text-center">
+                Analista
+              </span>
+            </div>
+
+            {/* 4° Año */}
+            <div className="flex flex-col items-center relative z-10">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#1A1E22] border-2 border-white/30 text-white flex items-center justify-center font-black text-xs sm:text-sm">
+                4°
+              </div>
+              <span className="text-[10px] sm:text-xs text-gray-400 font-medium mt-1.5">Gestión</span>
+            </div>
+
+            {/* 5° Año - TÍTULO DE GRADO */}
+            <div className="flex flex-col items-center relative z-10">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#1A1E22] border-2 border-white/60 text-white flex items-center justify-center font-black text-xs sm:text-sm">
+                5°
+              </div>
+              <span className="text-[10px] sm:text-xs text-white font-bold mt-1.5 text-center">
+                Ingeniería
+              </span>
+            </div>
           </div>
 
-          <div className="bg-white/10 backdrop-blur-md p-3.5 sm:p-4 rounded-xl border border-white/15 flex flex-col items-center">
-            <span className="text-xl sm:text-2xl font-black text-white">Gratuita</span>
-            <span className="text-[11px] sm:text-xs text-gray-300 font-medium mt-0.5">Pública Nacional</span>
+          <div className="mt-4 pt-2.5 border-t border-white/10 text-center text-[11px] sm:text-xs text-gray-300">
+            ⭐ <strong className="text-white">Título Intermedio (3° año):</strong> Analista Industrial con inserción laboral temprana.
           </div>
         </div>
 
