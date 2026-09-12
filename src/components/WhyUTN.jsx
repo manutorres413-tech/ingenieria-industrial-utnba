@@ -1,5 +1,83 @@
-import React from 'react';
-import { Award, ShieldCheck, CheckCircle2, Building2, GraduationCap, Users } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Award, ShieldCheck, CheckCircle2, Building2, GraduationCap, Users, User } from 'lucide-react';
+
+function EngineersStatGraphic() {
+  const [animated, setAnimated] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setAnimated(true), 250);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const total = 10;
+  const utn = 4;
+  const radius = 17;
+  const circumference = 2 * Math.PI * radius; // ~106.8
+  const strokeDashoffset = animated ? circumference * (1 - 0.40) : circumference;
+
+  return (
+    <div className="my-2.5 p-2.5 bg-gray-50/90 rounded-xl border border-gray-200">
+      <div className="flex items-center gap-3">
+        {/* Gráfico circular / dona animado */}
+        <div className="relative w-11 h-11 shrink-0 flex items-center justify-center">
+          <svg className="w-11 h-11 -rotate-90 transform" viewBox="0 0 42 42">
+            <circle
+              cx="21"
+              cy="21"
+              r={radius}
+              fill="none"
+              stroke="#E5E7EB"
+              strokeWidth="4"
+            />
+            <circle
+              cx="21"
+              cy="21"
+              r={radius}
+              fill="none"
+              stroke="#B71234"
+              strokeWidth="4"
+              strokeDasharray={circumference}
+              strokeDashoffset={strokeDashoffset}
+              strokeLinecap="round"
+              className="transition-all duration-1000 ease-out"
+            />
+          </svg>
+          <div className="absolute inset-0 flex flex-col items-center justify-center">
+            <span className="text-[11px] font-black text-[#2F3336] leading-none">40%</span>
+            <span className="text-[7px] font-bold text-[#B71234] uppercase tracking-tight">UTN</span>
+          </div>
+        </div>
+
+        {/* Pictograma de 10 personitas (4 UTN vs 6 resto del país) */}
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center justify-between text-[10px] font-bold mb-1">
+            <span className="text-[#B71234]">4 de cada 10 ingenieros</span>
+            <span className="text-gray-400">Total País</span>
+          </div>
+
+          <div className="grid grid-cols-10 gap-0.5">
+            {Array.from({ length: total }).map((_, i) => {
+              const isUtn = i < utn;
+              return (
+                <div
+                  key={i}
+                  title={isUtn ? "Ingeniero/a formado en UTN (40%)" : "Otras universidades (60%)"}
+                  className={`h-6 rounded flex items-center justify-center transition-all duration-200 hover:scale-125 cursor-default ${
+                    isUtn
+                      ? 'bg-[#FFF0F3] text-[#B71234] border border-[#FCD4DA] shadow-2xs font-bold'
+                      : 'bg-white text-gray-300 border border-gray-200'
+                  }`}
+                >
+                  <User className={`w-3 h-3 ${isUtn ? 'text-[#B71234]' : 'text-gray-300'}`} />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default function WhyUTN() {
   const points = [
@@ -26,6 +104,7 @@ export default function WhyUTN() {
     {
       icon: Building2,
       title: "El 40% de los Ingenieros del País",
+      hasGraphic: true,
       description: "La UTN forma a 4 de cada 10 ingenieros de la Argentina. UTN.BA es la regional más grande, con 77 años y 20.600 alumnos."
     },
     {
@@ -65,6 +144,9 @@ export default function WhyUTN() {
                   <h3 className="text-base font-bold text-[#2F3336] mb-1 leading-snug">
                     {item.title}
                   </h3>
+
+                  {item.hasGraphic && <EngineersStatGraphic />}
+
                   <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
                     {item.description}
                   </p>
