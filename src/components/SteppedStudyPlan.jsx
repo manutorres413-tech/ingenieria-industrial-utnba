@@ -32,10 +32,10 @@ export default function SteppedStudyPlan() {
               <ExternalLink className="w-3 h-3 text-gray-400" />
             </a>
             <a
-              href="https://frba.utn.edu.ar/ingreso/ingenieria-industrial/"
+              href="https://frba.utn.edu.ar/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-[#B71234] bg-white hover:bg-[#FFF1F3] border border-[#FCD4DA] transition-colors"
+              className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-[#A31235] bg-white hover:bg-[#FFF0F3] border border-[#FCD4DA] transition-colors"
             >
               <span>Web Oficial UTN.BA</span>
               <ExternalLink className="w-3 h-3" />

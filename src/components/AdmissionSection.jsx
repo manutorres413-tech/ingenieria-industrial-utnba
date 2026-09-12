@@ -14,8 +14,8 @@ export default function AdmissionSection() {
       step: "02",
       title: "Seminario Universitario",
       description: "Cursás tres módulos introductorios: Matemática, Física y Taller de Inicio a la Vida Universitaria (TIVU). Hay modalidades cuatrimestrales, intensivas de verano o examen libre.",
-      linkText: "Ver fechas de cursada",
-      linkUrl: "https://frba.utn.edu.ar/ingreso/ingenieria-industrial/"
+      linkText: "Web Oficial UTN.BA",
+      linkUrl: "https://frba.utn.edu.ar/"
     },
     {
       step: "03",
@@ -83,12 +83,12 @@ export default function AdmissionSection() {
           </div>
 
           <a
-            href="https://frba.utn.edu.ar/ingreso/ingenieria-industrial/"
+            href="https://frba.utn.edu.ar/"
             target="_blank"
             rel="noopener noreferrer"
-            className="shrink-0 px-5 py-2.5 rounded-lg font-bold text-xs sm:text-sm bg-[#B71234] hover:bg-[#9E0E2B] text-white transition-colors flex items-center space-x-2"
+            className="shrink-0 px-5 py-2.5 rounded-lg font-bold text-xs sm:text-sm bg-[#A31235] hover:bg-[#870E2B] text-white transition-colors flex items-center space-x-2"
           >
-            <span>Ingeniería Industrial - UTN.BA</span>
+            <span>Web Oficial UTN.BA</span>
             <ExternalLink className="w-4 h-4" />
           </a>
         </div>

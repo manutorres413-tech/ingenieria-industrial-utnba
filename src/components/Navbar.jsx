@@ -48,7 +48,7 @@ export default function Navbar() {
           {/* Action CTAs */}
           <div className="hidden sm:flex items-center space-x-3">
             <a
-              href="https://frba.utn.edu.ar/ingreso/ingenieria-industrial/"
+              href="https://frba.utn.edu.ar/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 px-4 py-2 text-xs sm:text-sm font-bold text-white bg-[#A31235] hover:bg-[#870E2B] rounded-md shadow-sm transition-all transform hover:-translate-y-0.5"
@@ -106,12 +106,12 @@ export default function Navbar() {
 
           <div className="pt-3 border-t border-gray-100 flex flex-col space-y-2">
             <a
-              href="https://frba.utn.edu.ar/ingreso/ingenieria-industrial/"
+              href="https://frba.utn.edu.ar/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center space-x-2 w-full py-2.5 px-4 text-sm font-bold text-white bg-[#B71234] rounded-md shadow-sm"
+              className="flex items-center justify-center space-x-2 w-full py-2.5 px-4 text-sm font-bold text-white bg-[#A31235] hover:bg-[#870E2B] rounded-md shadow-sm"
             >
-              <span>Ingeniería Industrial - UTN.BA</span>
+              <span>Web Oficial UTN.BA</span>
               <ExternalLink className="w-4 h-4" />
             </a>
           </div>

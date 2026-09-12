@@ -30,12 +30,12 @@ export default function Footer() {
             </p>
             <div className="pt-2">
               <a
-                href="https://frba.utn.edu.ar/ingreso/ingenieria-industrial/"
+                href="https://frba.utn.edu.ar/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center space-x-2 text-xs font-bold text-[#B71234] hover:text-white transition-colors"
+                className="inline-flex items-center space-x-2 text-xs font-bold text-[#FF4D6D] hover:text-white transition-colors"
               >
-                <span>Ingeniería Industrial - UTN.BA</span>
+                <span>Web Oficial UTN.BA</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
             </div>
@@ -77,12 +77,12 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a 
-                  href="https://frba.utn.edu.ar/ingreso/ingenieria-industrial/" 
+                  href="https://frba.utn.edu.ar/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors flex items-center space-x-1.5 text-rose-300 font-medium"
                 >
-                  <span>Portal Ingreso Ingeniería Industrial</span>
+                  <span>Portal Oficial UTN.BA</span>
                   <ExternalLink className="w-3 h-3" />
                 </a>
               </li>

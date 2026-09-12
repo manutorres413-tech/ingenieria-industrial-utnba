@@ -97,10 +97,10 @@ export default function CareerProfile() {
             </p>
           </div>
           <a
-            href="https://frba.utn.edu.ar/ingreso/ingenieria-industrial/"
+            href="https://frba.utn.edu.ar/"
             target="_blank"
             rel="noopener noreferrer"
-            className="shrink-0 px-4 py-2 text-xs sm:text-sm font-bold bg-[#B71234] hover:bg-[#9E0E2B] text-white rounded-lg transition-colors"
+            className="shrink-0 px-4 py-2 text-xs sm:text-sm font-bold bg-[#A31235] hover:bg-[#870E2B] text-white rounded-lg transition-colors"
           >
             Web Oficial UTN.BA
           </a>

@@ -2,7 +2,7 @@
 
 Folleto digital interactivo para la **Expo Carreras de la Universidad Tecnológica Nacional - Facultad Regional Buenos Aires (UTN.BA)**, accesible mediante código QR para aspirantes y estudiantes de secundaria.
 
-[![Web Oficial UTN](https://img.shields.io/badge/Web%20Oficial-Ingenier%C3%ADa%20Industrial%20UTNBA-B71234?style=flat&logo=googlechrome&logoColor=white)](https://frba.utn.edu.ar/ingreso/ingenieria-industrial/)
+[![Web Oficial UTN](https://img.shields.io/badge/Web%20Oficial-UTN.BA-A31235?style=flat&logo=googlechrome&logoColor=white)](https://frba.utn.edu.ar/)
 [![Deploy en Vercel](https://img.shields.io/badge/Deploy-Vercel-black?style=flat&logo=vercel)](https://vercel.com)
 [![GitHub Pages](https://img.shields.io/badge/Live-GitHub%20Pages-success?style=flat&logo=github)](https://manutorres413-tech.github.io/ingenieria-industrial-utnba/)
 
@@ -25,7 +25,7 @@ Folleto digital interactivo para la **Expo Carreras de la Universidad Tecnológi
 - **Modo Folleto / PDF**:
   - Compatible con impresión directa y exportación a PDF (`@media print`).
 - **Enlaces Institucionales**:
-  - Acceso directo a [Ingeniería Industrial - UTN.BA](https://frba.utn.edu.ar/ingreso/ingenieria-industrial/).
+  - Acceso directo al portal oficial [UTN.BA](https://frba.utn.edu.ar/).
   - Información sobre el Seminario Universitario y preinscripción por SIU-Guaraní.
 
 ---

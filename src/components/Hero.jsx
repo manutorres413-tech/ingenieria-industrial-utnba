@@ -105,7 +105,7 @@ export default function Hero() {
           </a>
 
           <a
-            href="https://frba.utn.edu.ar/ingreso/ingenieria-industrial/"
+            href="https://frba.utn.edu.ar/"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-5 py-3.5 rounded-xl text-sm sm:text-base font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-sm transition-all"
