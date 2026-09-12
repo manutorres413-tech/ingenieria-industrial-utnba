@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, ArrowRight, Mail, FileText } from 'lucide-react';
+import { ArrowRight, Mail, FileText } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -87,7 +87,7 @@ export default function Hero() {
                   5°
                 </div>
                 <span className="absolute -top-6 left-1/2 -translate-x-1/2 whitespace-nowrap text-[9px] font-extrabold uppercase bg-emerald-500 text-emerald-950 px-2 py-0.5 rounded-full shadow-xs">
-                  ¡Te Recibís!
+                  Título de Grado
                 </span>
               </div>
               <span className="text-[10px] sm:text-xs text-emerald-400 font-bold mt-1 text-center whitespace-nowrap">
@@ -102,14 +102,16 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Dos acciones principales elegidas: Ver Plan y Cómo Ingresar */}
+        {/* Acciones principales: Plan Oficial en PDF y Cómo Ingresar */}
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3 w-full max-w-lg">
           <a
-            href="#plan-estudios"
+            href="./PLAN_I23_Ingenieria_Industrial_UTNBA.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-6 py-3.5 rounded-xl text-sm sm:text-base font-bold text-white bg-[#A31235] hover:bg-[#870E2B] shadow-lg shadow-[#A31235]/40 transition-all transform hover:-translate-y-0.5"
           >
-            <BookOpen className="w-4 h-4" />
-            <span>Ver Plan de Estudios</span>
+            <FileText className="w-4 h-4" />
+            <span>Plan Oficial Completo (PDF)</span>
           </a>
 
           <a
@@ -118,19 +120,6 @@ export default function Hero() {
           >
             <span>Cómo Ingresar</span>
             <ArrowRight className="w-4 h-4 text-gray-300" />
-          </a>
-        </div>
-
-        {/* Enlace sutil al PDF oficial */}
-        <div className="mt-3">
-          <a
-            href="./PLAN_I23_Ingenieria_Industrial_UTNBA.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center space-x-1.5 text-xs text-gray-400 hover:text-white transition-colors"
-          >
-            <FileText className="w-3.5 h-3.5 text-[#FF4D6D]" />
-            <span>Descargar Plan Oficial I23 completo (PDF)</span>
           </a>
         </div>
 

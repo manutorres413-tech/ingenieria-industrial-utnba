@@ -124,8 +124,8 @@ export default function SteppedStudyPlan() {
                   <span className="font-black text-emerald-900 block text-sm">5° Año</span>
                   <GraduationCap className="w-4 h-4 text-emerald-700" />
                 </div>
-                <span className="text-[9px] text-emerald-800 font-extrabold uppercase tracking-tight block mt-0.5">🎓 ¡Título de Grado!</span>
-                <span className="text-[10px] text-emerald-950 font-bold block">Ingeniero/a</span>
+                <span className="text-[9px] text-emerald-800 font-extrabold uppercase tracking-tight block mt-0.5">🎓 Título de Grado</span>
+                <span className="text-[10px] text-emerald-950 font-bold block">Ingeniero/a Industrial</span>
               </div>
             </div>
           </div>
