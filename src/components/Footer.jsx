@@ -114,7 +114,7 @@ export default function Footer() {
                   download
                   className="hover:text-white transition-colors flex items-center space-x-1"
                 >
-                  <span>Descargar Plan I23 (PDF Oficial)</span>
+                  <span>Descargar Plan de Estudios (PDF)</span>
                   <FileText className="w-3 h-3 text-gray-500" />
                 </a>
               </li>

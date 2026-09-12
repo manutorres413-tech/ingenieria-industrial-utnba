@@ -30,7 +30,7 @@ function App() {
           className="bg-[#2F3336] text-white px-3.5 py-2.5 rounded-full shadow-lg text-xs font-bold flex items-center space-x-1.5 border border-white/20"
         >
           <BookOpen className="w-3.5 h-3.5 text-[#B71234]" />
-          <span>Plan I23</span>
+          <span>Plan</span>
         </a>
         <a
           href="https://frba.utn.edu.ar/ingreso/ingenieria-industrial/"

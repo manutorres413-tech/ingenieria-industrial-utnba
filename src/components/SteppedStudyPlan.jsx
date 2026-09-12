@@ -11,32 +11,32 @@ export default function SteppedStudyPlan() {
   );
 
   return (
-    <section id="plan-estudios" className="py-10 bg-[#F5F6F8]">
+    <section id="plan-estudios" className="py-8 sm:py-10 bg-[#F5F6F8]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Title */}
-        <div className="max-w-3xl mb-6 text-left">
+        {/* Encabezado */}
+        <div className="max-w-3xl mb-5 text-left">
           <h2 className="text-2xl sm:text-3xl font-black text-[#2F3336] tracking-tight">
             Plan de Estudios
           </h2>
           <p className="mt-1 text-xs sm:text-sm text-gray-600">
-            Tocá cualquier materia para ver sus contenidos y correlatividades.
+            Tocá cualquier materia para ver de qué trata y qué materias necesitás para cursarla.
           </p>
 
           <div className="mt-3 flex flex-wrap items-center gap-2 no-print">
             <a
               href="./PLAN_I23_Ingenieria_Industrial_UTNBA.pdf"
               download
-              className="inline-flex items-center space-x-1 px-3 py-1.5 rounded-lg text-xs font-semibold text-[#2F3336] bg-white hover:bg-gray-100 border border-gray-300 shadow-2xs transition-colors"
+              className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-[#2F3336] bg-white hover:bg-gray-100 border border-gray-300 shadow-2xs transition-colors"
             >
               <Download className="w-3.5 h-3.5 text-[#B71234]" />
-              <span>Descargar PDF</span>
+              <span>Descargar Plan Oficial (PDF)</span>
             </a>
             <a
               href="https://frba.utn.edu.ar/ingreso/ingenieria-industrial/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center space-x-1 px-3 py-1.5 rounded-lg text-xs font-semibold text-[#B71234] bg-white hover:bg-[#FFF1F3] border border-[#FCD4DA] transition-colors"
+              className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-[#B71234] bg-white hover:bg-[#FFF1F3] border border-[#FCD4DA] transition-colors"
             >
               <span>Web Oficial UTN.BA</span>
               <ExternalLink className="w-3 h-3" />
@@ -44,8 +44,8 @@ export default function SteppedStudyPlan() {
           </div>
         </div>
 
-        {/* Year Filter Tabs */}
-        <div className="mb-6 no-print overflow-x-auto pb-1 scrollbar-none">
+        {/* Filtros rápidos por año */}
+        <div className="mb-5 no-print overflow-x-auto pb-1 scrollbar-none">
           <div className="bg-white p-1 rounded-xl border border-gray-200 inline-flex items-center gap-1 min-w-full sm:min-w-0 justify-start sm:justify-center">
             <button
               onClick={() => setSelectedNivel('all')}
@@ -79,53 +79,47 @@ export default function SteppedStudyPlan() {
           </div>
         </div>
 
-        {/* Years & Subjects */}
-        <div className="space-y-5">
+        {/* Cuadrados por Año y Materias */}
+        <div className="space-y-4">
           {filteredPlan.map((level) => (
             <div 
               key={level.nivel} 
               className="bg-white rounded-xl border border-gray-200 shadow-2xs overflow-hidden"
             >
-              {/* Clean Year Bar */}
-              <div className="px-4 py-2.5 bg-gray-50 border-b border-gray-200 flex items-center justify-between text-left">
-                <div className="flex items-center space-x-2">
-                  <span className="w-6 h-6 rounded bg-[#2F3336] text-white flex items-center justify-center font-bold text-xs">
-                    {level.nivel}°
-                  </span>
-                  <h3 className="text-sm sm:text-base font-bold text-[#2F3336]">
-                    {level.anio}
-                  </h3>
-                </div>
-
-                <div className="text-xs text-gray-500 font-medium">
-                  {level.horasSemanales} hs/sem • {level.materias.length} materias
-                </div>
+              {/* Encabezado del Año: Limpio, sin números duplicados ni badges negros */}
+              <div className="px-4 py-2.5 bg-gray-50/90 border-b border-gray-200 flex items-center justify-between text-left">
+                <h3 className="text-base sm:text-lg font-bold text-[#2F3336]">
+                  {level.anio}
+                </h3>
+                <span className="text-xs text-gray-400 font-medium">
+                  {level.materias.length} materias
+                </span>
               </div>
 
-              {/* Hito 3° Año */}
+              {/* Hito 3° Año (Título Intermedio) */}
               {level.hitoTituloIntermedio && (
                 <div className="bg-[#FFF8F9] border-b border-[#FCD4DA] px-4 py-2 flex items-center space-x-2 text-left text-xs">
                   <Award className="w-4 h-4 text-[#B71234] shrink-0" />
                   <div>
-                    <strong className="text-[#B71234]">Título Intermedio (3° Año):</strong>{' '}
+                    <strong className="text-[#B71234]">Título intermedio al finalizar 3° año:</strong>{' '}
                     <span className="text-gray-700">Analista Industrial / Bachiller Universitario</span>
                   </div>
                 </div>
               )}
 
-              {/* Hito 5° Año */}
+              {/* Hito 5° Año (Graduación) */}
               {level.nivel === 5 && (
-                <div className="bg-amber-50 border-b border-amber-200 px-4 py-2 flex items-center space-x-2 text-left text-xs">
+                <div className="bg-amber-50/80 border-b border-amber-200 px-4 py-2 flex items-center space-x-2 text-left text-xs">
                   <GraduationCap className="w-4 h-4 text-amber-700 shrink-0" />
                   <div>
                     <strong className="text-amber-900">Graduación:</strong>{' '}
-                    <span className="text-amber-800">Práctica Profesional Supervisada (PPS - 200 hs) + Proyecto Final</span>
+                    <span className="text-amber-800">Práctica Profesional Supervisada (PPS) y Proyecto Final</span>
                   </div>
                 </div>
               )}
 
-              {/* CUADRADOS COMPACTOS */}
-              <div className="p-3 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 sm:gap-2.5">
+              {/* Cuadrícula compacta de materias */}
+              <div className="p-3 sm:p-3.5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 sm:gap-2.5">
                 {level.materias.map((mat) => {
                   const isIntegradora = mat.tipo.includes('Integradora');
 
@@ -133,29 +127,29 @@ export default function SteppedStudyPlan() {
                     <button
                       key={mat.codigo}
                       onClick={() => setActiveMateria(mat)}
-                      className={`text-left p-2.5 sm:p-3 rounded-lg border transition-all duration-150 flex flex-col justify-between h-24 sm:h-28 active:scale-98 ${
+                      className={`text-left p-2.5 sm:p-3 rounded-lg border transition-all duration-150 flex flex-col justify-between min-h-[70px] sm:min-h-[78px] active:scale-98 group cursor-pointer ${
                         isIntegradora
-                          ? 'border-[#FCD4DA] bg-[#FFFDFE] hover:border-[#B71234]'
-                          : 'border-gray-200 bg-white hover:border-gray-400 hover:shadow-xs'
+                          ? 'border-[#FCD4DA] bg-[#FFF9FA] hover:border-[#B71234] hover:shadow-xs'
+                          : 'border-gray-200 bg-white hover:border-gray-300 hover:bg-gray-50/70 hover:shadow-xs'
                       }`}
                     >
-                      {/* Top Code & Hours */}
-                      <div className="flex items-center justify-between w-full text-[10px] text-gray-500">
-                        <span className="font-mono text-gray-400">{mat.codigo}</span>
-                        <span className="font-semibold">{mat.horas}</span>
-                      </div>
-
-                      {/* Subject Name */}
-                      <div className="text-xs sm:text-sm font-bold text-[#2F3336] leading-snug line-clamp-2 my-1">
+                      {/* Nombre de la materia bien visible y legible */}
+                      <span className="text-xs sm:text-sm font-semibold text-[#2F3336] leading-snug group-hover:text-[#B71234] transition-colors">
                         {mat.nombre}
-                      </div>
+                      </span>
 
-                      {/* Bottom Category */}
-                      <div className="flex items-center justify-between w-full pt-1 border-t border-gray-100 text-[10px]">
-                        <span className="truncate text-gray-400">
-                          {isIntegradora ? '★ Integradora' : mat.tipo}
-                        </span>
-                        <span className="text-[#B71234] font-bold text-xs shrink-0 ml-1">
+                      {/* Pie de la tarjeta */}
+                      <div className="flex items-center justify-between w-full pt-1.5 mt-1 border-t border-gray-100 text-[10px]">
+                        {isIntegradora ? (
+                          <span className="font-bold text-[#B71234]">
+                            ★ Integradora
+                          </span>
+                        ) : (
+                          <span className="text-gray-400 truncate">
+                            Ver detalle
+                          </span>
+                        )}
+                        <span className="text-gray-300 group-hover:text-[#B71234] font-bold text-xs shrink-0 ml-1 transition-colors">
                           +
                         </span>
                       </div>
@@ -168,14 +162,14 @@ export default function SteppedStudyPlan() {
           ))}
         </div>
 
-        {/* Electivas */}
-        <div className="mt-6 bg-white rounded-xl border border-gray-200 p-4 text-left">
-          <div className="flex items-center justify-between pb-2 mb-3 border-b border-gray-100">
+        {/* Materias Electivas - Diseño compacto en cuadrados */}
+        <div className="mt-5 bg-white rounded-xl border border-gray-200 p-4 text-left">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-2 mb-3 border-b border-gray-100 gap-1">
             <h3 className="text-sm sm:text-base font-bold text-[#2F3336]">
-              Materias Electivas
+              Materias Electivas (4° y 5° Año)
             </h3>
             <span className="text-xs text-gray-500">
-              10 hs anuales a elección
+              Podés elegir según el perfil profesional que quieras orientar
             </span>
           </div>
 
@@ -183,14 +177,9 @@ export default function SteppedStudyPlan() {
             {asignaturasElectivas.map((el, i) => (
               <div 
                 key={i} 
-                className="p-2 bg-gray-50 border border-gray-200 rounded-lg flex flex-col justify-between h-18 text-xs"
+                className="p-2.5 bg-gray-50/70 border border-gray-200 rounded-lg flex items-center min-h-[50px] text-xs font-semibold text-[#2F3336] leading-snug"
               >
-                <div className="font-bold text-[#2F3336] line-clamp-2 leading-tight">
-                  {el.nombre}
-                </div>
-                <div className="text-[10px] text-[#B71234] font-semibold mt-1">
-                  {el.horas}
-                </div>
+                {el.nombre}
               </div>
             ))}
           </div>
@@ -198,7 +187,7 @@ export default function SteppedStudyPlan() {
 
       </div>
 
-      {/* POPUP MODAL PARA DETALLE DE MATERIA */}
+      {/* Modal para ver detalle de la materia */}
       {activeMateria && (
         <div 
           className="fixed inset-0 z-50 bg-black/50 backdrop-blur-xs flex items-center justify-center p-4 animate-fade-in"
@@ -208,16 +197,14 @@ export default function SteppedStudyPlan() {
             className="bg-white rounded-2xl max-w-lg w-full p-5 sm:p-6 shadow-2xl border border-gray-200 text-left space-y-4 max-h-[90vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Modal Header */}
+            {/* Cabecera del modal */}
             <div className="flex items-start justify-between gap-3 border-b border-gray-100 pb-3">
               <div>
-                <div className="flex items-center space-x-2 text-xs text-gray-500 mb-1">
-                  <span className="font-mono font-bold bg-gray-100 px-1.5 py-0.5 rounded">
-                    Código {activeMateria.codigo}
+                {activeMateria.tipo.includes('Integradora') && (
+                  <span className="inline-block text-[10px] font-bold text-[#B71234] bg-[#FFF1F3] px-2 py-0.5 rounded-md border border-[#FCD4DA] mb-1.5">
+                    Materia Integradora
                   </span>
-                  <span>• {activeMateria.horas}</span>
-                  <span>• {activeMateria.regimen}</span>
-                </div>
+                )}
                 <h4 className="text-lg sm:text-xl font-bold text-[#2F3336]">
                   {activeMateria.nombre}
                 </h4>
@@ -232,35 +219,43 @@ export default function SteppedStudyPlan() {
               </button>
             </div>
 
-            {/* Description */}
+            {/* Qué se aprende */}
             <div>
               <div className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1">
-                Contenidos principales
+                De qué trata la materia
               </div>
               <p className="text-sm text-gray-700 leading-relaxed">
                 {activeMateria.descripcion}
               </p>
             </div>
 
-            {/* Correlatividades */}
+            {/* Correlatividades explicadas de forma directa */}
             <div className="space-y-2 pt-2 border-t border-gray-100 text-xs">
               <div className="bg-gray-50 p-3 rounded-lg">
-                <strong className="text-gray-700 block mb-0.5">Para cursar necesitás:</strong>
-                <span className="text-gray-600">{activeMateria.correlativasCursar}</span>
+                <strong className="text-gray-800 block mb-0.5">Para cursarla necesitás tener:</strong>
+                <span className="text-gray-600">
+                  {activeMateria.correlativasCursar && activeMateria.correlativasCursar !== '-'
+                    ? activeMateria.correlativasCursar
+                    : 'No requiere materias previas (se puede cursar directamente)'}
+                </span>
               </div>
               <div className="bg-gray-50 p-3 rounded-lg">
-                <strong className="text-gray-700 block mb-0.5">Para rendir examen final necesitás:</strong>
-                <span className="text-gray-600">{activeMateria.correlativasRendir}</span>
+                <strong className="text-gray-800 block mb-0.5">Para rendir el examen final necesitás:</strong>
+                <span className="text-gray-600">
+                  {activeMateria.correlativasRendir && activeMateria.correlativasRendir !== '-'
+                    ? activeMateria.correlativasRendir
+                    : 'No requiere finales previos'}
+                </span>
               </div>
             </div>
 
-            {/* Modal Footer */}
+            {/* Pie del modal */}
             <div className="pt-2 flex items-center justify-end">
               <button
                 onClick={() => setActiveMateria(null)}
                 className="px-4 py-2 bg-[#2F3336] hover:bg-black text-white text-xs font-bold rounded-lg transition-colors"
               >
-                Cerrar
+                Entendido
               </button>
             </div>
 

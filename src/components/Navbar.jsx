@@ -36,10 +36,7 @@ export default function Navbar() {
           {/* Desktop Navigation Links */}
           <nav className="hidden lg:flex items-center space-x-7 text-sm font-medium text-[#2F3336]">
             <a href="#plan-estudios" className="flex items-center space-x-1 hover:text-[#B71234] transition-colors">
-              <span>Plan de Estudios (I23)</span>
-              <span className="bg-[#FFF1F3] text-[#B71234] text-[10px] font-bold px-1.5 py-0.5 rounded-full">
-                Vigente
-              </span>
+              <span>Plan de Estudios</span>
             </a>
             <a href="#perfil" className="hover:text-[#B71234] transition-colors">
               Salida Laboral
@@ -103,7 +100,7 @@ export default function Navbar() {
             onClick={() => setMobileMenuOpen(false)}
             className="block py-2 text-base font-medium text-gray-700 hover:text-[#B71234]"
           >
-            Plan de Estudios Escalonado (I23)
+            Plan de Estudios
           </a>
           <a
             href="#perfil"

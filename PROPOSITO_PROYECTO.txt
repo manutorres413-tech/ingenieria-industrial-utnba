@@ -38,23 +38,21 @@ Despliegue en Vercel: Vinculado directamente al repositorio GitHub (CI/CD automa
    - Oraciones cortas, claras y bien construidas.
 
 --------------------------------------------------------------------------------
-2. DISEÑO DEL PLAN DE ESTUDIOS (CUADRADOS COMPACTOS Y UNIFORMES)
+2. DISEÑO DEL PLAN DE ESTUDIOS (CUADRADOS COMPACTOS Y LEGIBLES)
 --------------------------------------------------------------------------------
-- Cuadricula en cuadrados compactos:
-  * 2 columnas en celulares.
-  * 3 a 4 columnas en computadoras.
-  * Cada materia es una ficha cuadrada de altura fija y compacta con:
-    codigo, carga horaria, nombre y tipo.
-  * Se elimino el buscador de materias para mantener el diseno 100% limpio y minimalista.
-- Detalle interactivo sin desarmar la grilla:
-  * Al tocar o hacer clic en una materia, se abre una ventana modal emergente (popup)
-    con la descripcion de contenidos y las correlativas para cursar y rendir.
-  * Se cierra tocando afuera o con la cruz (x).
-- Hitos sencillos:
+- Cuadrícula de materias en cajas/cuadrados compactos:
+  * 2 columnas en celulares, 3 a 4 en computadoras.
+  * Encabezados de año limpios: "1° Año", "2° Año", "3° Año", etc. (sin badges negros que dupliquen "1° 1° Año").
+  * Tarjetas de materias enfocadas en máxima legibilidad del nombre: sin horas ni códigos técnicos que sobrecarguen la vista (eso ya está en el PDF oficial).
+  * Indicador sutil de materias integradoras (★ Integradora).
+- Detalle interactivo en ventana modal:
+  * Al tocar una materia se abre un popup con descripción concisa y correlativas ("Para cursarla", "Para rendir final").
+  * Explicado en lenguaje claro, sin reglas burocráticas complejas.
+- Hitos de carrera:
   * 3° Año: Título Intermedio (Analista Industrial).
-  * 5° Año: PPS (200 hs) y Proyecto Final.
-  * Materias electivas en cuadrícula compacta.
-  * Boton para descargar el PDF oficial del plan.
+  * 5° Año: Práctica Profesional y Proyecto Final.
+- Materias electivas: cuadrícula compacta con nombres limpios.
+- Enlace destacado de descarga del PDF oficial para quienes quieran ver la reglamentación completa.
 
 --------------------------------------------------------------------------------
 3. ESTRUCTURA VIGENTE DE LA PAGINA
