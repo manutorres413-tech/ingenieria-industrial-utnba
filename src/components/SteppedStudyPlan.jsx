@@ -100,31 +100,32 @@ export default function SteppedStudyPlan() {
               </div>
             </div>
 
-            {/* Mini preview visual de los 5 niveles */}
-            <div className="mt-5 pt-4 border-t border-gray-100 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2 text-center text-xs">
+            {/* Mini preview visual de los 5 años */}
+            <div className="mt-5 pt-4 border-t border-gray-100 grid grid-cols-2 sm:grid-cols-5 gap-2 text-center text-xs">
               <div className="p-2.5 rounded-xl bg-gray-50/80 border border-gray-100 group-hover:bg-gray-100/70 transition-colors">
                 <span className="font-bold text-[#231F20] block text-sm">1° Año</span>
-                <span className="text-[10px] text-gray-500">Ciencias Básicas</span>
+                <span className="text-[10px] text-gray-500 block mt-0.5">Ciencias Básicas</span>
               </div>
               <div className="p-2.5 rounded-xl bg-gray-50/80 border border-gray-100 group-hover:bg-gray-100/70 transition-colors">
                 <span className="font-bold text-[#231F20] block text-sm">2° Año</span>
-                <span className="text-[10px] text-gray-500">Ingeniería Básica</span>
+                <span className="text-[10px] text-gray-500 block mt-0.5">Ingeniería Básica</span>
               </div>
               <div className="p-2.5 rounded-xl bg-[#FFF8F9] border border-[#FCD4DA] group-hover:border-[#A31235] transition-colors">
                 <span className="font-bold text-[#A31235] block text-sm">3° Año</span>
-                <span className="text-[9px] text-[#A31235] font-extrabold uppercase">★ Título Intermedio</span>
+                <span className="text-[9px] text-[#A31235] font-extrabold uppercase tracking-tight block">★ Título Intermedio</span>
+                <span className="text-[10px] text-[#A31235] font-semibold block mt-0.5">Técnico/a Univ.</span>
               </div>
               <div className="p-2.5 rounded-xl bg-gray-50/80 border border-gray-100 group-hover:bg-gray-100/70 transition-colors">
                 <span className="font-bold text-[#231F20] block text-sm">4° Año</span>
-                <span className="text-[10px] text-gray-500">Operaciones</span>
+                <span className="text-[10px] text-gray-500 block mt-0.5">Gestión y Procesos</span>
               </div>
-              <div className="p-2.5 rounded-xl bg-gray-50/80 border border-gray-100 group-hover:bg-gray-100/70 transition-colors">
-                <span className="font-bold text-[#231F20] block text-sm">5° Año</span>
-                <span className="text-[10px] text-gray-500">Proyecto Final</span>
-              </div>
-              <div className="p-2.5 rounded-xl bg-gray-50/80 border border-gray-100 group-hover:bg-gray-100/70 transition-colors">
-                <span className="font-bold text-[#231F20] block text-sm">Electivas</span>
-                <span className="text-[10px] text-gray-500">Especialidades</span>
+              <div className="col-span-2 sm:col-span-1 p-2.5 rounded-xl bg-emerald-50/90 border-2 border-emerald-300 group-hover:border-emerald-500 transition-colors shadow-2xs">
+                <div className="flex items-center justify-center space-x-1">
+                  <span className="font-black text-emerald-900 block text-sm">5° Año</span>
+                  <GraduationCap className="w-4 h-4 text-emerald-700" />
+                </div>
+                <span className="text-[9px] text-emerald-800 font-extrabold uppercase tracking-tight block mt-0.5">🎓 ¡Título de Grado!</span>
+                <span className="text-[10px] text-emerald-950 font-bold block">Ingeniero/a</span>
               </div>
             </div>
           </div>
@@ -147,6 +148,11 @@ export default function SteppedStudyPlan() {
                     {num === 3 && (
                       <span className={`text-[9px] px-1.5 py-0.5 rounded uppercase font-extrabold ${selectedNivel === 3 ? 'bg-white text-[#A31235]' : 'bg-[#FFF1F3] text-[#A31235]'}`}>
                         Intermedio
+                      </span>
+                    )}
+                    {num === 5 && (
+                      <span className={`text-[9px] px-1.5 py-0.5 rounded uppercase font-extrabold ${selectedNivel === 5 ? 'bg-emerald-300 text-emerald-950' : 'bg-emerald-100 text-emerald-800'}`}>
+                        Título Grado
                       </span>
                     )}
                   </button>
