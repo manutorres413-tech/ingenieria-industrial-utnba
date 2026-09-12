@@ -44,8 +44,8 @@ export default function Navbar() {
                 Nuevo
               </span>
             </a>
-            <a href="#industrialito" className="hover:text-[#B71234] transition-colors">
-              Industrialito
+            <a href="#perfil" className="hover:text-[#B71234] transition-colors">
+              Salida Laboral
             </a>
             <a href="#por-que-utn" className="hover:text-[#B71234] transition-colors">
               ¿Por qué UTN?
@@ -116,11 +116,11 @@ export default function Navbar() {
             Plan de Estudios Escalonado (I23)
           </a>
           <a
-            href="#industrialito"
+            href="#perfil"
             onClick={() => setMobileMenuOpen(false)}
             className="block py-2 text-base font-medium text-gray-700 hover:text-[#B71234]"
           >
-            Industrialito - El Simulador
+            Perfil y Salida Laboral
           </a>
           <a
             href="#por-que-utn"

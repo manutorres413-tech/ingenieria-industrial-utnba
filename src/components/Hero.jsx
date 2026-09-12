@@ -24,8 +24,8 @@ export default function Hero() {
           <div className="lg:col-span-7 space-y-6 text-left">
             
             <div className="space-y-1">
-              <span className="text-xs sm:text-sm font-bold uppercase tracking-widest text-gray-500">
-                INDUSTRIALITO • EL SIMULADOR DE INGENIERÍA INDUSTRIAL
+              <span className="text-xs sm:text-sm font-bold uppercase tracking-widest text-[#B71234]">
+                CARRERA DE GRADO • FACULTAD REGIONAL BUENOS AIRES
               </span>
               <h1 className="text-4xl sm:text-6xl xl:text-7xl font-extrabold tracking-tight leading-[1.08]">
                 <span className="block text-[#2F3336]">Tu fábrica.</span>
@@ -115,26 +115,26 @@ export default function Hero() {
               
               {/* Badge Over Image */}
               <div className="absolute top-3 left-3 z-10 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/20 flex items-center space-x-2">
-                <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></div>
-                <span className="text-white text-xs font-semibold">Simulador en el Stand</span>
+                <div className="w-2 h-2 rounded-full bg-[#B71234]"></div>
+                <span className="text-white text-xs font-semibold">Operaciones & Industria 4.0</span>
               </div>
 
               <img 
-                src="./assets/industrialito-factory.png" 
-                alt="Planta Industrial 3D y Avatares Ingenieros de Industrialito"
+                src="./assets/planta-industrial-3d.png" 
+                alt="Planta Industrial y Modelado de Procesos UTNBA"
                 className="w-full h-auto object-cover transform hover:scale-102 transition-transform duration-500"
               />
 
               <div className="p-4 bg-[#23272A] text-white flex items-center justify-between border-t border-white/10">
                 <div>
-                  <h3 className="text-sm font-bold tracking-wide">¿Probaste Industrialito?</h3>
-                  <p className="text-xs text-gray-400">Tomá decisiones de producción en tiempo real</p>
+                  <h3 className="text-sm font-bold tracking-wide">Plantas, Procesos y Logística</h3>
+                  <p className="text-xs text-gray-400">Optimizá recursos, tecnología y personas</p>
                 </div>
                 <a
-                  href="#industrialito"
+                  href="#plan-estudios"
                   className="px-3 py-1.5 bg-[#B71234] hover:bg-[#9E0E2B] text-white text-xs font-bold rounded transition-colors"
                 >
-                  Conocer más
+                  Ver Plan I23
                 </a>
               </div>
             </div>

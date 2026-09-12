@@ -75,14 +75,14 @@ export default function StepsPillars() {
           <div className="flex flex-col md:flex-row md:items-center justify-between pb-6 mb-8 border-b border-gray-300 gap-4">
             <div>
               <span className="text-xs font-bold uppercase tracking-wider text-[#B71234]">
-                La lógica del simulador Industrialito
+                El ciclo operativo de la ingeniería
               </span>
               <h3 className="text-2xl font-bold text-[#2F3336]">
-                El ciclo operativo de una organización
+                De la planificación física al consumidor final
               </h3>
             </div>
             <p className="text-xs sm:text-sm text-gray-600 max-w-md">
-              Como en el afiche de la expo: <em>"Vení a jugar. No necesitás conocimientos previos. Descubrí la carrera jugando."</em>
+              El Ingeniero/a Industrial domina las tres fases clave de la cadena de valor: infraestructura, ejecución productiva y logística de distribución.
             </p>
           </div>
 

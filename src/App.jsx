@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import StepsPillars from './components/StepsPillars';
 import SteppedStudyPlan from './components/SteppedStudyPlan';
-import IndustrialitoSimulator from './components/IndustrialitoSimulator';
+import CareerProfile from './components/CareerProfile';
 import WhyUTN from './components/WhyUTN';
 import AdmissionSection from './components/AdmissionSection';
 import Footer from './components/Footer';
@@ -18,7 +18,7 @@ function App() {
         <Hero />
         <StepsPillars />
         <SteppedStudyPlan />
-        <IndustrialitoSimulator />
+        <CareerProfile />
         <WhyUTN />
         <AdmissionSection />
       </main>

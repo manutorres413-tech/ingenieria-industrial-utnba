@@ -1,29 +1,29 @@
 # Ingeniería Industrial - UTN Buenos Aires (Expo Carreras & Plan I23)
 
-Landing page y folleto digital interactivo para la **Expo Carreras de la Universidad Tecnológica Nacional - Facultad Regional Buenos Aires (UTN.BA)**, accesible a través del código QR del afiche oficial de **Industrialito**.
+Folleto digital interactivo para la **Expo Carreras de la Universidad Tecnológica Nacional - Facultad Regional Buenos Aires (UTN.BA)**, accesible mediante código QR para aspirantes y estudiantes de secundaria.
 
 [![Web Oficial UTN](https://img.shields.io/badge/Web%20Oficial-Ingenier%C3%ADa%20Industrial%20UTNBA-B71234?style=flat&logo=googlechrome&logoColor=white)](https://frba.utn.edu.ar/ingreso/ingenieria-industrial/)
 [![Deploy en Vercel](https://img.shields.io/badge/Deploy-Vercel-black?style=flat&logo=vercel)](https://vercel.com)
+[![GitHub Pages](https://img.shields.io/badge/Live-GitHub%20Pages-success?style=flat&logo=github)](https://manutorres413-tech.github.io/ingenieria-industrial-utnba/)
 
 ---
 
-## 🏭 Características
+## 🏭 Características del Folleto Digital
 
-- **Estética Fiel al Afiche**:
-  - Paleta de color oficial: Rojo Carmín UTN (`#B71234`), Grafito Oscuro (`#2F3336`), fondo técnico editorial y blanco.
+- **Estética Fiel al Afiche Institucional**:
+  - Paleta de color oficial: Rojo Carmín UTN (`#B71234`), Grafito Antracita (`#2F3336`), fondo técnico editorial (`#F5F6F8`) y blanco puro.
   - Tipografía sans-serif de alto impacto con numeración circular (`01`, `02`, `03`).
-  - Ilustración 3D isométrica de la planta industrial y los avatares de **Industrialito**.
+  - Ilustración 3D isométrica de modelado de procesos y planta de operaciones.
 - **Plan de Estudios Escalonado (Plan I23 - Ord. 1909/23)**:
   - Estructura paso a paso de 1° a 5° año con carga horaria semanal y correlatividades.
   - Hito destacado del **Título Intermedio** (Analista Industrial / Bachiller Universitario en Ciencias de la Ingeniería) al 3° año.
-  - Tesis y Práctica Profesional Supervisada (PPS - 200 hs).
-  - Buscador interactivo de asignaturas en tiempo real.
-- **Simulador Industrialito**:
-  - Desafío interactivo de toma de decisiones para aspirantes.
-  - Conexión con el stand en el Campus de Villa Lugano (Mozart 2300).
+  - Práctica Profesional Supervisada (PPS - 200 hs) y Proyecto Final Integrador.
+  - Buscador interactivo de asignaturas en tiempo real y descarga del PDF oficial.
+- **Perfil del Egresado y Campo Laboral**:
+  - Detalle de sectores de inserción: Manufactura, Logística Global, Finanzas, Consultoría Estratégica, Datos y Sustentabilidad.
+  - Horarios vespertino y nocturno para trabajar y cursar en simultáneo (+95% empleabilidad).
 - **Modo Folleto / PDF**:
   - Compatible con impresión directa y exportación a PDF (`@media print`).
-  - Enlace de descarga directa del plan oficial de estudios en PDF.
 - **Enlaces Institucionales**:
   - Acceso directo a [Ingeniería Industrial - UTN.BA](https://frba.utn.edu.ar/ingreso/ingenieria-industrial/).
   - Información sobre el Seminario Universitario y preinscripción por SIU-Guaraní.
