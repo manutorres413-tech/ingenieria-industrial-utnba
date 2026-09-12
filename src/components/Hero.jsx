@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowDown, ExternalLink, Download, Clock, Award, GraduationCap, MessageCircle, FileText } from 'lucide-react';
+import { ArrowDown, ExternalLink, Download, Clock, Award, GraduationCap, Mail, FileText } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -115,12 +115,12 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Nota directa para consultas en el stand o por mail */}
-        <div className="mt-7 inline-flex items-center space-x-2 text-xs sm:text-sm text-gray-300 bg-white/5 backdrop-blur-xs px-4 py-2 rounded-xl border border-white/10 max-w-md">
-          <MessageCircle className="w-4 h-4 text-[#FF4D6D] shrink-0" />
+        {/* Contacto directo por mail */}
+        <div className="mt-7 inline-flex items-center space-x-2 text-xs sm:text-sm text-gray-300 bg-white/5 backdrop-blur-xs px-4 py-2 rounded-xl border border-white/10">
+          <Mail className="w-4 h-4 text-[#FF4D6D] shrink-0" />
           <span>
-            ¿Tenés dudas? Acercate al <strong>stand de la Expo</strong> o escribinos a{' '}
-            <a href="mailto:industrial@frba.utn.edu.ar" className="underline hover:text-white text-gray-200">
+            ¿Tenés dudas? Escribinos a{' '}
+            <a href="mailto:industrial@frba.utn.edu.ar" className="font-semibold text-white underline hover:text-[#FF4D6D] transition-colors">
               industrial@frba.utn.edu.ar
             </a>
           </span>
