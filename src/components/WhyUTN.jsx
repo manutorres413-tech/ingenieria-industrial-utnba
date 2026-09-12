@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Award, GraduationCap, Clock, CheckCircle2, User, Sparkles } from 'lucide-react';
+import { Award, GraduationCap, Clock, CheckCircle2, User } from 'lucide-react';
 
 function EngineersStatGraphic() {
   const [animated, setAnimated] = useState(false);
@@ -51,9 +51,8 @@ function EngineersStatGraphic() {
         {/* Pictograma de 10 personitas (4 UTN vs 6 resto del país) */}
         <div className="flex-1 w-full text-left">
           <div className="flex items-center justify-between text-xs font-bold mb-2">
-            <span className="text-[#A31235] flex items-center gap-1">
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>4 de cada 10 ingenieros de Argentina</span>
+            <span className="text-[#A31235]">
+              4 de cada 10 ingenieros de Argentina
             </span>
             <span className="text-gray-400 text-[11px]">Total país</span>
           </div>
