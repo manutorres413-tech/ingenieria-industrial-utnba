@@ -111,11 +111,12 @@ export default function Footer() {
               <li>
                 <a 
                   href="./PLAN_I23_Ingenieria_Industrial_UTNBA.pdf" 
-                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-white transition-colors flex items-center space-x-1"
                 >
-                  <span>Descargar Plan de Estudios (PDF)</span>
-                  <FileText className="w-3 h-3 text-gray-500" />
+                  <span>Plan de Estudios (PDF Oficial)</span>
+                  <ExternalLink className="w-3 h-3 text-gray-500" />
                 </a>
               </li>
             </ul>

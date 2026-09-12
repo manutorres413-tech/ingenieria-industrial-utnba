@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { planEstudios, asignaturasElectivas } from '../data/planEstudios';
-import { Download, ExternalLink, Award, GraduationCap, X } from 'lucide-react';
+import { Download, ExternalLink, Award, GraduationCap, X, FileText } from 'lucide-react';
 
 export default function SteppedStudyPlan() {
   const [selectedNivel, setSelectedNivel] = useState('all');
@@ -26,11 +26,13 @@ export default function SteppedStudyPlan() {
           <div className="mt-3 flex flex-wrap items-center gap-2 no-print">
             <a
               href="./PLAN_I23_Ingenieria_Industrial_UTNBA.pdf"
-              download
-              className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-[#2F3336] bg-white hover:bg-gray-100 border border-gray-300 shadow-2xs transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-[#231F20] bg-white hover:bg-gray-100 border border-gray-300 shadow-2xs transition-colors"
             >
-              <Download className="w-3.5 h-3.5 text-[#B71234]" />
-              <span>Descargar Plan Oficial (PDF)</span>
+              <FileText className="w-3.5 h-3.5 text-[#A31235]" />
+              <span>Plan Oficial (PDF)</span>
+              <ExternalLink className="w-3 h-3 text-gray-400" />
             </a>
             <a
               href="https://frba.utn.edu.ar/ingreso/ingenieria-industrial/"

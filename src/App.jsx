@@ -5,6 +5,7 @@ import SteppedStudyPlan from './components/SteppedStudyPlan';
 import CareerProfile from './components/CareerProfile';
 import WhyUTN from './components/WhyUTN';
 import AdmissionSection from './components/AdmissionSection';
+import CampusLocations from './components/CampusLocations';
 import Footer from './components/Footer';
 import { BookOpen, ExternalLink } from 'lucide-react';
 
@@ -19,6 +20,7 @@ function App() {
         <CareerProfile />
         <WhyUTN />
         <AdmissionSection />
+        <CampusLocations />
       </main>
 
       <Footer />

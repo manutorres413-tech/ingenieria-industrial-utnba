@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowDown, ExternalLink, Download, Clock, Award, GraduationCap, MessageCircle } from 'lucide-react';
+import { ArrowDown, ExternalLink, Download, Clock, Award, GraduationCap, MessageCircle, FileText } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -15,11 +15,6 @@ export default function Hero() {
 
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
         
-        {/* Etiqueta institucional con logo */}
-        <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs font-semibold text-gray-200 mb-5 backdrop-blur-xs">
-          <span>Universidad Tecnológica Nacional • Facultad Regional Buenos Aires</span>
-        </div>
-
         {/* Título Principal Directo y Limpio */}
         <h1 className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight leading-none text-white">
           Ingeniería Industrial
@@ -46,33 +41,27 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Botones de acción centrados */}
+        {/* Botones de acción centrados y unificados */}
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3 w-full max-w-lg">
           <a
-            href="#plan-estudios"
-            className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-6 py-3 rounded-xl text-sm sm:text-base font-bold text-white bg-[#A31235] hover:bg-[#870E2B] shadow-lg shadow-[#A31235]/40 transition-all transform hover:-translate-y-0.5"
+            href="./PLAN_I23_Ingenieria_Industrial_UTNBA.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-6 py-3.5 rounded-xl text-sm sm:text-base font-bold text-white bg-[#A31235] hover:bg-[#870E2B] shadow-lg shadow-[#A31235]/40 transition-all transform hover:-translate-y-0.5"
           >
-            <span>Ver Plan de Estudios</span>
-            <ArrowDown className="w-4 h-4" />
+            <FileText className="w-4 h-4" />
+            <span>Plan de Estudios (PDF)</span>
+            <ExternalLink className="w-3.5 h-3.5 opacity-80" />
           </a>
 
           <a
             href="https://frba.utn.edu.ar/ingreso/ingenieria-industrial/"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-5 py-3 rounded-xl text-sm sm:text-base font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-sm transition-all"
+            className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-5 py-3.5 rounded-xl text-sm sm:text-base font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-sm transition-all"
           >
             <span>Web Oficial UTN</span>
             <ExternalLink className="w-4 h-4 text-gray-300" />
-          </a>
-
-          <a
-            href="./PLAN_I23_Ingenieria_Industrial_UTNBA.pdf"
-            download
-            className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-4 py-3 rounded-xl text-sm font-semibold text-gray-300 hover:text-white transition-colors"
-          >
-            <Download className="w-4 h-4 text-[#FF4D6D]" />
-            <span>PDF Oficial</span>
           </a>
         </div>
 
