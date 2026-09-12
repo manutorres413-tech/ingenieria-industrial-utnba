@@ -203,7 +203,7 @@ export const planEstudios = [
     descripcion: "Física térmica, fluidos, estructuras mecánicas, estudio de tiempos, costos y comercialización.",
     horasSemanales: 31,
     hitoTituloIntermedio: {
-      nombre: "Título Intermedio: Técnico/a Universitario/a en Gestión Industrial",
+      nombre: "Título Intermedio: Técnico/a Universitario/a en Administración, Producción y Gestión Industrial",
       reconocimiento: "Bachiller Universitario en Ciencias de la Ingeniería (CIN/CONEAU)",
       descripcion: "Habilita inserción laboral técnica calificada tras aprobar 1°, 2° y 3° año completos y cursar Gestión Industrial."
     },
@@ -304,7 +304,7 @@ export const planEstudios = [
         horas: "2 hs/sem",
         tipo: "Especial Título Intermedio",
         regimen: "Anual",
-        descripcion: "Módulo integrativo obligatorio para la titulación intermedia de Técnico/a Universitario/a en Gestión Industrial.",
+        descripcion: "Módulo integrativo obligatorio para la titulación intermedia de Técnico/a Universitario/a en Administración, Producción y Gestión Industrial.",
         correlativasCursar: "10, 11, 14, 15",
         correlativasRendir: "1°, 2° y 3° año completo"
       }

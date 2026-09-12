@@ -63,18 +63,36 @@ export default function SteppedStudyPlan() {
                 onClick={() => setSelectedNivel(num)}
                 className={`px-3 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap transition-all flex items-center space-x-1 ${
                   selectedNivel === num
-                    ? 'bg-[#B71234] text-white'
-                    : 'text-gray-600 hover:text-[#B71234] hover:bg-gray-100'
+                    ? 'bg-[#A31235] text-white'
+                    : 'text-gray-600 hover:text-[#A31235] hover:bg-gray-100'
                 }`}
               >
                 <span>{num}° Año</span>
                 {num === 3 && (
-                  <span className={`text-[9px] px-1 rounded uppercase font-extrabold ${selectedNivel === 3 ? 'bg-white text-[#B71234]' : 'bg-[#FFF1F3] text-[#B71234]'}`}>
+                  <span className={`text-[9px] px-1 rounded uppercase font-extrabold ${selectedNivel === 3 ? 'bg-white text-[#A31235]' : 'bg-[#FFF1F3] text-[#A31235]'}`}>
                     Intermedio
                   </span>
                 )}
               </button>
             ))}
+
+            <button
+              onClick={() => setSelectedNivel('electivas')}
+              className={`px-3 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap transition-all flex items-center space-x-1.5 ${
+                selectedNivel === 'electivas'
+                  ? 'bg-[#A31235] text-white'
+                  : 'text-gray-600 hover:text-[#A31235] hover:bg-gray-100'
+              }`}
+            >
+              <span>Electivas</span>
+              <span className={`text-[10px] px-1.5 py-0.2 rounded-full font-extrabold ${
+                selectedNivel === 'electivas'
+                  ? 'bg-white text-[#A31235]'
+                  : 'bg-gray-100 text-gray-600'
+              }`}>
+                {asignaturasElectivas.length}
+              </span>
+            </button>
           </div>
         </div>
 
@@ -102,7 +120,7 @@ export default function SteppedStudyPlan() {
                   <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
                     <div>
                       <strong className="text-[#A31235]">Título intermedio oficial (3° año):</strong>{' '}
-                      <span className="text-[#231F20] font-bold">Técnico/a Universitario/a en Gestión Industrial</span>
+                      <span className="text-[#231F20] font-bold">Técnico/a Universitario/a en Administración, Producción y Gestión Industrial</span>
                     </div>
                     <span className="hidden sm:inline text-gray-300">•</span>
                     <span className="text-gray-500 text-[11px]">Acredita Bachiller Universitario en Ciencias de la Ingeniería</span>
@@ -153,41 +171,61 @@ export default function SteppedStudyPlan() {
                 })}
               </div>
 
+              {/* Nota de electivas en 5° año cuando se filtra específicamente por 5° año */}
+              {level.nivel === 5 && selectedNivel === 5 && (
+                <div className="p-3 bg-gray-50/80 border-t border-gray-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-gray-600">
+                  <span>💡 En 5° año se cursan además <strong>10 hs/sem de Asignaturas Electivas</strong> a elección.</span>
+                  <button
+                    onClick={() => setSelectedNivel('electivas')}
+                    className="inline-flex items-center text-xs font-bold text-[#A31235] hover:underline cursor-pointer shrink-0"
+                  >
+                    Ver las 12 materias electivas →
+                  </button>
+                </div>
+              )}
+
             </div>
           ))}
         </div>
 
-        {/* Materias Electivas - Diseño compacto e interactivo en cuadrados */}
-        <div className="mt-5 bg-white rounded-xl border border-gray-200 p-4 text-left">
-          <div className="pb-2 mb-3 border-b border-gray-100 flex items-center justify-between">
-            <h3 className="text-sm sm:text-base font-bold text-[#2F3336]">
-              Materias Electivas
-            </h3>
-            <span className="text-xs text-gray-400 font-medium">
-              {asignaturasElectivas.length} especialidades
-            </span>
-          </div>
+        {/* Materias Electivas - Mostradas en 'Todos los Años' o en la pestaña 'Electivas' */}
+        {(selectedNivel === 'all' || selectedNivel === 'electivas') && (
+          <div className="mt-5 bg-white rounded-xl border border-gray-200 p-4 text-left shadow-2xs">
+            <div className="pb-2 mb-3 border-b border-gray-100 flex items-center justify-between flex-wrap gap-2">
+              <div>
+                <h3 className="text-sm sm:text-base font-bold text-[#2F3336]">
+                  Materias Electivas (5° Año)
+                </h3>
+                <p className="text-xs text-gray-500 mt-0.5">
+                  Asignaturas de especialización técnica y directiva a elección del estudiante (10 hs/sem anuales).
+                </p>
+              </div>
+              <span className="text-xs text-gray-400 font-medium">
+                {asignaturasElectivas.length} especialidades
+              </span>
+            </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
-            {asignaturasElectivas.map((el, i) => (
-              <button 
-                key={i} 
-                onClick={() => setActiveMateria({
-                  ...el,
-                  tipo: 'Asignatura Electiva',
-                  correlativasCursar: 'Según orientación y nivel de cursada',
-                  correlativasRendir: 'Cursada regular'
-                })}
-                className="p-2.5 bg-gray-50/70 hover:bg-[#FFF8F9] border border-gray-200 hover:border-[#A31235] rounded-xl flex flex-col justify-center min-h-[52px] text-xs font-semibold text-[#2F3336] hover:text-[#A31235] text-left transition-all active:scale-98 cursor-pointer group shadow-2xs"
-              >
-                <span>{el.nombre}</span>
-                <span className="text-[10px] text-gray-400 group-hover:text-[#A31235] mt-0.5">
-                  {el.area}
-                </span>
-              </button>
-            ))}
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
+              {asignaturasElectivas.map((el, i) => (
+                <button 
+                  key={i} 
+                  onClick={() => setActiveMateria({
+                    ...el,
+                    tipo: 'Asignatura Electiva',
+                    correlativasCursar: 'Según orientación y nivel de cursada',
+                    correlativasRendir: 'Cursada regular'
+                  })}
+                  className="p-2.5 bg-gray-50/70 hover:bg-[#FFF8F9] border border-gray-200 hover:border-[#A31235] rounded-xl flex flex-col justify-center min-h-[52px] text-xs font-semibold text-[#2F3336] hover:text-[#A31235] text-left transition-all active:scale-98 cursor-pointer group shadow-2xs"
+                >
+                  <span>{el.nombre}</span>
+                  <span className="text-[10px] text-gray-400 group-hover:text-[#A31235] mt-0.5">
+                    {el.area}
+                  </span>
+                </button>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
 
       </div>
 

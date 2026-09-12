@@ -85,10 +85,6 @@ export default function Hero() {
               </span>
             </div>
           </div>
-
-          <div className="mt-4 pt-2.5 border-t border-white/10 text-center text-[11px] sm:text-xs text-gray-300">
-            ⭐ <strong className="text-white">Título Intermedio (3° año):</strong> Técnico/a Universitario/a en Gestión Industrial &nbsp;•&nbsp; 🎓 <strong className="text-white">Título de Grado (5° año):</strong> Ingeniero/a Industrial
-          </div>
         </div>
 
         {/* Botones de acción centrados y unificados */}
