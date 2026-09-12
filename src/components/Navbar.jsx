@@ -1,12 +1,8 @@
 import React, { useState } from 'react';
-import { ExternalLink, Printer, Menu, X, BookOpen, Layers, Gamepad2, GraduationCap } from 'lucide-react';
+import { ExternalLink, Menu, X, BookOpen, Layers, GraduationCap } from 'lucide-react';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  const handlePrint = () => {
-    window.print();
-  };
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200 shadow-sm">
@@ -51,20 +47,11 @@ export default function Navbar() {
 
           {/* Action CTAs */}
           <div className="hidden sm:flex items-center space-x-3">
-            <button
-              onClick={handlePrint}
-              title="Guardar o imprimir folleto en PDF"
-              className="inline-flex items-center space-x-1.5 px-3 py-2 text-xs font-semibold text-[#2F3336] bg-gray-100 hover:bg-gray-200 rounded-md transition-colors"
-            >
-              <Printer className="w-3.5 h-3.5 text-gray-600" />
-              <span>Imprimir Folleto</span>
-            </button>
-
             <a
               href="https://frba.utn.edu.ar/ingreso/ingenieria-industrial/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center space-x-2 px-4 py-2 text-xs sm:text-sm font-bold text-white bg-[#B71234] hover:bg-[#9E0E2B] rounded-md shadow-sm transition-all transform hover:-translate-y-0.5"
+              className="inline-flex items-center space-x-2 px-4 py-2 text-xs sm:text-sm font-bold text-white bg-[#A31235] hover:bg-[#870E2B] rounded-md shadow-sm transition-all transform hover:-translate-y-0.5"
             >
               <span>Web Oficial</span>
               <ExternalLink className="w-3.5 h-3.5" />
@@ -74,15 +61,8 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <div className="flex sm:hidden items-center space-x-2">
             <button
-              onClick={handlePrint}
-              className="p-2 text-gray-600 hover:text-[#B71234]"
-              title="Imprimir"
-            >
-              <Printer className="w-5 h-5" />
-            </button>
-            <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 text-[#2F3336] hover:text-[#B71234] focus:outline-none"
+              className="p-2 text-[#231F20] hover:text-[#A31235] focus:outline-none"
               aria-label="Abrir menú"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

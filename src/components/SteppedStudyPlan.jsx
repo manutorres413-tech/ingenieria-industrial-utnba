@@ -126,32 +126,20 @@ export default function SteppedStudyPlan() {
                     <button
                       key={mat.codigo}
                       onClick={() => setActiveMateria(mat)}
-                      className={`text-left p-2.5 sm:p-3 rounded-lg border transition-all duration-150 flex flex-col justify-between min-h-[70px] sm:min-h-[78px] active:scale-98 group cursor-pointer ${
+                      className={`text-left p-3 rounded-xl border transition-all duration-150 flex flex-col justify-center min-h-[56px] sm:min-h-[62px] active:scale-98 group cursor-pointer ${
                         isIntegradora
-                          ? 'border-[#FCD4DA] bg-[#FFF9FA] hover:border-[#B71234] hover:shadow-xs'
+                          ? 'border-[#FCD4DA] bg-[#FFF8F9] hover:border-[#A31235] hover:shadow-xs'
                           : 'border-gray-200 bg-white hover:border-gray-300 hover:bg-gray-50/70 hover:shadow-xs'
                       }`}
                     >
-                      {/* Nombre de la materia bien visible y legible */}
-                      <span className="text-xs sm:text-sm font-semibold text-[#2F3336] leading-snug group-hover:text-[#B71234] transition-colors">
+                      <span className="text-xs sm:text-sm font-semibold text-[#231F20] leading-snug group-hover:text-[#A31235] transition-colors">
                         {mat.nombre}
                       </span>
-
-                      {/* Pie de la tarjeta */}
-                      <div className="flex items-center justify-between w-full pt-1.5 mt-1 border-t border-gray-100 text-[10px]">
-                        {isIntegradora ? (
-                          <span className="font-bold text-[#B71234]">
-                            ★ Integradora
-                          </span>
-                        ) : (
-                          <span className="text-gray-400 truncate">
-                            Ver detalle
-                          </span>
-                        )}
-                        <span className="text-gray-300 group-hover:text-[#B71234] font-bold text-xs shrink-0 ml-1 transition-colors">
-                          +
+                      {isIntegradora && (
+                        <span className="text-[10px] text-[#A31235] font-bold mt-1">
+                          ★ Integradora
                         </span>
-                      </div>
+                      )}
                     </button>
                   );
                 })}
