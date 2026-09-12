@@ -534,99 +534,171 @@ export const planEstudios = [
 
 export const asignaturasElectivas = [
   {
-    codigo: "952577",
-    nombre: "Ciencia de Datos",
-    horas: "5 hs/sem",
-    area: "Tecnología 4.0",
-    programaPdf: "./programas/ciencia-de-datos.pdf",
-    descripcion: "Minería de datos, análisis predictivo con Python/R, visualización analítica y modelos de machine learning para la toma de decisiones industriales."
-  },
-  {
-    codigo: "952564",
-    nombre: "Automatización en Logística",
-    horas: "5 hs/sem",
-    area: "Cadena de Suministro",
-    programaPdf: "./programas/automatizacion-en-logistica.pdf",
-    descripcion: "Sistemas automáticos de almacenamiento (AS/RS), vehículos guiados automáticamente (AGVs), RFID, sensores IoT y control inteligente de centros de distribución."
-  },
-  {
-    codigo: "952571",
-    nombre: "Robótica Industrial",
-    horas: "5 hs/sem",
-    area: "Automatización",
-    programaPdf: "./programas/robotica-industrial.pdf",
-    descripcion: "Cinemática y programación de robots manipuladores, cobots colaborativos, celdas de soldadura y automatización de líneas de ensamble."
-  },
-  {
-    codigo: "952559",
-    nombre: "Fabricación Flexible y Sistemas Inteligentes",
-    horas: "5 hs/sem",
-    area: "Industria 4.0",
-    programaPdf: "./programas/fabricacion-flexible-y-sistemas-inteligentes.pdf",
-    descripcion: "Células de manufactura flexible (FMS), gemelos digitales, integración de SCADA, control numérico y manufactura aditiva 3D."
-  },
-  {
-    codigo: "952580",
+    codigo: "EL-01",
     nombre: "IA Aplicada a Comercio Electrónico y Marketing",
-    horas: "5 hs/sem",
+    horas: "4 hs/sem",
     area: "Inteligencia Artificial",
     programaPdf: "./programas/ia-aplicada-a-comercio-electronico-y-marketing.pdf",
-    descripcion: "Modelos de inteligencia artificial para recomendación de productos, procesamiento de lenguaje natural (LLMs), optimización de conversión y marketing digital predictivo."
+    descripcion: "Modelos predictivos de Machine Learning y LLMs aplicados a plataformas digitales, sistemas de recomendación, pricing dinámico, embudos de conversión y analítica comercial avanzada."
   },
   {
-    codigo: "952581",
+    codigo: "EL-02",
+    nombre: "Ciencia de Datos",
+    horas: "4 hs/sem",
+    area: "Analítica y Big Data",
+    programaPdf: "./programas/ciencia-de-datos.pdf",
+    descripcion: "Procesamiento de datos a gran escala, modelos probabilísticos y estadísticos con Python, aprendizaje automático e inferencia predictiva para optimización en operaciones y toma de decisiones."
+  },
+  {
+    codigo: "EL-03",
+    nombre: "Robótica Industrial",
+    horas: "4 hs/sem",
+    area: "Automatización y Robótica",
+    programaPdf: "./programas/robotica-industrial.pdf",
+    descripcion: "Cinemática, programación y control de robots manipuladores, cobots colaborativos, celdas de soldadura y ensamble automatizado en líneas de manufactura avanzada."
+  },
+  {
+    codigo: "EL-04",
+    nombre: "Automatización en Logística",
+    horas: "4 hs/sem",
+    area: "Cadena de Suministro 4.0",
+    programaPdf: "./programas/automatizacion-en-logistica.pdf",
+    descripcion: "Almacenes automáticos inteligentes (AS/RS), vehículos guiados automáticamente (AGVs), trazabilidad por RFID, visión artificial e integración IoT en centros de distribución."
+  },
+  {
+    codigo: "EL-05",
+    nombre: "Fabricación Flexible y Sistemas Inteligentes",
+    horas: "4 hs/sem",
+    area: "Industria 4.0",
+    programaPdf: "./programas/fabricacion-flexible-y-sistemas-inteligentes.pdf",
+    descripcion: "Sistemas de Manufactura Flexible (FMS), gemelos digitales (Digital Twins), integración de sistemas SCADA, control numérico computarizado (CNC) y manufactura aditiva 3D."
+  },
+  {
+    codigo: "EL-06",
     nombre: "Ingeniería para Organizaciones Inteligentes",
-    horas: "5 hs/sem",
-    area: "Gestión Estratégica",
+    horas: "4 hs/sem",
+    area: "Transformación Digital y Agilidad",
     programaPdf: "./programas/ingenieria-para-organizaciones-inteligentes.pdf",
-    descripcion: "Gestión del conocimiento, agilidad empresarial, modelos organizacionales exponenciales y transformación cultural en la era de la información."
+    descripcion: "Modelos organizacionales basados en datos, agilidad empresarial a escala, gestión estratégica del conocimiento y adaptación a entornos dinámicos y complejos."
+  },
+  {
+    codigo: "EL-07",
+    nombre: "Certificación de Sistemas de Calidad ISO 9001 y Productos",
+    horas: "4 hs/sem",
+    area: "Calidad y Normas",
+    programaPdf: "./programas/certificacion-de-sistemas-de-calidad-iso-9001-y-productos.pdf",
+    descripcion: "Diseño, auditoría y certificación de Sistemas de Gestión de Calidad (SGC) bajo estándares ISO 9001, integración con normas ambientales y aseguramiento de calidad de producto ante entes certificadores (TÜV, IRAM)."
+  },
+  {
+    codigo: "EL-08",
+    nombre: "Tecnología y Gestión de la Energía",
+    horas: "4 hs/sem",
+    area: "Transición Energética y Sostenibilidad",
+    programaPdf: "./programas/tecnologia-y-gestion-de-la-energia.pdf",
+    descripcion: "Diagnósticos y auditorías energéticas industriales, eficiencia en redes térmicas y eléctricas, energías renovables, descarbonización y norma ISO 50001."
+  },
+  {
+    codigo: "EL-09",
+    nombre: "Gestión de Proyectos",
+    horas: "4 hs/sem",
+    area: "Dirección de Proyectos",
+    programaPdf: "./programas/gestion-de-proyectos.pdf",
+    descripcion: "Gestión ágil (Scrum, Kanban) y tradicional (estándares PMI), balance de recursos, mitigación de riesgos y seguimiento de presupuestos y plazos en proyectos de ingeniería."
+  },
+  {
+    codigo: "EL-10",
+    nombre: "Análisis de Mercados y Finanzas Globales",
+    horas: "4 hs/sem",
+    area: "Finanzas Internacionales",
+    programaPdf: "./programas/analisis-de-mercados-y-finanzas-globales.pdf",
+    descripcion: "Interpretación de variables macroeconómicas globales en tiempo real (tasas, tipo de cambio, riesgo país, commodities), derivados financieros y valuación estratégica bajo incertidumbre."
   },
   {
     codigo: "952594",
     nombre: "Finanzas",
     horas: "5 hs/sem",
-    area: "Economía",
+    area: "Finanzas Corporativas",
     programaPdf: "./programas/finanzas.pdf",
-    descripcion: "Estructura de capital, instrumentos de renta fija y variable, derivados financieros, valuación de empresas y gestión del riesgo corporativo."
+    descripcion: "Estructura de financiamiento corporativo, administración del capital de trabajo, valuación de activos, flujo de fondos descontado y mercado de capitales."
   },
   {
-    codigo: "952573",
-    nombre: "Gestión de Proyectos",
-    horas: "5 hs/sem",
-    area: "Gestión",
-    programaPdf: "./programas/gestion-de-proyectos.pdf",
-    descripcion: "Estándares PMI y marcos ágiles (Scrum, Kanban), gestión de riesgos, estimación de cronogramas y control de costos en proyectos de ingeniería."
-  },
-  {
-    codigo: "952592",
-    nombre: "Logística Avanzada",
-    horas: "5 hs/sem",
+    codigo: "EL-12",
+    nombre: "Logística",
+    horas: "4 hs/sem",
     area: "Cadena de Suministro",
     programaPdf: "./programas/logistica.pdf",
-    descripcion: "Optimización de redes globales de suministro, cross-docking, transporte multimodal y logística verde sustentable."
+    descripcion: "Modelado de redes logísticas, gestión de flotas y transporte multimodal, cross-docking, optimización de inventarios y logística inversa."
   },
   {
-    codigo: "032560",
-    nombre: "Certificación de Sistemas de Calidad ISO 9001",
-    horas: "5 hs/sem",
-    area: "Calidad",
-    programaPdf: "./programas/certificacion-de-sistemas-de-calidad-iso-9001-y-productos.pdf",
-    descripcion: "Diseño, implementación y auditoría de sistemas de gestión según normas ISO 9001, gestión por procesos y aseguramiento de calidad de producto."
+    codigo: "EL-13",
+    nombre: "Innovación y Emprendedorismo",
+    horas: "4 hs/sem",
+    area: "Emprendimiento y Startups",
+    programaPdf: "./programas/innovacion-y-emprendedorismo.pdf",
+    descripcion: "Creación y escalado de empresas de base tecnológica, metodologías de innovación (Lean Startup, Design Thinking), validación de propuestas de valor y rondas de inversión."
   },
   {
-    codigo: "952567",
-    nombre: "Tecnología y Gestión de la Energía",
-    horas: "5 hs/sem",
-    area: "Sustentabilidad",
-    programaPdf: "./programas/tecnologia-y-gestion-de-la-energia.pdf",
-    descripcion: "Auditorías energéticas industriales, eficiencia en redes térmicas y eléctricas, energías renovables (solar, eólica) y certificación ISO 50001."
+    codigo: "EL-14",
+    nombre: "Marketing Industrial",
+    horas: "4 hs/sem",
+    area: "Negocios B2B",
+    programaPdf: "./programas/marketing-industrial.pdf",
+    descripcion: "Inteligencia de mercado interempresarial (B2B), pricing técnico, desarrollo de clientes industriales, licitaciones complejas y gestión de canales comerciales."
   },
   {
-    codigo: "952576",
-    nombre: "Negociación Estratégica",
-    horas: "5 hs/sem",
+    codigo: "EL-15",
+    nombre: "Gestión Empresarial",
+    horas: "4 hs/sem",
+    area: "Gestión Directiva",
+    programaPdf: "./programas/gestion-empresarial.pdf",
+    descripcion: "Modelos directivos contemporáneos de administración de empresas, cuadros de mando integral, formulación de planes de negocios y gobierno corporativo."
+  },
+  {
+    codigo: "EL-16",
+    nombre: "Negociación",
+    horas: "4 hs/sem",
     area: "Habilidades Directivas",
     programaPdf: "./programas/negociacion.pdf",
-    descripcion: "Modelos de negociación colaborativa (Método Harvard), manejo de situaciones de conflicto laboral/comercial y construcción de acuerdos duraderos."
+    descripcion: "Métodos colaborativos de negociación (Método Harvard), manejo de intereses contrapuestos, dinámicas de persuasión y resolución estratégica de controversias comerciales y laborales."
+  },
+  {
+    codigo: "EL-17",
+    nombre: "Ergonomía",
+    horas: "4 hs/sem",
+    area: "Salud Ocupacional y Ergonomía",
+    programaPdf: "./programas/ergonomia.pdf",
+    descripcion: "Evaluación biomecánica de puestos laborales, análisis de carga física y postural, factores ambientales (ruido, iluminación) y prevención de trastornos músculo-esqueléticos."
+  },
+  {
+    codigo: "EL-18",
+    nombre: "Política Económica",
+    horas: "4 hs/sem",
+    area: "Entorno Macroeconómico",
+    programaPdf: "./programas/politica-economica.pdf",
+    descripcion: "Análisis del marco macroeconómico argentino, políticas monetarias, fiscales y arancelarias, y su incidencia sobre el desarrollo industrial y la competitividad regional."
+  },
+  {
+    codigo: "EL-19",
+    nombre: "Responsabilidad Social Empresaria",
+    horas: "4 hs/sem",
+    area: "Ética y Sustentabilidad",
+    programaPdf: "./programas/responsabilidad-social-empresaria.pdf",
+    descripcion: "Modelos de sostenibilidad corporativa, lineamientos ESG (Environmental, Social and Governance), balance social y diálogo con grupos de interés."
+  },
+  {
+    codigo: "EL-20",
+    nombre: "Cooperativismo, Tecnología y Economía Solidaria",
+    horas: "4 hs/sem",
+    area: "Economía Social y Autogestión",
+    programaPdf: "./programas/cooperativismo-tecnologia-y-economia-solidaria.pdf",
+    descripcion: "Marco doctrinario y legal de empresas recuperadas, cooperativas de trabajo, autogestión de la producción y modelos de tecnología social."
+  },
+  {
+    codigo: "EL-21",
+    nombre: "Inglés Comunicacional II",
+    horas: "4 hs/sem",
+    area: "Idiomas Extranjeros",
+    programaPdf: "./programas/ingles-comunicacional-ii.pdf",
+    descripcion: "Desarrollo de competencias comunicacionales en inglés orientadas a presentaciones ejecutivas, lectura de papers técnicos y reuniones de negocios internacionales."
   }
 ];

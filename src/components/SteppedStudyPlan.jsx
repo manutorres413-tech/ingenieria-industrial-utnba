@@ -35,7 +35,7 @@ export default function SteppedStudyPlan() {
                 Plan de Estudios
               </h2>
               <p className="text-xs sm:text-sm text-gray-500 mt-1">
-                Plan oficial I23 • 5 años de duración • Título intermedio al 3° año
+                Plan oficial I23 • 42 materias + 20 hs de electivas + 200 hs PPS • Título intermedio al 3° año
               </p>
             </div>
 
@@ -80,7 +80,7 @@ export default function SteppedStudyPlan() {
                   <span className="text-[11px] font-bold uppercase tracking-wider text-[#A31235] bg-[#FFF0F3] px-2.5 py-0.5 rounded-md border border-[#FCD4DA]">
                     Estructura Curricular I23
                   </span>
-                  <span className="text-xs text-gray-400 font-medium">42 asignaturas obligatorias + electivas y PPS</span>
+                  <span className="text-xs text-gray-400 font-medium">42 materias obligatorias + 20 hs de electivas + 200 hs PPS</span>
                 </div>
                 <h4 className="text-base sm:text-lg font-bold text-[#231F20] group-hover:text-[#A31235] transition-colors">
                   Explorá las materias año por año y sus temarios analíticos
@@ -254,7 +254,7 @@ export default function SteppedStudyPlan() {
                   {/* Nota de electivas en 5° año cuando se filtra específicamente por 5° año */}
                   {level.nivel === 5 && selectedNivel === 5 && (
                     <div className="p-3 bg-gray-50/80 border-t border-gray-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-gray-600">
-                      <span>💡 En 5° año se cursan además <strong>10 hs/sem de Asignaturas Electivas</strong> a elección.</span>
+                      <span>💡 En 5° año se cursan además <strong>20 hs de Asignaturas Electivas</strong> a elección entre la oferta oficial departamental.</span>
                       <button
                         onClick={() => setSelectedNivel('electivas')}
                         className="inline-flex items-center text-xs font-bold text-[#A31235] hover:underline cursor-pointer shrink-0"
@@ -271,13 +271,18 @@ export default function SteppedStudyPlan() {
             {/* Materias Electivas - Mostradas en 'Todos los Años' o en la pestaña 'Electivas' */}
             {(selectedNivel === 'all' || selectedNivel === 'electivas') && (
               <div className="mt-5 bg-white rounded-xl border border-gray-200 p-4 text-left shadow-2xs">
-                <div className="pb-2 mb-3 border-b border-gray-100">
-                  <h3 className="text-sm sm:text-base font-bold text-[#2F3336]">
-                    Materias Electivas (5° Año)
-                  </h3>
-                  <p className="text-xs text-gray-500 mt-0.5">
-                    Asignaturas de especialización técnica y directiva a elección del estudiante (10 hs/sem anuales).
-                  </p>
+                <div className="pb-2 mb-3 border-b border-gray-100 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                  <div>
+                    <h3 className="text-sm sm:text-base font-bold text-[#2F3336]">
+                      Materias Electivas (5° Año)
+                    </h3>
+                    <p className="text-xs text-gray-500 mt-0.5">
+                      Oferta completa de 21 asignaturas de especialización técnica y directiva (requiere cursar 20 hs de electivas).
+                    </p>
+                  </div>
+                  <span className="text-[11px] text-[#A31235] font-semibold bg-[#FFF1F3] px-2 py-0.5 rounded border border-[#FCD4DA] self-start sm:self-auto">
+                    Priorizadas por innovación tecnológica
+                  </span>
                 </div>
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
@@ -347,6 +352,12 @@ export default function SteppedStudyPlan() {
                 <h4 className="text-lg sm:text-xl font-bold text-[#2F3336]">
                   {activeMateria.nombre}
                 </h4>
+                {activeMateria.horas && (
+                  <p className="text-xs text-gray-500 mt-0.5">
+                    Carga horaria: <span className="font-semibold text-gray-700">{activeMateria.horas}</span>
+                    {activeMateria.regimen && <span> • {activeMateria.regimen}</span>}
+                  </p>
+                )}
               </div>
 
               <button
