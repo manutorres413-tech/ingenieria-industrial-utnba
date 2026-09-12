@@ -92,7 +92,7 @@ export default function Hero() {
           </div>
 
           <div className="mt-3.5 pt-2.5 border-t border-white/10 text-[11px] text-gray-400 text-center sm:text-left">
-            ★ Título intermedio oficial (3° año):{' '}
+            ★ Título intermedio (3° año):{' '}
             <strong className="text-white">Técnico/a Universitario/a en Administración, Producción y Gestión Industrial</strong>
           </div>
         </div>
