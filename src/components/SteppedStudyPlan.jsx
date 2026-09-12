@@ -213,33 +213,24 @@ export default function SteppedStudyPlan() {
               </p>
             </div>
 
-            {/* Correlatividades explicadas de forma directa */}
-            <div className="space-y-2 pt-2 border-t border-gray-100 text-xs">
-              <div className="bg-gray-50 p-3 rounded-lg">
-                <strong className="text-gray-800 block mb-0.5">Para cursarla necesitás tener:</strong>
-                <span className="text-gray-600">
-                  {activeMateria.correlativasCursar && activeMateria.correlativasCursar !== '-'
-                    ? activeMateria.correlativasCursar
-                    : 'No requiere materias previas (se puede cursar directamente)'}
-                </span>
-              </div>
-              <div className="bg-gray-50 p-3 rounded-lg">
-                <strong className="text-gray-800 block mb-0.5">Para rendir el examen final necesitás:</strong>
-                <span className="text-gray-600">
-                  {activeMateria.correlativasRendir && activeMateria.correlativasRendir !== '-'
-                    ? activeMateria.correlativasRendir
-                    : 'No requiere finales previos'}
-                </span>
-              </div>
-            </div>
+            {/* Pie del modal con enlace al PDF y botón de cierre */}
+            <div className="pt-3 border-t border-gray-100 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5">
+              <a
+                href="./PLAN_I23_Ingenieria_Industrial_UTNBA.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center space-x-1.5 px-3.5 py-2 text-xs font-semibold text-[#A31235] bg-[#FFF0F3] hover:bg-[#FCD4DA] border border-[#FCD4DA] rounded-lg transition-colors"
+              >
+                <FileText className="w-3.5 h-3.5" />
+                <span>Ver Plan Completo (PDF)</span>
+                <ExternalLink className="w-3 h-3 opacity-80" />
+              </a>
 
-            {/* Pie del modal */}
-            <div className="pt-2 flex items-center justify-end">
               <button
                 onClick={() => setActiveMateria(null)}
-                className="px-4 py-2 bg-[#2F3336] hover:bg-black text-white text-xs font-bold rounded-lg transition-colors"
+                className="px-4 py-2 bg-[#231F20] hover:bg-black text-white text-xs font-bold rounded-lg transition-colors"
               >
-                Entendido
+                Cerrar
               </button>
             </div>
 
