@@ -63,7 +63,7 @@ export default function Hero() {
                 </span>
               </div>
               <span className="text-[10px] sm:text-xs text-[#FF4D6D] font-bold mt-1 text-center">
-                Analista
+                Técnico/a
               </span>
             </div>
 
@@ -81,13 +81,13 @@ export default function Hero() {
                 5°
               </div>
               <span className="text-[10px] sm:text-xs text-white font-bold mt-1.5 text-center">
-                Ingeniería
+                Ingeniero/a
               </span>
             </div>
           </div>
 
           <div className="mt-4 pt-2.5 border-t border-white/10 text-center text-[11px] sm:text-xs text-gray-300">
-            ⭐ <strong className="text-white">Título Intermedio (3° año):</strong> Analista Industrial con inserción laboral temprana.
+            ⭐ <strong className="text-white">Título Intermedio (3° año):</strong> Técnico/a Universitario/a en Gestión Industrial &nbsp;•&nbsp; 🎓 <strong className="text-white">Título de Grado (5° año):</strong> Ingeniero/a Industrial
           </div>
         </div>
 

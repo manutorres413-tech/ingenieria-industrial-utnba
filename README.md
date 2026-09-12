@@ -16,7 +16,7 @@ Folleto digital interactivo para la **Expo Carreras de la Universidad Tecnológi
   - Ilustración 3D isométrica de modelado de procesos y planta de operaciones.
 - **Plan de Estudios Escalonado (Plan I23 - Ord. 1909/23)**:
   - Estructura paso a paso de 1° a 5° año con carga horaria semanal y correlatividades.
-  - Hito destacado del **Título Intermedio** (Analista Industrial / Bachiller Universitario en Ciencias de la Ingeniería) al 3° año.
+  - Hito destacado del **Título Intermedio** (Técnico/a Universitario/a en Gestión Industrial / Bachiller Universitario en Ciencias de la Ingeniería) al 3° año.
   - Práctica Profesional Supervisada (PPS - 200 hs) y Proyecto Final Integrador.
   - Buscador interactivo de asignaturas en tiempo real y descarga del PDF oficial.
 - **Perfil del Egresado y Campo Laboral**:
