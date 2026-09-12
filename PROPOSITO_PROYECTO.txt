@@ -45,6 +45,7 @@ Despliegue en Vercel: Vinculado directamente al repositorio GitHub (CI/CD automa
   * 3 a 4 columnas en computadoras.
   * Cada materia es una ficha cuadrada de altura fija y compacta con:
     codigo, carga horaria, nombre y tipo.
+  * Se elimino el buscador de materias para mantener el diseno 100% limpio y minimalista.
 - Detalle interactivo sin desarmar la grilla:
   * Al tocar o hacer clic en una materia, se abre una ventana modal emergente (popup)
     con la descripcion de contenidos y las correlativas para cursar y rendir.
@@ -61,9 +62,11 @@ Despliegue en Vercel: Vinculado directamente al repositorio GitHub (CI/CD automa
 1. Navbar: Logo UTN.BA + Depto Industrial + Boton Imprimir Folleto + Web Oficial.
 2. Hero: Titular limpio ("Ingenieria Industrial - UTN Buenos Aires"), 3 datos clave
    (5 Años de duracion, Titulo Intermedio en 3°, Gratuita) + Botones de accion + Render 3D.
-3. Plan de Estudios: Cuadricula compacta con modal emergente y buscador.
+3. Plan de Estudios: Cuadricula compacta con modal emergente (sin buscador).
 4. Salida Laboral: 6 ambitos de insercion explicados de forma clara y humana.
-5. ¿Como es cursar en UTN Buenos Aires?: Sedes Medrano y Campus Lugano, tutorias en 1° ano, gratuidad.
+5. ¿Por que estudiar en UTN Buenos Aires?: Se destaca que la UTN es una universidad
+   enfocada EXCLUSIVAMENTE en ingenieria (no se dictan otras disciplinas), sedes
+   Medrano y Campus Lugano, tutorias en 1° ano, gratuidad.
 6. Ingreso a la Carrera: Pasos claros del Seminario Universitario y link a SIU-Guarani.
 7. Footer: Sedes y enlaces oficiales.
 

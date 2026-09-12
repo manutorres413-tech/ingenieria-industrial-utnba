@@ -1,35 +1,14 @@
 import React, { useState } from 'react';
 import { planEstudios, asignaturasElectivas } from '../data/planEstudios';
-import { Download, Search, ExternalLink, Award, GraduationCap, X } from 'lucide-react';
+import { Download, ExternalLink, Award, GraduationCap, X } from 'lucide-react';
 
 export default function SteppedStudyPlan() {
   const [selectedNivel, setSelectedNivel] = useState('all');
   const [activeMateria, setActiveMateria] = useState(null);
-  const [searchQuery, setSearchQuery] = useState('');
 
-  const filteredPlan = planEstudios.map(level => {
-    if (selectedNivel !== 'all' && level.nivel !== Number(selectedNivel)) {
-      return null;
-    }
-    const filteredMaterias = level.materias.filter(m => 
-      m.nombre.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      m.codigo.includes(searchQuery) ||
-      m.tipo.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      m.descripcion.toLowerCase().includes(searchQuery.toLowerCase())
-    );
-
-    return {
-      ...level,
-      materias: filteredMaterias
-    };
-  }).filter(Boolean);
-
-  const getTipoColor = (tipo) => {
-    if (tipo.includes('Integradora')) return 'bg-[#FFF1F3] text-[#B71234] border-[#FCD4DA]';
-    if (tipo.includes('Ciencias Básicas')) return 'bg-blue-50 text-blue-700 border-blue-200';
-    if (tipo.includes('Gestión') || tipo.includes('Economía')) return 'bg-emerald-50 text-emerald-700 border-emerald-200';
-    return 'bg-gray-100 text-gray-700 border-gray-200';
-  };
+  const filteredPlan = planEstudios.filter(level => 
+    selectedNivel === 'all' || level.nivel === Number(selectedNivel)
+  );
 
   return (
     <section id="plan-estudios" className="py-10 bg-[#F5F6F8]">
@@ -66,7 +45,7 @@ export default function SteppedStudyPlan() {
         </div>
 
         {/* Year Filter Tabs */}
-        <div className="mb-4 no-print overflow-x-auto pb-1 scrollbar-none">
+        <div className="mb-6 no-print overflow-x-auto pb-1 scrollbar-none">
           <div className="bg-white p-1 rounded-xl border border-gray-200 inline-flex items-center gap-1 min-w-full sm:min-w-0 justify-start sm:justify-center">
             <button
               onClick={() => setSelectedNivel('all')}
@@ -97,20 +76,6 @@ export default function SteppedStudyPlan() {
                 )}
               </button>
             ))}
-          </div>
-        </div>
-
-        {/* Search */}
-        <div className="mb-6 bg-white p-2 rounded-xl border border-gray-200 no-print">
-          <div className="relative w-full">
-            <Search className="w-3.5 h-3.5 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2" />
-            <input
-              type="text"
-              placeholder="Buscar materia (ej: Costos, Álgebra, Física, Datos)..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-8 pr-3 py-1 text-xs sm:text-sm border-0 focus:outline-none"
-            />
           </div>
         </div>
 

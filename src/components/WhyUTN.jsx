@@ -1,22 +1,22 @@
 import React from 'react';
-import { Building2, GraduationCap, HeartHandshake } from 'lucide-react';
+import { Building2, GraduationCap, Compass, ShieldCheck } from 'lucide-react';
 
 export default function WhyUTN() {
   const points = [
     {
-      icon: Building2,
-      title: "Dos sedes en la ciudad",
-      description: "Sede Medrano en Almagro y Sede Campus en Villa Lugano (Mozart 2300), con talleres de máquinas, laboratorios de ensayo y centros de cómputo."
+      icon: Compass,
+      title: "Enfocada 100% en ingeniería",
+      description: "A diferencia de otras universidades, en la UTN no se dictan otras disciplinas. Todos los recursos, laboratorios y claustros docentes están dedicados exclusivamente a la ingeniería y la tecnología."
     },
     {
-      icon: HeartHandshake,
-      title: "Tutorías de apoyo en primer año",
-      description: "Estudiantes avanzados brindan clases de consulta y grupos de estudio para acompañarte en materias como Análisis Matemático, Álgebra y Física."
+      icon: Building2,
+      title: "Dos sedes en la ciudad",
+      description: "Sede Medrano en Almagro y Sede Campus en Villa Lugano (Mozart 2300), equipadas con talleres pesados, laboratorios de ensayo y centros de cómputo."
     },
     {
       icon: GraduationCap,
       title: "Universidad pública y gratuita",
-      description: "La UTN no cobra aranceles ni matrículas. Es una universidad nacional de excelencia en la formación de ingenieros de todo el país."
+      description: "Formación de excelencia sin aranceles ni matrículas. Además, contás con tutorías de apoyo gratuitas dictadas por estudiantes avanzados en materias de 1° año."
     }
   ];
 
@@ -26,10 +26,10 @@ export default function WhyUTN() {
         
         <div className="max-w-3xl mb-8 text-left">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-[#2F3336] tracking-tight">
-            ¿Cómo es cursar en la UTN Buenos Aires?
+            ¿Por qué estudiar en la UTN Buenos Aires?
           </h2>
-          <p className="mt-1 text-sm sm:text-base text-gray-600">
-            Algunos puntos prácticos para tener en cuenta sobre la facultad:
+          <p className="mt-2 text-sm sm:text-base text-gray-600 leading-relaxed">
+            La UTN es una universidad enfocada únicamente en ingeniería: no se dictan carreras de otras áreas. Esto asegura que la comunidad, los espacios de práctica y la investigación estén totalmente alineados a la formación técnica.
           </p>
         </div>
 
