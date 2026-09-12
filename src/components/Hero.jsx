@@ -82,23 +82,17 @@ export default function Hero() {
 
             {/* 5° Año - TÍTULO DE GRADO */}
             <div className="flex flex-col items-center relative z-10">
-              <div className="relative">
-                <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-emerald-600 border-2 border-emerald-400 text-white flex items-center justify-center font-black text-xs sm:text-sm shadow-lg shadow-emerald-600/50 ring-4 ring-emerald-400/20">
-                  5°
-                </div>
-                <span className="absolute -top-6 left-1/2 -translate-x-1/2 whitespace-nowrap text-[9px] font-extrabold uppercase bg-emerald-500 text-emerald-950 px-2 py-0.5 rounded-full shadow-xs">
-                  Título de Grado
-                </span>
+              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#1A1E22] border-2 border-white/60 text-white flex items-center justify-center font-black text-xs sm:text-sm">
+                5°
               </div>
-              <span className="text-[10px] sm:text-xs text-emerald-400 font-bold mt-1 text-center whitespace-nowrap">
+              <span className="text-[10px] sm:text-xs text-white font-bold mt-1.5 text-center whitespace-nowrap">
                 Ingeniero/a
               </span>
             </div>
           </div>
 
-          <div className="mt-3.5 pt-2.5 border-t border-white/10 text-[11px] text-gray-300 flex flex-col sm:flex-row items-center justify-between gap-1.5 text-center sm:text-left">
-            <span>★ Título intermedio (3°): <strong className="text-white">Técnico/a Universitario/a</strong></span>
-            <span>🎓 Título de grado (5°): <strong className="text-emerald-400">Ingeniero/a Industrial</strong></span>
+          <div className="mt-3.5 pt-2.5 border-t border-white/10 text-[11px] text-gray-400 text-center sm:text-left">
+            ★ Título intermedio (3° año): <strong className="text-white">Técnico/a Universitario/a</strong> • Título de grado (5° año): <strong className="text-white">Ingeniero/a Industrial</strong>
           </div>
         </div>
 

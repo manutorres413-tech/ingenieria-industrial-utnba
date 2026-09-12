@@ -119,13 +119,10 @@ export default function SteppedStudyPlan() {
                 <span className="font-bold text-[#231F20] block text-sm">4° Año</span>
                 <span className="text-[10px] text-gray-500 block mt-0.5">Gestión y Procesos</span>
               </div>
-              <div className="col-span-2 sm:col-span-1 p-2.5 rounded-xl bg-emerald-50/90 border-2 border-emerald-300 group-hover:border-emerald-500 transition-colors shadow-2xs">
-                <div className="flex items-center justify-center space-x-1">
-                  <span className="font-black text-emerald-900 block text-sm">5° Año</span>
-                  <GraduationCap className="w-4 h-4 text-emerald-700" />
-                </div>
-                <span className="text-[9px] text-emerald-800 font-extrabold uppercase tracking-tight block mt-0.5">🎓 Título de Grado</span>
-                <span className="text-[10px] text-emerald-950 font-bold block">Ingeniero/a Industrial</span>
+              <div className="col-span-2 sm:col-span-1 p-2.5 rounded-xl bg-gray-50/80 border border-gray-100 group-hover:bg-gray-100/70 transition-colors">
+                <span className="font-bold text-[#231F20] block text-sm">5° Año</span>
+                <span className="text-[9px] text-[#A31235] font-extrabold uppercase tracking-tight block mt-0.5">Título de Grado</span>
+                <span className="text-[10px] text-gray-500 block">Ingeniero/a Industrial</span>
               </div>
             </div>
           </div>
@@ -148,11 +145,6 @@ export default function SteppedStudyPlan() {
                     {num === 3 && (
                       <span className={`text-[9px] px-1.5 py-0.5 rounded uppercase font-extrabold ${selectedNivel === 3 ? 'bg-white text-[#A31235]' : 'bg-[#FFF1F3] text-[#A31235]'}`}>
                         Intermedio
-                      </span>
-                    )}
-                    {num === 5 && (
-                      <span className={`text-[9px] px-1.5 py-0.5 rounded uppercase font-extrabold ${selectedNivel === 5 ? 'bg-emerald-300 text-emerald-950' : 'bg-emerald-100 text-emerald-800'}`}>
-                        Título Grado
                       </span>
                     )}
                   </button>
@@ -205,15 +197,15 @@ export default function SteppedStudyPlan() {
 
                   {/* Hito 5° Año (Título Final de Grado) */}
                   {level.nivel === 5 && (
-                    <div className="bg-emerald-50/80 border-b border-emerald-200 px-4 py-2.5 flex items-center space-x-2.5 text-left text-xs">
-                      <GraduationCap className="w-4 h-4 text-emerald-700 shrink-0" />
+                    <div className="bg-gray-50 border-b border-gray-200 px-4 py-2.5 flex items-center space-x-2.5 text-left text-xs">
+                      <GraduationCap className="w-4 h-4 text-[#A31235] shrink-0" />
                       <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
                         <div>
-                          <strong className="text-emerald-900">Título de Grado Final:</strong>{' '}
+                          <strong className="text-[#A31235]">Título de Grado Final:</strong>{' '}
                           <span className="text-[#231F20] font-bold">Ingeniero/a Industrial</span>
                         </div>
                         <span className="hidden sm:inline text-gray-300">•</span>
-                        <span className="text-emerald-800 text-[11px]">5 años oficiales • Práctica Profesional Supervisada (PPS) y Proyecto Final</span>
+                        <span className="text-gray-500 text-[11px]">5 años oficiales • Práctica Profesional Supervisada (PPS) y Proyecto Final</span>
                       </div>
                     </div>
                   )}
