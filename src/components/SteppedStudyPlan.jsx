@@ -19,9 +19,9 @@ export default function SteppedStudyPlan() {
     return () => window.removeEventListener('hashchange', handleHash);
   }, []);
 
-  const filteredPlan = planEstudios.filter(level => 
-    level.nivel === Number(selectedNivel)
-  );
+  const filteredPlan = selectedNivel === 'todos'
+    ? planEstudios
+    : planEstudios.filter(level => level.nivel === Number(selectedNivel));
 
   return (
     <section id="plan-estudios" className="py-8 sm:py-12 bg-[#F5F6F8]">
@@ -76,14 +76,8 @@ export default function SteppedStudyPlan() {
           >
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div className="space-y-1.5">
-                <div className="flex items-center space-x-2">
-                  <span className="text-[11px] font-bold uppercase tracking-wider text-[#A31235] bg-[#FFF0F3] px-2.5 py-0.5 rounded-md border border-[#FCD4DA]">
-                    Estructura Curricular I23
-                  </span>
-                  <span className="text-xs text-gray-400 font-medium">42 materias obligatorias + 20 hs de electivas + 200 hs PPS</span>
-                </div>
-                <h4 className="text-base sm:text-lg font-bold text-[#231F20] group-hover:text-[#A31235] transition-colors">
-                  Explorá las materias año por año y sus temarios analíticos
+                <h4 className="text-base sm:text-lg font-bold text-[#2F3336] group-hover:text-[#A31235] transition-colors">
+                  Explorá las materias año por año y sus temarios
                 </h4>
                 <p className="text-xs sm:text-sm text-gray-600">
                   Tocá aquí para desplegar la cuadrícula de materias, programas oficiales en PDF y régimen de correlatividades.
@@ -159,6 +153,17 @@ export default function SteppedStudyPlan() {
                   }`}
                 >
                   Electivas
+                </button>
+
+                <button
+                  onClick={() => setSelectedNivel('todos')}
+                  className={`px-3.5 py-2 rounded-lg text-xs sm:text-sm font-bold whitespace-nowrap transition-all cursor-pointer ${
+                    selectedNivel === 'todos'
+                      ? 'bg-[#A31235] text-white shadow-xs'
+                      : 'text-gray-600 hover:text-[#A31235] hover:bg-gray-100'
+                  }`}
+                >
+                  Plan Completo
                 </button>
               </div>
             </div>
@@ -255,8 +260,8 @@ export default function SteppedStudyPlan() {
               ))}
             </div>
 
-            {/* Materias Electivas - Mostradas exclusivamente en la pestaña 'Electivas' */}
-            {selectedNivel === 'electivas' && (
+            {/* Materias Electivas - Mostradas en la pestaña 'Electivas' o en 'Plan Completo' */}
+            {(selectedNivel === 'electivas' || selectedNivel === 'todos') && (
               <div className="mt-5 bg-white rounded-xl border border-gray-200 p-4 text-left shadow-2xs">
                 <div className="pb-2 mb-3 border-b border-gray-100 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                   <div>
