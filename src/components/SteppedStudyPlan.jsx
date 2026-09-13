@@ -32,11 +32,8 @@ export default function SteppedStudyPlan() {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#2F3336] tracking-tight">
-                Plan de Estudios
+                Plan de Estudios I23
               </h2>
-              <p className="text-xs sm:text-sm text-gray-500 mt-1">
-                Plan oficial I23 • 42 materias + 20 hs de electivas + 200 hs PPS • Título intermedio al 3° año
-              </p>
             </div>
 
             <div className="flex items-center gap-2 no-print">
