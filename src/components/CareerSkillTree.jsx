@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Factory, Globe2, Cpu, TrendingUp, ArrowRight, Sparkles, CheckCircle2 } from 'lucide-react';
+import { Factory, Globe2, Cpu, TrendingUp, ArrowRight, Sparkles } from 'lucide-react';
 
 export default function CareerSkillTree() {
   const [activeTrack, setActiveTrack] = useState('produccion');
@@ -42,7 +42,7 @@ export default function CareerSkillTree() {
         {
           year: '5° Año',
           subject: 'Distribución en Planta & Robótica',
-          badge: 'Nivel Experto',
+          badge: 'Especialización',
           desc: 'Diseñás el layout óptimo de una planta entera y coordinás brazos robóticos automatizados.'
         }
       ]
@@ -185,7 +185,7 @@ export default function CareerSkillTree() {
         <div className="max-w-3xl mb-8 text-left">
           <span className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs font-bold bg-[#FFF0F3] text-[#A31235] border border-[#FCD4DA] mb-3">
             <Sparkles className="w-3.5 h-3.5 text-[#FF4D6D]" />
-            <span>Árbol de Habilidades (Skill Tree)</span>
+            <span>Evolución de la Carrera</span>
           </span>
           <h2 className="text-2xl sm:text-3xl font-black text-[#231F20] tracking-tight">
             Rutas de la Carrera: ¿Cómo evolucionás año a año?
@@ -282,11 +282,6 @@ export default function CareerSkillTree() {
                   <p className="text-[11px] text-gray-600 leading-relaxed">
                     {step.desc}
                   </p>
-                </div>
-
-                <div className="mt-3 pt-2 border-t border-gray-100 flex items-center text-[10px] font-semibold text-gray-400">
-                  <CheckCircle2 className="w-3 h-3 text-[#A31235] mr-1 shrink-0" />
-                  <span>Nivel {idx + 1} desbloqueado</span>
                 </div>
               </div>
             ))}
