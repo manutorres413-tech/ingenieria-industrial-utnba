@@ -4,7 +4,6 @@ import Hero from './components/Hero';
 import SteppedStudyPlan from './components/SteppedStudyPlan';
 import CareerSkillTree from './components/CareerSkillTree';
 import CareerProfile from './components/CareerProfile';
-import CareerQuiz from './components/CareerQuiz';
 import RealIndustries from './components/RealIndustries';
 import WhyUTN from './components/WhyUTN';
 import AdmissionSection from './components/AdmissionSection';
@@ -21,7 +20,6 @@ function App() {
         <SteppedStudyPlan />
         <CareerSkillTree />
         <CareerProfile />
-        <CareerQuiz />
         <RealIndustries />
         <WhyUTN />
         <AdmissionSection />
