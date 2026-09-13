@@ -1,0 +1,191 @@
+﻿Auditoría de Empleabilidad y Mecanismos de Inserción Profesional en Ingeniería Industrial de la UTN Buenos Aires
+La inserción laboral de los estudiantes y graduados de Ingeniería Industrial en la Facultad Regional Buenos Aires de la Universidad Tecnológica Nacional (UTN FRBA) opera como un sistema de alto rendimiento, donde el 85% del alumnado avanzado participa activamente en el mercado productivo formal antes de obtener su titulación de grado. El núcleo de este ecosistema se define mediante una premisa operativa elemental: la compatibilidad entre una currícula orientada a la ingeniería de procesos, un régimen de cursada vespertino-nocturno y una infraestructura institucional de intermediación laboral digitalizada que convierte las pasantías formativas en el principal canal de reclutamiento temprano y acreditación curricular1.
+La modernización de la intermediación laboral en la UTN.BA —marcada por la adopción de plataformas con inteligencia artificial como Talentia dentro del Área de Desarrollo Profesional (ADP)— ha transformado las dinámicas de colocación, concentrando más del 55% de los requerimientos en perfiles de formación inicial (trainees, pasantes y analistas junior)1. Paralelamente, el régimen legal de la Ley Nacional de Pasantías Educativas N.º 26.427 y los programas corporativos de Jóvenes Profesionales (JP) configuran el andamiaje sobre el cual se asienta la Práctica Profesional Supervisada (PPS), articulando la demanda operativa de las principales corporaciones industriales con las metas pedagógicas de la carrera5.
+A pesar de que el perfil del ingeniero industrial de la UTN se posiciona ventajosamente frente a la competencia universitaria por su pragmatismo en planta y su solidez operativa, el mercado impone exigencias crecientes que operan como cuellos de botella selectivos. La transformación hacia la Industria 4.0 exige superar el dominio transaccional tradicional de hojas de cálculo e incorporar competencias avanzadas en analítica de datos, sistemas empresariales integrados (ERP) y un bilingüismo técnico estandarizado, variables que definen la diferenciación salarial y el acceso a puestos directivos regionales en el mediano plazo1.
+Resumen Ejecutivo del Mercado Laboral para Ingeniería Industrial en UTN.BA
+La empleabilidad de Ingeniería Industrial en la UTN FRBA descansa sobre una articulación estructurada entre la administración central de la facultad, el departamento académico de la especialidad y el tejido gremial-estudiantil2. El perfil profesional combina las ciencias duras de la ingeniería con la optimización de sistemas productivos, la logística integral, el control de gestión y la formulación y evaluación de proyectos de inversión3.
+Esta formación permite a los estudiantes insertarse tempranamente en corporaciones multinacionales, complejos siderúrgicos, plantas automotrices, operadoras energéticas y firmas de consultoría estratégica. La disponibilidad horaria diurna derivada de la oferta de turnos vespertinos actúa como un catalizador decisivo que reduce a cero el tiempo de transición entre la graduación y el empleo a tiempo completo2.
+
+
+Dimensión Analítica
+	Estado Operativo e Institucional
+	Impacto en la Trayectoria Profesional
+	Plataforma de Intermediación
+	Talentia UTN Buenos Aires (+19.000 postulantes, +1.000 organizaciones)4
+	Matching automatizado mediante algoritmos de compatibilidad de perfiles4.
+	Población Objetivo Demandada
+	55% de avisos orientados a niveles trainee y junior1
+	Absorción acelerada de estudiantes de 3.º a 5.º año de cursada.
+	Marco Jurídico Contractual
+	Ley Nacional 26.427 (hasta 20 horas semanales diurnas)7
+	Prácticas formativas no laborales con asignación estímulo vinculada a CCT7.
+	Integración Curricular (PPS)
+	150 a 200 horas técnicas de campo requeridas14
+	Homologación directa de pasantías o empleo formal vía Cátedra de PPS6.
+	Áreas Críticas de Inserción
+	Supply Chain, PCP, Mejora Continua, Calidad y PMO
+	Despliegue operativo inmediato en líneas productivas y centros de distribución.
+	Calidad de Gestión Administrativa
+	Certificación ISO 9001 en los procesos del ADP2
+	Estandarización en auditoría de acuerdos marco, convenios y tutorías de empresa2.
+	Mapeo Integral de Canales de Empleo y Procedimiento de Postulación
+El ecosistema de vinculación laboral de la facultad combina canales institucionales centralizados con redes departamentales y plataformas promovidas por las agrupaciones de estudiantes y graduados.
+Ecosistema de Plataformas Oficiales y Redes Especializadas
+El órgano rector de la gestión laboral en la facultad es el Área de Desarrollo Profesional (ADP), unidad operativa dependiente de la Secretaría de Asuntos Universitarios (SAU), cuya sede central funciona en la calle Medrano 951 (3.er piso, Oficina 320) bajo procedimientos certificados por la norma ISO 90012. El ADP centraliza la fiscalización legal de pasantías y administra la bolsa de empleo institucional2. La plataforma tecnológica oficial es el portal Talentia UTN Buenos Aires (utnba.talentia.com), implementado para sustituir la carga manual de postulaciones por un sistema automatizado que permite a las organizaciones reclutadoras identificar perfiles de ingeniería según competencias técnicas y materias específicas aprobadas1.
+A nivel de la especialidad, el Departamento de Ingeniería Industrial interviene de forma directa mediante la gestión de la Cátedra de Prácticas Profesionales Supervisadas (con contacto oficial a través de industrialpps@gmail.com) y su canal informativo web6. Por esta vía circulan convocatorias de proyectos específicos con pymes, institutos de tecnología y programas de vinculación comunitaria (como la PPS Social Comunitaria en cooperativas y fábricas recuperadas)6.
+El canal estudiantil se articula a través de dos organizaciones: el Centro de Estudiantes de Ingeniería y Tecnología (CEIT) y la delegación local de la Asociación Argentina de Estudiantes de Ingeniería Industrial y Carreras Afines (AArEII)9. El CEIT mantiene un portal propio de intermediación laboral (ceitfmt.ar) con más de 300 estudiantes activos en búsquedas orientadas a becas y pasantías iniciales9.
+Por su parte, AArEII UTN FRBA actúa como un nodo de difusión de programas de Jóvenes Profesionales, pasantías corporativas de verano (internships) y visitas técnicas de formación, vinculando a los alumnos con una red nacional de más de 6.000 asociados en 66 universidades del país10. A su vez, la comunidad profesional utiliza activamente los canales de LinkedIn (páginas institucionales de la UTN.BA, grupos de graduados de la regional y redes de reclutadores de recursos humanos), donde se publican sistemáticamente avisos corporativos que solicitan expresamente estudiantes o egresados de la universidad tecnológica.
+Procedimiento Técnico y Administrativo de Postulación y Formalización
+La postulación, selección y contratación de un estudiante de Ingeniería Industrial bajo el régimen de pasantías educativas se realiza a través de un procedimiento administrativo y pedagógico secuencial:
+
+
+Etapa del Proceso
+	Actor Responsable
+	Plataforma / Mecanismo
+	Entregables y Documentación Asociada
+	1. Alta de Perfil
+	Postulante
+	Portal digital Talentia UTN.BA (utnba.talentia.com)2.
+	Creación de cuenta con correo institucional @frba.utn.edu.ar, CV estandarizado y trayectoria académica6.
+	2. Filtrado y Matching
+	Algoritmo del Portal / Empresa
+	Sistema automatizado de Talentia y panel de búsquedas4.
+	Calificación automática según requerimientos del puesto (año de cursada, asignaturas clave)4.
+	3. Postulación Directa
+	Postulante / Reclutador
+	Módulo de autopostulación en vacante activa4.
+	Envío del perfil curricular validado; revisión del reclutador e invitación a entrevistas4.
+	4. Validación del Convenio Marco
+	Empresa y ADP UTN.BA
+	Remisión formal a pasantias@frba.utn.edu.ar y mesa de entrada presencial15.
+	Presentación de estatuto corporativo, designación de autoridades, CUIT ante AFIP y constancia de CCT aplicable15.
+	5. Instrumentación de Acuerdo Particular
+	Postulante, Empresa y ADP
+	Firma tripartita de documento individual por triplicado15.
+	Certificado de Alumno Regular (vía SIU Guaraní), alta temprana de ANSES, plan pedagógico y cobertura ART/Salud7.
+	6. Control de Tutoría
+	Tutor Corporativo y Tutor ADP
+	Formulario digital de auditoría y seguimiento15.
+	Evaluación obligatoria de desempeño cumplimentada al transcurrir el 25% del plazo de pasantía15.
+	Matriz de Sectores Industriales, Áreas Funcionales y Firmas Empleadoras
+El campo de inserción del ingeniero industrial de la UTN FRBA comprende tanto la manufactura discreta y continua como la logística y los servicios corporativos avanzados3. Los sectores económicos estructuran sus búsquedas en perfiles funcionales específicos:
+
+
+Sector Industrial
+	Áreas Funcionales Demandadas
+	Puestos Clave Habituales
+	Corporaciones Empleadoras Recurrentes
+	Modalidades y Programas Típicos
+	Consumo Masivo (FMCG)
+	Supply Chain, Planificación de Demanda, PCP, Aseguramiento de la Calidad, Envasado.
+	Analista de Planning, Supervisor de Producción Junior, Coordinador de Calidad en Planta.
+	Cervecería y Maltería Quilmes, Unilever, Arcor, Danone, Molinos Río de la Plata, Mondelez18.
+	Programas corporativos de pasantías (20 hs) y Trainee global de operaciones; esquemas híbridos en oficinas y 100% presencial en planta.
+	Energía, Petróleo y Gas
+	Cadena de Abastecimiento Técnico, Logística de Campamentos, Mantenimiento, Compras Estratégicas.
+	Ingeniero de Logística Operativa, Comprador Técnico, Planificador de Mantenimiento de Activos.
+	YPF, Pan American Energy (PAE), Vista Energy, Raízen, Pampa Energía, Tecpetrol.
+	Programas intensivos de Jóvenes Profesionales con rotación en cuencas productivas (Vaca Muerta) y complejos de refinación.
+	Automotriz y Autopartes
+	Lean Manufacturing, Métodos y Tiempos, Logística Interna (Milkrun), Calidad de Proveedores (SQA).
+	Analista de Control de Producción, Facilitador Kaizen, Ingeniero de Procesos de Ensamble.
+	Toyota Argentina, Ford Motor Company, Volkswagen Group, Stellantis.
+	Formación en sistemas de manufactura esbelta (TPS); esquemas de pasantía en turnos fijos en plantas de Zárate, Pacheco y El Palomar.
+	Siderurgia y Metalmecánica
+	Programación de Acería y Laminación, Operaciones Industriales, Proyectos de Inversión (PMO).
+	Ingeniero de Turno Junior, Planificador de Producción Siderúrgica, Analista Técnico de Mejora de Procesos.
+	Grupo Techint (Tenaris, Ternium), Acindar ArcelorMittal, Aluar.
+	Programas de Prácticas Educativas de Verano (PEV) y Programas de Jóvenes Profesionales (JP) con evaluación técnica y dinámica de panel.
+	Logística, E-commerce y Retail
+	Gestión de Almacenes (Fulfillment), Ruteo y Transporte, Abastecimiento y Compras, Procesos Ágiles.
+	Process Engineer Logístico, Analista Senior de Operaciones, Diseñador de Métodos y Layouts.
+	Mercado Libre, Andreani, DHL Express, Celsur Logística, Cencosud, Carrefour.
+	Contrataciones directas a tiempo completo con modalidades híbridas y desarrollo acelerado en centros logísticos robotizados.
+	Consultoría Estratégica y de Operaciones
+	Diagnóstico Operacional, Reingeniería de Procesos de Negocio, PMO Corporativa, Reducción de Costos.
+	Consultor Junior de Operaciones, Analista Funcional de Procesos, Business Analyst.
+	Accenture, Deloitte, PwC, EY, Boston Consulting Group (BCG), McKinsey & Company.
+	Programas de graduados recientes; procesos de selección basados en resolución de casos de negocio (business cases) y alta exposición a clientes.
+	En el ámbito de la producción y la logística de consumo masivo, las visitas técnicas y los convenios continuos facilitan el ingreso de estudiantes de la regional a plantas industriales representativas, como la cervecería de Quilmes o el centro industrial de Tenaris, donde los estudiantes son evaluados directamente en la gestión de indicadores operacionales y metodologías Kaizen aprendidas en las cátedras de Organización Industrial y Estudio del Trabajo3.
+Marco Regulatorio de Pasantías y Acreditación de la Práctica Profesional Supervisada
+El régimen legal de pasantías y el cumplimiento curricular de la carrera de Ingeniería Industrial convergen en un marco que exige rigurosidad documental y técnica para evitar contingencias laborales y garantizar la validez académica.
+Parámetros Legales del Régimen de Pasantías (Ley Nacional N.º 26.427)
+La legislación nacional define a la pasantía formativa universitaria como una práctica de extensión educativa coordinada entre una casa de altos estudios y una entidad jurídica empleadora, orientada a dotar al estudiante de herramientas complementarias a su formación académica7. La aplicación operativa del régimen en la UTN FRBA se sujeta a los siguientes lineamientos técnicos:
+* Plazos y Prórrogas: La pasantía tiene una duración mínima legal de dos (2) meses y un límite máximo ordinario de doce (12) meses7. Puede pactarse una renovación de hasta seis (6) meses complementarios mediante la suscripción de un nuevo convenio particular, fijando un tope absoluto improrrogable de dieciocho (18) meses de vinculación en una misma organización7.
+* Jornada de Trabajo: La carga horaria máxima autorizada es de hasta veinte (20) horas a la semana7. Las labores deben desarrollarse exclusivamente de lunes a viernes en el rango diurno (comprendido entre las 06:00 y las 21:00 horas), con jornadas unitarias que no superen las seis horas y media (6 h 30 min)7. La normativa prohíbe de forma taxativa la ejecución de horas suplementarias o la afectación a tareas penosas, riesgosas o insalubres7.
+* Asignación Estímulo: El pasante percibe mensualmente una retribución dineraria de carácter no remunerativo denominada asignación estímulo7. Se liquida en proporción horaria directa tomando como base el sueldo básico de la categoría equivalente asignada por el Convenio Colectivo de Trabajo (CCT) que rija en la empresa patrocinante7:
+  
+Si la entidad no posee convenio aplicable, la liquidación debe tomar como referencia proporcional el Salario Mínimo, Vital y Móvil (SMVM) legal de la República Argentina7. El importe incorpora, en escala proporcional, los conceptos adicionales compatibles pactados en el CCT7.
+* Seguridad Social y Coberturas: Las organizaciones deben garantizar la incorporación obligatoria del estudiante al Sistema Nacional del Seguro de Salud mediante una obra social del régimen general (Ley 23.660), así como la cobertura frente a siniestros laborales y enfermedades profesionales a través de una Aseguradora de Riesgos del Trabajo (ART, bajo Ley 24.557), gestionando el alta formal de seguridad social con el código correspondiente a pasantías15.
+Procedimiento de Acreditación Curricular de la Práctica Profesional Supervisada (PPS)
+La Práctica Profesional Supervisada es una obligación académica para acceder al título de Ingeniero Industrial en la UTN FRBA5. El plan de estudios de la carrera demanda el cumplimiento documentado de un total de entre 150 y 200 horas reloj de intervención profesional en un entorno de producción o gestión técnica14.
+Para homologar una pasantía gestionada a través del ADP o un empleo técnico en relación de dependencia formal, el estudiante debe cumplir inicialmente con las materias correlativas exigidas por la reglamentación departamental (las mismas fijadas para la inscripción en la materia integradora Evaluación de Proyectos, correspondiente al quinto nivel)6.
+El proceso de acreditación de la PPS está completamente digitalizado y se gestiona mediante la remisión de la documentación a través del dominio institucional @frba.utn.edu.ar a la comisión docente de la cátedra6:
+   1. Formulario PPS A (Anteproyecto y Plan de Práctica): Instrumento donde se declaran los datos de la organización, el cargo y antecedentes del tutor de empresa (ingeniero o profesional idóneo) y la delimitación del proyecto a desarrollar6. Debe abarcar temas de incumbencia directa: optimización de métodos de trabajo, balanceo de líneas, diagramación de almacenamiento, implantación de normas de calidad ISO, auditorías de higiene y seguridad, o estudios de costos de fabricación3. El anteproyecto es auditado y formalmente autorizado por la comisión docente6.
+   2. Formulario PPS B (Informe de Seguimiento e Hitos de Avance): Se completa promediando el plazo fijado para la práctica con el fin de auditar la ejecución de las fases del diagrama de Gantt planificado en la etapa preliminar6.
+   3. Formulario PPS C (Informe Técnico Final y Certificación de Competencias): Informe de ingeniería donde el alumno expone el diagnóstico industrial, la ingeniería metodológica implementada y los resultados cuantitativos o económicos obtenidos en la intervención6. Incluye la firma del tutor de empresa certificando el cumplimiento de la carga horaria técnica y el desempeño profesional observado6.
+   4. Coloquio Evaluatorio y Asentamiento de Actas: Validados los tres instrumentos, la cátedra autoriza la inscripción a la mesa final a través del sistema SIU Guaraní para el registro formal de la aprobación en el historial académico del estudiante6.
+En los casos en que los estudiantes no dispongan de inserción corporativa activa pero alcancen el tramo final de la carrera, el Departamento de Ingeniería Industrial ofrece la modalidad de PPS Social Comunitaria (PPS-SC)6. Esta alternativa formativa articula a los alumnos con cooperativas de trabajo asociativo y empresas recuperadas (como la Cooperativa de Trabajo El Zócalo), canalizando diagnósticos operacionales, redistribución de plantas fabriles y estructuración de costos para resolver cuellos de botella productivos en organizaciones de la economía social6.
+Eventos Institucionales y Vinculación Universidad-Empresa
+La vinculación tecnológica entre la UTN FRBA y las empresas empleadoras combina instancias institucionales centralizadas con iniciativas impulsadas por el departamento académico y las asociaciones estudiantiles en las sedes Medrano y Campus25.
+Feria de Empresas y Encuentros de Atracción de Talento
+El evento central de inserción laboral de la facultad es la Feria de Empresas UTN.BA, coordinada con periodicidad anual por el Área de Desarrollo Profesional en las sedes de Medrano (Almagro) y Campus (Villa Lugano)25. Durante el evento, corporaciones multinacionales y empresas nacionales del sector industrial montan stands operativos y brindan presentaciones sobre sus programas de graduados, academias de desarrollo interno y vacantes de pasantías25. Para el estudiante de Ingeniería Industrial, este espacio permite tomar contacto directo con los selectores de talento de compañías como Techint, YPF, Quilmes, Pan American Energy y Toyota, realizando postulaciones en sitio y participando en dinámicas breves de preselección25.
+Charlas Técnicas, Visitas a Plantas y Talleres de Inserción
+El calendario académico incorpora actividades diseñadas para consolidar el aprendizaje técnico y preparar la salida al mercado:
+   * Visitas Guiadas a Plantas Productivas: Coorganizadas por el Departamento de Ingeniería Industrial, la cátedra de PPS y la delegación de AArEII10. Abarcan recorridos guiados por las instalaciones fabriles de empresas de primera línea, como la planta cervecera de Quilmes (donde se analizan los tableros de control de procesos continuos y herramientas de mejora continua)18, el complejo siderúrgico de Tenaris en Campana, la terminal automotriz de Ford en General Pacheco o los centros logísticos automatizados de distribución de e-commerce.
+   * Conferencias de Industria 4.0 y Gestión Operacional: Paneles organizados en el Aula Magna de la sede Medrano donde directores industriales y gerentes de cadena de suministro exponen sobre la adopción de tecnologías habilitadoras (IoT industrial, automatización, gemelos digitales y logística autónoma)27.
+   * Talleres de Habilidades Profesionales y Reclutamiento: Clínicas periódicas impulsadas por el ADP y el centro de estudiantes (CEIT) enfocadas en la optimización del currículum bajo estándares corporativos, preparación para dinámicas de Assessment Center y simulación de entrevistas por competencias2.
+Evaluación Competitiva del Ingeniero Industrial de la UTN en el Mercado
+El posicionamiento de los ingenieros industriales de la UTN FRBA en el mercado laboral se asienta en ventajas formativas operativas, aunque enfrenta desafíos específicos vinculados a la transformación tecnológica.
+Fortalezas y Ventajas Comparativas
+   1. Régimen de Cursada Vespertino y Experiencia Práctica Acumulada: La concentración de las asignaturas del ciclo profesional en el turno noche (franja horaria habitual de 18:15 a 22:45 hs) permite que los estudiantes trabajen jornadas de 8 o 9 horas en empresas fabriles o de servicios sin discontinuar su avance académico regular. Esto genera graduados con 2 a 4 años de trayectoria laboral formal, reduciendo la curva de inducción corporativa respecto de otras universidades de cursada exclusivamente diurna.
+   2. Pragmatismo Operacional y Cultura de Planta: El egresado tecnológico destaca por su solvencia técnica para interactuar directamente en el piso de fábrica con operarios, mandos medios y representaciones sindicales, combinando el cálculo técnico de ingeniería con el sentido práctico del funcionamiento mecánico y logístico de las instalaciones3.
+   3. Visión Sistémica del Negocio: A través de la columna de materias integradoras de la carrera, el ingeniero industrial de la UTN articula el análisis cuantitativo de costos, la capacidad física de las plantas y la planeación de la demanda dentro de una perspectiva económica integral3.
+Cuellos de Botella Tecnológicos y Competencias Críticas
+El perfil presenta debilidades recurrentes que los selectores señalan como limitantes para la proyección a cargos directivos o programas corporativos globales:
+   1. Nivel de Bilingüismo en Idioma Inglés: Los procesos de selección para programas globales de Jóvenes Profesionales y multinacionales energéticas o de consultoría exigen un dominio avanzado y fluido del inglés (nivel B2 o C1) para sostener entrevistas internacionales y reportes regionales. Debido a la alta carga de materias analíticas de la carrera, los estudiantes suelen postergar la certificación de idiomas, lo que reduce sus opciones a corporaciones con operaciones limitadas al mercado local.
+   2. Brecha en Analítica de Operaciones (Power BI, SQL, Python): Aunque el manejo de hojas de cálculo avanzadas (Microsoft Excel) es generalizado en el alumnado, la gestión moderna de cadenas de suministro requiere habilidades en herramientas de Business Intelligence (Power BI, Tableau) para el modelado y visualización de tableros de KPIs en tiempo real8. Asimismo, la creciente digitalización industrial demanda bases sólidas de consultas estructuradas en bases de datos (SQL) y automatización de procesos analíticos mediante Python, conocimientos que aún se adquieren principalmente de forma autodidacta1.
+   3. Manejo Práctico de Sistemas ERP Transaccionales (SAP): En el mercado industrial, los módulos funcionales de SAP (tales como MM para abastecimiento, PP para control de producción y QM para gestión de calidad) constituyen el estándar de operación. La ausencia de prácticas con sistemas ERP en el laboratorio académico genera una barrera operativa inicial en posiciones de analista de compras, almacenes y programación de operaciones.
+Recomendaciones Estratégicas para la Aceleración de la Colocación Profesional
+Para maximizar las probabilidades de inserción en programas de Jóvenes Profesionales y posiciones de analista avanzado, los estudiantes y graduados recientes de Ingeniería Industrial de la UTN.BA deben estructurar su desarrollo sobre las siguientes directrices:
+Gestión Activa de Perfiles y Plataformas
+   * Completitud Técnica en Talentia UTN.BA: Completar el perfil en el portal oficial (utnba.talentia.com) detallando asignaturas aprobadas, competencias metodológicas (Lean, 5S, Six Sigma) y proyectos realizados4. Los algoritmos de intermediación priorizan los perfiles con mayor densidad de términos técnicos asociados a la vacante4.
+   * Currículum Orientado a Logros (Formato STAR): Estructurar el CV profesional en una sola página, describiendo la experiencia técnica bajo el modelo Situación, Tarea, Acción y Resultados, cuantificando los impactos económicos u operativos de las iniciativas (por ejemplo: "Optimización de stock de seguridad logrando una reducción del 14% en costos de almacenamiento").
+   * Uso Estratégico de LinkedIn: Mantener el perfil profesional actualizado indicando la pertenencia a la UTN FRBA, interactuar con publicaciones del departamento académico y conectar activamente con líderes de talento y graduados de la regional insertos en corporaciones objetivo.
+Planificación de la Práctica Profesional Supervisada (PPS)
+   * Anticipación en la Acreditación: Gestionar la PPS apenas se cumplan las correlativas de cuarto año, evitando postergar el trámite administrativo hasta el último cuatrimestre de cursada6.
+   * Definición de Alcance Metodológico con la Empresa: Al ingresar a una pasantía bajo la Ley 26.427, consensuar con el tutor de planta un proyecto técnico de mejora que posea impacto mensurable (un balanceo de línea, estandarización de procedimientos o cálculo de capacidad de planta) para facilitar la redacción de los formularios PPS A y PPS C6.
+   * Uso de la Alternativa Comunitaria: En contextos de contracción en la oferta de pasantías corporativas, aplicar a los proyectos de PPS Social Comunitaria en cooperativas de trabajo para completar las horas reglamentarias y desarrollar habilidades de liderazgo y gestión en organizaciones reales6.
+Adquisición de Habilidades Complementarias
+   * Capacitación en Analítica de Datos: Certificarse en herramientas de visualización de datos (Power BI) y profundizar en programación en Python orientada a la investigación operativa y el análisis predictivo de la demanda1.
+   * Certificación Internacional de Inglés: Invertir de forma temprana en cursos de conversación técnica y rendir exámenes internacionales estandarizados (IELTS, TOEFL, B2 First/C1 Advanced) para calificar a entrevistas de programas de alcance regional o global.
+   * Integración en Redes Profesionales: Asociarse a la delegación local de AArEII y participar activamente en congresos y visitas a plantas fabriles para consolidar vínculos con colegas y acceder a canales informales de recomendación profesional10.
+El posicionamiento del ingeniero industrial de la UTN FRBA en el mercado laboral se sostiene en su capacidad para articular el rigor analítico con una presencia efectiva en la operación cotidiana de las organizaciones. A través de la profesionalización de la intermediación laboral en la plataforma Talentia, la gestión de convenios regulados por la Ley 26.427 y la acreditación de proyectos formativos en la Práctica Profesional Supervisada, la facultad ofrece una estructura sólida de inserción temprana. En la medida en que los estudiantes complementen su pragmatismo técnico con el dominio de la analítica de datos avanzada y el bilingüismo de negocios, la institución continuará liderando como la principal cantera de talento operativo y gerencial para la industria nacional y regional1.
+Obras citadas
+   1. Talentia busca potenciar la empleabilidad en universidades, https://www.sobretiza.com.ar/2026/06/19/talentia-una-plataforma-gratuita-para-gestionar-la-empleabilidad-en-universidades/
+   2. Desarrollo Profesional - UTN.BA, https://frba.utn.edu.ar/estudiantes/adp/
+   3. Fundamentación - UTN.BA, https://frba.utn.edu.ar/industrial/fundamentacion/
+   4. TalentIA - UTN Buenos Aires | Inicio, https://utnba.talentia.com/
+   5. Carrizo Blanca (1); Abet Jorge (1); Gallegos Laura (2 ... - RIA - UTN, https://ria.utn.edu.ar/bitstreams/21c8acd2-566d-4bdc-bbe8-0270b238768f/download
+   6. PPS Industrial - UTN.BA, https://frba.utn.edu.ar/industrial/practicas-supervisadas/
+   7. Ley 26.427 Régimen de Pasantías: aspectos clave - Arizmendi, https://arizmendi.ar/ley-26-427-regimen-de-pasantias-aspectos-clave
+   8. Búsquedas Laborales - UTN.BA, https://frba.utn.edu.ar/electronica/busqueda-laboral/
+   9. CEIT FMT, https://ceitfmt.ar/
+   10. AAREII - UTN.BA, https://frba.utn.edu.ar/industrial/aareii/
+   11. Incumbencias - UTN.BA, https://frba.utn.edu.ar/industrial/incumbencias/
+   12. Talentia - El puente entre quienes buscan talento y quienes buscan, https://talentia.com/
+   13. duración, carga horaria y asignación estímulo - Arizmendi, https://www.arizmendi.com/Orientaci%C3%B3n_Legal/Boletines_y_Publicaciones/Info.Arizmendi/Info.Arizmendi_completo/2022/11/07_11_2022
+   14. Plan de Estudios 2023 - UTN.BA, https://frba.utn.edu.ar/mecanica/plan-de-estudios-2023/
+   15. ADP Empresas - UTN.BA, https://frba.utn.edu.ar/estudiantes/adp-empresas/
+   16. ADP Preguntas Frecuentes - UTN.BA, https://frba.utn.edu.ar/estudiantes/adp-preguntas-frecuentes/
+   17. Pasantías universitarias – UN MUY BUEN SISTEMA NO, https://www.estudiopiacentini.com.ar/pasantias-universitarias-un-muy-buen-sistema-no-remunerativo-de-convocar-estudiantes/
+   18. Quilmes - UTN.BA, https://frba.utn.edu.ar/tag/quilmes/
+   19. Ley de Pasantías Educativas - Jus.gob.ar - Infoleg, https://servicios.infoleg.gob.ar/infolegInternet/anexos/145000-149999/148599/norma.htm
+   20. Normativa Vigente - Facultad de Ciencias Económicas y Sociales, https://eco.mdp.edu.ar/extension/pasantias?view=article&id=54:normativa-vigente&catid=161
+   21. Pasantía educativa - Argentina.gob.ar, https://www.argentina.gob.ar/trabajo/contratacion/educativa
+   22. Obra Social para el pasante | Consultora PÉREZ MARZO, https://perezmarzo.com.ar/obra-social-para-el-pasante
+   23. Prácticas Supervisadas - UTN.BA, https://frba.utn.edu.ar/quimica/practicas-supervisadas/
+   24. UTN Santa Fe - UTN Facultad Regional Santa Fe - resolucion, https://sidn.frsf.utn.edu.ar/resoluciones/?pcg_sort_col=id&pcg_sort_order=asc&pcg_show=500&pcg_page=16
+   25. ADP Actividades - UTN.BA, https://frba.utn.edu.ar/estudiantes/adp-actividades/
+   26. Noticias sobre Industrial - UTN.BA, https://frba.utn.edu.ar/noticias/industrial/page/2/
+   27. Noticias sobre Industrial - UTN.BA, https://frba.utn.edu.ar/noticias/industrial/
